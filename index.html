@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paana - Santé Publique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #f0f0f0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #007d8b;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .section {
+      padding: 60px 20px;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .section-text {
+      flex: 1;
+      max-width: 500px;
+      margin: 20px;
+    }
+
+    .section-text h2 {
+      color: #007d8b;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    .section-text p {
+      text-align: justify;
+      font-size: 1em;
+    }
+
+    .section-image {
+      flex: 1;
+      max-width: 400px;
+      margin: 20px;
+    }
+
+    .section-image img {
+      width: 100%;
+    }
+
+    .explorer {
+      background-color: #e9ecef;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .explorer h2 {
+      font-size: 2em;
+      color: #007d8b;
+      margin-bottom: 30px;
+    }
+
+    .explorer-box {
+      display: inline-block;
+      background-color: #007d8b;
+      color: white;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: left;
+      max-width: 500px;
+    }
+
+    .explorer-box ul {
+      list-style: disc inside;
+    }
+
+    .explorer-box li {
+      margin-bottom: 10px;
+    }
+
+    .arrow {
+      margin-top: 30px;
+    }
+
+    .arrow img {
+      width: 100px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Paana</h1>
+    <p>Base de connaissances dédiée à la santé publique en Polynésie française</p>
+  </header>
+
+  <section class="section">
+    <div class="section-text">
+      <h2>À propos de Paana</h2>
+      <p>
+        La santé publique évolue dans le temps. Connaître les stratégies mises, les contextes locaux, les dynamiques : c’est essentiel pour agir efficacement. Paana est une base de données ouverte, dédiée à la santé publique en Polynésie française. Elle centralise des informations utiles, des données historiques, des événements santé, et des documents clés.
+      </p>
+    </div>
+    <div class="section-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Sky_landscape_icon.svg/800px-Sky_landscape_icon.svg.png" alt="illustration">
+    </div>
+  </section>
+
+  <section class="explorer">
+    <h2>Explorer</h2>
+    <div class="explorer-box">
+      <ul>
+        <li>Explorer les événements de santé publique par année, catégories fonctionnelles et mots-clés</li>
+        <li>Consulter des fiches descriptives détaillées</li>
+        <li>Accéder aux modes résumé pour visualiser rapidement l’essentiel</li>
+        <li>Suivre l’évolution de thématiques</li>
+        <li>Proposer de nouveaux événements via un formulaire dédié</li>
+      </ul>
+    </div>
+    <div class="arrow">
+      <img src="https://cdn-icons-png.flaticon.com/512/60/60761.png" alt="Let's go">
+    </div>
+  </section>
+
+  <section class="section reverse">
+    <div class="section-text">
+      <h2>À propos de Paana</h2>
+      <p>
+        La santé publique évolue dans le temps. Connaître les stratégies mises, les contextes locaux, les dynamiques : c’est essentiel pour agir efficacement. Paana est une base de données ouverte, dédiée à la santé publique en Polynésie française. Elle centralise des informations utiles, des données historiques, des événements santé, et des documents clés.
+      </p>
+    </div>
+    <div class="section-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Sky_landscape_icon.svg/800px-Sky_landscape_icon.svg.png" alt="illustration">
+    </div>
+  </section>
+
+  <footer>
+    <p>Planifier une consultation gratuite ou contribuer avec un expert en transformation numérique.<br/>
+    <a href="#">Téléphone</a></p>
+  </footer>
+
+</body>
+</html>
