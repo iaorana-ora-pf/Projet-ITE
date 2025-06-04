@@ -1,204 +1,89 @@
 
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Paana – Santé Publique</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Site Moderne 2025</title>
   <style>
-    :root {
-      --blue: #0391a4;
-      --dark-blue: #027489;
-      --light: #f7fafd;
-      --white: #ffffff;
-      --gray: #666;
-    }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: var(--light);
-      color: var(--gray);
-      line-height: 1.8;
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      background: url('https://source.unsplash.com/1600x900/?technology,future') no-repeat center center fixed;
+      background-size: cover;
     }
-
-    a {
-      color: var(--blue);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     header {
-      background: linear-gradient(135deg, var(--blue), var(--dark-blue));
-      color: var(--white);
-      padding: 80px 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      position: relative;
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 15px;
-    }
-
-    header p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      max-width: 600px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .hero-buttons a {
-      background-color: var(--white);
-      color: var(--blue);
-      padding: 15px 25px;
-      border-radius: 30px;
+      position: absolute;
+      top: 20px;
+      left: 30px;
       font-weight: bold;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: 0.3s ease;
+      font-size: 1.2rem;
+      color: #fff;
     }
-
-    .hero-buttons a:hover {
-      background-color: #e0f4f8;
-    }
-
-    section {
-      max-width: 960px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    section h2 {
-      font-size: 2em;
-      color: var(--blue);
-      margin-bottom: 30px;
-    }
-
-    section p {
-      font-size: 1em;
-      text-align: justify;
-      margin-bottom: 20px;
-    }
-
-    .feature-cards {
+    .overlay {
+      height: 100%;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 40px;
-    }
-
-    .feature-card {
-      flex: 1 1 calc(50% - 20px);
-      background-color: var(--white);
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .feature-card i {
-      font-size: 1.8em;
-      color: var(--blue);
-      margin-bottom: 10px;
-    }
-
-    footer {
-      background-color: var(--white);
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 40px 20px;
-      font-size: 0.9em;
-      color: var(--gray);
+      padding: 2rem;
     }
-
+    .glass-box {
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 16px;
+      padding: 3rem 2rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      animation: fadeIn 2s ease-out;
+    }
+    .glass-box h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .glass-box p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .glass-box button {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      background-color: #3a86ff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .glass-box button:hover {
+      background-color: #265df2;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
     @media (max-width: 768px) {
-      .feature-card {
-        flex: 1 1 100%;
-      }
+      .glass-box h1 { font-size: 2rem; }
+      .glass-box p { font-size: 1rem; }
     }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>Paana</h1>
-  <p>Base de connaissances collaborative dédiée à la santé publique en Polynésie française</p>
-  <div class="hero-buttons">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_ZNcG1XMZxoZVdUDn_4yV5BXX-BMAuJs9nraIeS9ziBcqNQ/viewform" target="_blank">
-      🤝 Contribuer
-    </a>
-    <a href="#features">
-      🔍 Explorer la base
-    </a>
+  <header>✨ Paana</header>
+  <div class="overlay">
+    <div class="glass-box">
+      <h1>Paana</h1>
+      <p>Base de connaissances dédiée à la santé publique en Polynésie française.</p>
+      <button onclick="alert('Merci de votre intérêt !')">Découvrir</button>
+    </div>
   </div>
-</header>
-
-<section>
-  <h2>À propos de Paana</h2>
-  <p>La santé publique évolue dans le temps. Connaître les actions passées, les contextes locaux, les dynamiques à l'œuvre permet de mieux préparer l’avenir.</p>
-  <p>Paana est une base de connaissances collaborative dédiée à la santé publique en Polynésie française. Elle met en lumière les initiatives, les enjeux et les apprentissages territoriaux.</p>
-  <p>Elle a pour but de :</p>
-  <ul>
-    <li>Contribuer à une mémoire collective territoriale</li>
-    <li>Faciliter la réutilisation des savoirs existants</li>
-    <li>Soutenir une meilleure compréhension des dynamiques sanitaires locales</li>
-  </ul>
-    <div class="feature-card">
-      <i class="fa-solid fa-circle-plus"></i>
-      <h3>Proposer un contenu</h3>
-      <p>Utiliser le formulaire pour enrichir la base</p>
-    </div>
-</section>
-
-<section id="features">
-  <h2>Ce que vous pouvez faire avec Paana</h2>
-  <div class="feature-cards">
-    <div class="feature-card">
-      <i class="fa-solid fa-calendar-days"></i>
-      <h3>Parcourir les événements</h3>
-      <p>Filtrer par année, catégories fonctionnelles ou mots-clés</p>
-    </div>
-    <div class="feature-card">
-      <i class="fa-solid fa-file-lines"></i>
-      <h3>Consulter les fiches</h3>
-      <p>Accéder à des descriptions détaillées et à l'essentiel en un clic</p>
-    </div>
-    <div class="feature-card">
-      <i class="fa-solid fa-chart-line"></i>
-      <h3>Explorer les dynamiques</h3>
-      <p>Visualiser l’évolution des thématiques sur le long terme</p>
-    </div>
-  
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 Paana. Tous droits réservés. Contact : <a href="mailto:paanaconseil@outlook.com">paanaconseil@outlook.com</a></p>
-</footer>
-
 </body>
 </html>
