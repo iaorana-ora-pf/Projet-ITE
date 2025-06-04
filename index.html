@@ -197,7 +197,27 @@ header {
 .arrow img {
   width: 100px;
 }
+.btn-icon {
+  background-color: #0391a4;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
 
+.btn-icon:hover {
+  background-color: #027489;
+}
+
+.btn-icon i {
+  font-size: 1.2em;
+}
 /* ============================
    🔚 FOOTER
 ============================ */
@@ -295,6 +315,9 @@ footer {
         formulaire dédié
       </a></li>
       </ul>
+    <button class="btn-icon">
+  <i class="fa-solid fa-magnifying-glass-location"></i> Rechercher
+</button>
     </div>
    </section>
 
