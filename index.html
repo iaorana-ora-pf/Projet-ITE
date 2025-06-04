@@ -114,14 +114,15 @@
     
   header {
   background-color: #f7f7f7;
-  padding: 40px 20px;
+  padding: 40px ;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
+  min-height: 250px;
 }
 
 .header-text {
@@ -148,13 +149,20 @@
   color: #333;
   margin-bottom: 30px;
 }
-
-.header-image {
-  position: relative;
-  max-width: 35%;
-  margin-top: 20px;
-  
+.header-rectangle {
+  background-color: #0391a4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 35%;
+  min-height: 100%;
 }
+.header-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}  
 
 .image-bg {
   background-color: #0391a4;
@@ -180,8 +188,8 @@
       <div class="horizontal-line"></div>
       <p>Base de connaissances dédiée à la santé publique en Polynésie française</p>
     </div>
-    <div class="header-image">
-      <div class="image-bg">
+     <div class="header-rectangle">
+      <div class="header-image">
         <img src="index-image.png" alt="illustration">
       </div>
     </div>
