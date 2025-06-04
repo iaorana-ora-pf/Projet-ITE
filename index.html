@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Paana - Santé Publique</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     * {
       box-sizing: border-box;
@@ -59,7 +60,33 @@
     .section-image img {
       width: 100%;
     }
+    
+.section {
+  position: relative;
+  overflow: hidden;
+}
 
+.icon-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 300px;
+  color: #0391a4;
+  opacity: 0.1;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.section-text,
+.section-image {
+  position: relative;
+  z-index: 1;
+}
     .explorer {
       background-color: #e9ecef;
       text-align: center;
@@ -196,16 +223,22 @@
 
   
   <section class="section">
+    <div class="icon-bg">
+    <i class="fa-solid fa-circle-info"></i>
+  </div>
     <div class="section-text">
       <h2>À propos de Paana</h2>
       <p>
-        La santé publique évolue dans le temps. Connaître les stratégies mises, les contextes locaux, les dynamiques : c’est essentiel pour agir efficacement. Paana est une base de données ouverte, dédiée à la santé publique en Polynésie française. Elle centralise des informations utiles, des données historiques, des événements santé, et des documents clés.
-      </p>
+       La santé publique évolue dans le temps. Connaître les actions passées, les contextes locaux, les dynamiques à l'œuvre permet de mieux préparer l’avenir.<br>
+C’est dans cet esprit qu’a été créée Paana, base de connaissances dédiée à la santé publique en Polynésie française, avec une attention particulière portée à la prévention et à la promotion de la santé.
+Cette démarche a pour objectifs de :
+<ul>
+        <li>Contribuer à une mémoire collective territoriale</li>
+        <li>Faciliter la réutilisation des savoirs existants</li>
+        <li>Soutenir une meilleure compréhension des dynamiques sanitaires locales</li>
+ </ul>
     </div>
-    <div class="section-image">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Sky_landscape_icon.svg/800px-Sky_landscape_icon.svg.png" alt="illustration">
-    </div>
-  </section>
+</section>
 
   <section class="explorer">
     <h2>Explorer</h2>
