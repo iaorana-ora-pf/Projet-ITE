@@ -5,333 +5,226 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Paana - Santé Publique</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* 🔁 Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  background-color: #f5f5f5;
-  color: #333;
-}
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
 
-a {
-  color: #0391a4; /* un beau bleu turquoise, cohérent avec ton thème */
-  text-decoration: none; /* enlève le souligné */
-  font-weight: bold;
-  transition: color 0.3s;
-}
+    a {
+      color: #0391a4;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-a:hover {
-  color: #007d8b; /* plus foncé au survol */
-  text-decoration: underline; /* ou laisse none si tu préfères */
-}
+    a:hover {
+      color: #007d8b;
+      text-decoration: underline;
+    }
 
-/* ============================
-   🟦 HEADER / BANDEAU
-============================ */
-header {
-  background-color: #0391a4;
-  padding: 20px 0;
-}
+    /* 🟦 HEADER */
+    header {
+      background-color: #0391a4;
+      padding: 20px 0;
+    }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: wrap;
-  }
-
-.header-text {
-  text-align: left;
-  max-width: 60%;
-  padding-left: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.header-text h1 {
-  font-size: 2.5em;
-  color: #f5f6f1;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-.horizontal-line {
-  width: 110px;
-  height: 20px;
-  background-color: #f5f6f1;
-  margin-bottom: 15px;
-}
-
-.header-text p {
-  font-size: 1.5em;
-  color: #f5f6f1;
-  margin-bottom: 20px;
-}
-.header-button-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-right: 40px;
-}
-
-.btn-access {
-  background-color: #f5f6f1;
-  color: #0391a4;
-  border: none;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  font-size: 1.8em;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.btn-access:hover {
-  background-color: #dde0e3;
-}
-
-.btn-label {
-  margin-top: 10px;
-  color: #f5f6f1;
-  font-weight: bold;
-  font-size: 1em;
-  text-align: center;
-}
     .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 0 40px;
-}
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      flex-wrap: wrap;
+    }
 
-.header-button-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-}
+    .header-text {
+      text-align: left;
+      max-width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-.btn-access {
-  background-color: #f5f6f1;
-  color: #0391a4;
-  border: none;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  font-size: 1.8em;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+    .header-text h1 {
+      font-size: 2.5em;
+      color: #f5f6f1;
+      margin: 20px 0 15px;
+    }
 
-.btn-access:hover {
-  background-color: #dde0e3;
-}
+    .horizontal-line {
+      width: 110px;
+      height: 20px;
+      background-color: #f5f6f1;
+      margin-bottom: 15px;
+    }
 
-.btn-label {
-  margin-top: 8px;
-  color: #f5f6f1;
-  font-weight: bold;
-  font-size: 0.95em;
-  text-align: center;
-}
-/* ============================
-   📄 SECTIONS CONTENUS
-============================ */
-.section {
-  position: relative;
-  overflow: hidden;
-  padding: 60px 40px;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  min-height: 100%; 
-}
+    .header-text p {
+      font-size: 1.5em;
+      color: #f5f6f1;
+    }
 
-.section.reverse {
-  flex-direction: row-reverse;
-}
+    .header-button-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-.section-text {
-  flex: 1;
-  max-width: 70%;
-  margin-left: 30%;
-  position: relative;
-  z-index: 1;
-  text-align: left;
-}
+    .btn-access {
+      background-color: #f5f6f1;
+      color: #0391a4;
+      border: none;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      font-size: 1.8em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
 
-.section-text h2 {
-  color: #007d8b;
-  font-size: 1.8em;
-  margin-bottom: 20px;
-}
+    .btn-access:hover {
+      background-color: #dde0e3;
+    }
 
-.section-text p {
-  text-align: justify;
-  font-size: 1em;
-  margin-bottom: 0px;
-}
+    .btn-label {
+      margin-top: 8px;
+      color: #f5f6f1;
+      font-weight: bold;
+      font-size: 0.95em;
+      text-align: center;
+    }
 
-.section-text ul {
-  list-style-type: disc;
-  padding-left: 40px;
-}
+    /* 📄 SECTIONS */
+    .section {
+      position: relative;
+      overflow: hidden;
+      padding: 60px 40px;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
 
-.section-text li {
-  margin-bottom: 0px;
-}
+    .section.reverse {
+      flex-direction: row-reverse;
+    }
 
-.section-image {
-  flex: 1;
-  max-width: 400px;
-  margin: 20px;
-  position: relative;
-  z-index: 1;
-}
+    .section-text {
+      flex: 1;
+      max-width: 65%;
+      margin-left: auto;
+      position: relative;
+      z-index: 1;
+      text-align: left;
+    }
 
-.section-image img {
-  width: 100%;
-  border-radius: 12px;
-}
+    .section-text h2 {
+      color: #007d8b;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
 
-/* ============================
-   🔍 ICÔNE EN FOND (section)
-============================ */
-.icon-bg {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0; /* ➤ place l’icône à gauche */
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-left: 80px; /* ➤ ajuste le décalage depuis le bord gauche */
+    .section-text p {
+      text-align: justify;
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
 
-  font-size: 480px;
-  color: #dde0e3;
-  opacity: 0.4;
-  z-index: 0;
-  pointer-events: none;
-}
+    .section-text ul {
+      list-style-type: disc;
+      padding-left: 40px;
+      margin-bottom: 20px;
+    }
 
-/* ============================
-   🔵 EXPLORER SECTION
-============================ */
-.explorer {
-  background-color: #dde0e3;
-  text-align: center;
-  padding: 60px 20px;
-}
+    .section-text li {
+      margin-bottom: 10px;
+    }
 
-.explorer h2 {
-  font-size: 2em;
-  color: #007d8b;
-  margin-bottom: 30px;
-}
+    .section-image {
+      flex: 1;
+      max-width: 400px;
+      margin: 20px;
+      position: relative;
+      z-index: 1;
+    }
 
-.explorer-box {
-  display: inline-block;
-  background-color: #007d8b;
-  color: white;
-  padding: 30px;
-  border-radius: 8px;
-  text-align: left;
-  max-width: 500px;
-}
+    .section-image img {
+      width: 100%;
+      border-radius: 12px;
+    }
 
-.explorer-box ul {
-  list-style: disc inside;
-}
+    /* 🔍 ICÔNE DE FOND */
+    .icon-bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 80px;
+      font-size: 480px;
+      color: #dde0e3;
+      opacity: 0.4;
+      z-index: 0;
+      pointer-events: none;
+    }
 
-.explorer-box li {
-  margin-bottom: 10px;
-}
+    /* 🔚 FOOTER */
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
 
-.arrow {
-  margin-top: 30px;
-}
+    /* 📱 RESPONSIVE */
+    @media (max-width: 768px) {
+      .section,
+      .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-.arrow img {
-  width: 100px;
-}
-.btn-icon {
-  background-color: #0391a4;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1em;
-  border-radius: 8px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  transition: background-color 0.3s ease;
-}
+      .header-text,
+      .section-text {
+        max-width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+      }
 
-.btn-icon:hover {
-  background-color: #027489;
-}
+      .header-button-block {
+        margin-top: 20px;
+      }
 
-.btn-icon i {
-  font-size: 1.2em;
-}
-/* ============================
-   🔚 FOOTER
-============================ */
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  padding: 40px 20px;
-  background-color: #ffffff;
-}
-
-/* ============================
-   📱 RESPONSIVE
-============================ */
-@media (max-width: 768px) {
-  .section,
-  .header-container {
-    flex-direction: column;
-  }
-
-  .header-text,
-  .section-text {
-    max-width: 100%;
-    margin-left: 0;
-    padding: 0 20px;
-  }
-
-  .header-rectangle {
-    width: 100%;
-    justify-content: center;
-  }
-}
+      .icon-bg {
+        justify-content: center;
+        padding: 0;
+      }
+    }
   </style>
 </head>
 <body>
 
 <header>
   <div class="header-container">
-    <!-- Bloc gauche : texte -->
     <div class="header-text">
       <h1>Paana</h1>
       <div class="horizontal-line"></div>
       <p>Base de connaissances dédiée à la santé publique en Polynésie française</p>
     </div>
 
-    <!-- Bloc droite : bouton -->
     <div class="header-button-block">
       <button class="btn-access">
         <i class="fa-solid fa-magnifying-glass-location"></i>
@@ -341,14 +234,14 @@ footer {
   </div>
 </header>
 
-  
-  <section class="section">
+<section class="section">
   <div class="icon-bg">
     <i class="fa-solid fa-circle-info"></i>
   </div>
 
   <div class="section-text">
-   
+    <h2>À propos de Paana</h2>
+
     <p>
       La santé publique évolue dans le temps. Connaître les actions passées, les contextes locaux, les dynamiques à l'œuvre permet de mieux préparer l’avenir.
     </p>
@@ -364,35 +257,30 @@ footer {
       <li>Faciliter la réutilisation des savoirs existants</li>
       <li>Soutenir une meilleure compréhension des dynamiques sanitaires locales</li>
     </ul>
-<p>    </p>
-     <p>
-      Le projet est mené à titre personnel par Emmanuelle RUPP-TERRIS, consultante en santé publique, dans une logique 
-      de formation continue et de partage des connaissances. La base n’a pas vocation à l’exhaustivité : elle se construit
-      progressivement, à partir de sources variées (rapports, archives, témoignages, etc.).
+
+    <p>
+      Le projet est mené à titre personnel par Emmanuelle RUPP-TERRIS, consultante en santé publique, dans une logique de formation continue et de partage des connaissances. La base n’a pas vocation à l’exhaustivité : elle se construit progressivement, à partir de sources variées (rapports, archives, témoignages, etc.).
     </p>
-<p>    </p>
+
     <p>
       Ouverte par principe, elle intègre une fonction de contribution : un 
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_ZNcG1XMZxoZVdUDn_4yV5BXX-BMAuJs9nraIeS9ziBcqNQ/viewform" target="_blank">
-        formulaire simple
-      </a> permet à chacun de suggérer des contenus ou des références, afin de renforcer collectivement cette mémoire de la santé publique en Polynésie française.
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_ZNcG1XMZxoZVdUDn_4yV5BXX-BMAuJs9nraIeS9ziBcqNQ/viewform" target="_blank">formulaire simple</a> permet à chacun de suggérer des contenus ou des références, afin de renforcer collectivement cette mémoire de la santé publique en Polynésie française.
     </p>
-     <p><strong>Ce que vous pouvez faire sur la plateforme : </strong></p> 
-      <ul>
-        <li>Explorer les événements de santé publique par année, catégories fonctionnelles et mots-clés</li>
-        <li>Consulter des fiches descriptives détaillées</li>
-        <li>Suivre l’évolution de thématiques</li>
-        <li>Proposer de nouveaux événements via un <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_ZNcG1XMZxoZVdUDn_4yV5BXX-BMAuJs9nraIeS9ziBcqNQ/viewform" target="_blank">
-        formulaire dédié
-      </a></li>
-      </ul>
-    </div>
+
+    <p><strong>Ce que vous pouvez faire sur la plateforme :</strong></p>
+    <ul>
+      <li>Explorer les événements de santé publique par année, catégories fonctionnelles et mots-clés</li>
+      <li>Consulter des fiches descriptives détaillées</li>
+      <li>Suivre l’évolution de thématiques</li>
+      <li>Proposer de nouveaux événements via un <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_ZNcG1XMZxoZVdUDn_4yV5BXX-BMAuJs9nraIeS9ziBcqNQ/viewform" target="_blank">formulaire dédié</a></li>
+    </ul>
+  </div>
 </section>
-  
-   <footer>
-    <p>© 2025 Paana. Tous droits réservés. Reproduction interdite sans autorisation.<br/>
-    Contact : <a href="paanaconseil@outlook.com"><i class="fa-solid fa-envelope"></i></a></p>
-  </footer>
+
+<footer>
+  <p>© 2025 Paana. Tous droits réservés. Reproduction interdite sans autorisation.<br/>
+  Contact : <a href="mailto:paanaconseil@outlook.com"><i class="fa-solid fa-envelope"></i></a></p>
+</footer>
 
 </body>
 </html>
