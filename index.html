@@ -87,6 +87,7 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  min-height: 100%; 
 }
 
 .section.reverse {
@@ -141,14 +142,18 @@ header {
 ============================ */
 .icon-bg {
   position: absolute;
-  top: 50%;
+  top: 0;
+  bottom: 0;
   left: 0;
-  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+
   font-size: 480px;
   color: #dde0e3;
   opacity: 0.4;
   z-index: 0;
-  height: 100%;
   pointer-events: none;
 }
 
@@ -264,8 +269,7 @@ footer {
       <li>Soutenir une meilleure compréhension des dynamiques sanitaires locales</li>
     </ul>
 
-    <!-- ✅ Ici le saut de ligne sera bien pris en compte -->
-    <p>
+     <p>
       Le projet est mené à titre personnel par Emmanuelle RUPP-TERRIS, consultante en santé publique, dans une logique 
       de formation continue et de partage des connaissances. La base n’a pas vocation à l’exhaustivité : elle se construit
       progressivement, à partir de sources variées (rapports, archives, témoignages, etc.).
@@ -296,17 +300,7 @@ footer {
     </div>
   </section>
 
-  <section class="section reverse">
-    <div class="section-text">
-      <h2>À propos de Paana</h2>
-      <p>
-        La santé publique évolue dans le temps. Connaître les stratégies mises, les contextes locaux, les dynamiques : c’est essentiel pour agir efficacement. Paana est une base de données ouverte, dédiée à la santé publique en Polynésie française. Elle centralise des informations utiles, des données historiques, des événements santé, et des documents clés.
-      </p>
-    </div>
-    <div class="section-image">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Sky_landscape_icon.svg/800px-Sky_landscape_icon.svg.png" alt="illustration">
-    </div>
-  </section>
+ 
 
   <footer>
     <p>Planifier une consultation gratuite ou contribuer avec un expert en transformation numérique.<br/>
