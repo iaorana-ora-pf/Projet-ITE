@@ -105,6 +105,45 @@ header {
   font-size: 1em;
   text-align: center;
 }
+    .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0 40px;
+}
+
+.header-button-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.btn-access {
+  background-color: #f5f6f1;
+  color: #0391a4;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 1.8em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-access:hover {
+  background-color: #dde0e3;
+}
+
+.btn-label {
+  margin-top: 8px;
+  color: #f5f6f1;
+  font-weight: bold;
+  font-size: 0.95em;
+  text-align: center;
+}
 /* ============================
    📄 SECTIONS CONTENUS
 ============================ */
@@ -285,23 +324,21 @@ footer {
 
 <header>
   <div class="header-container">
+    <!-- Bloc gauche : texte -->
     <div class="header-text">
-<div class="header-button-block">
-  <button class="btn-access">
-    <i class="fa-solid fa-magnifying-glass-location"></i>
-  </button>
-  <span class="btn-label">Accéder à la base</span>
-</div>
-      
       <h1>Paana</h1>
       <div class="horizontal-line"></div>
       <p>Base de connaissances dédiée à la santé publique en Polynésie française</p>
     </div>
-     </div>
+
+    <!-- Bloc droite : bouton -->
+    <div class="header-button-block">
+      <button class="btn-access">
+        <i class="fa-solid fa-magnifying-glass-location"></i>
+      </button>
+      <span class="btn-label">Accéder à la base</span>
+    </div>
   </div>
-   <button class="btn-icon">
-  <i class="fa-solid fa-magnifying-glass-location"></i> Rechercher
-</button>
 </header>
 
   
