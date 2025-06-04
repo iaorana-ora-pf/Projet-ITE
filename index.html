@@ -124,15 +124,84 @@
         flex-direction: column;
       }
     }
+
+    header {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 60%;
+}
+
+.line {
+  width: 6px;
+  height: 100px;
+  background-color: #0391a4;
+}
+
+.header-text h1 {
+  font-size: 2.5em;
+  color: #007d8b;
+  margin: 0;
+}
+
+.header-text p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.header-image {
+  position: relative;
+  max-width: 35%;
+  margin-top: 20px;
+}
+
+.image-bg {
+  background-color: #0391a4;
+  border-radius: 50%;
+  padding: 15px;
+  display: inline-block;
+}
+
+.image-bg img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Paana</h1>
-    <p>Base de connaissances dédiée à la santé publique en Polynésie française</p>
-  </header>
+  <div class="header-container">
+    <div class="header-text">
+      <div class="line"></div>
+      <div>
+        <h1>Paana</h1>
+        <p>Base de connaissances dédiée à la santé publique en Polynésie française</p>
+      </div>
+    </div>
+    <div class="header-image">
+      <div class="image-bg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Sky_landscape_icon.svg/800px-Sky_landscape_icon.svg.png" alt="illustration">
+      </div>
+    </div>
+  </div>
+</header>
 
+  
   <section class="section">
     <div class="section-text">
       <h2>À propos de Paana</h2>
