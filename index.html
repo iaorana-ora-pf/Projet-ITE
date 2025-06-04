@@ -74,7 +74,37 @@ header {
   color: #f5f6f1;
   margin-bottom: 20px;
 }
+.header-button-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+}
 
+.btn-access {
+  background-color: #f5f6f1;
+  color: #0391a4;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 1.8em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-access:hover {
+  background-color: #dde0e3;
+}
+
+.btn-label {
+  margin-top: 10px;
+  color: #f5f6f1;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
 /* ============================
    📄 SECTIONS CONTENUS
 ============================ */
@@ -256,6 +286,13 @@ footer {
 <header>
   <div class="header-container">
     <div class="header-text">
+<div class="header-button-block">
+  <button class="btn-access">
+    <i class="fa-solid fa-magnifying-glass-location"></i>
+  </button>
+  <span class="btn-label">Accéder à la base</span>
+</div>
+      
       <h1>Paana</h1>
       <div class="horizontal-line"></div>
       <p>Base de connaissances dédiée à la santé publique en Polynésie française</p>
