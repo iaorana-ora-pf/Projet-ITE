@@ -124,8 +124,9 @@
         flex-direction: column;
       }
     }
-
-    header {
+//== *BANDEAU*==//
+    
+  header {
   background-color: #f7f7f7;
   padding: 40px 20px;
 }
@@ -138,22 +139,20 @@
 }
 
 .header-text {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
   max-width: 60%;
-}
-
-.line {
-  width: 6px;
-  height: 100px;
-  background-color: #0391a4;
 }
 
 .header-text h1 {
   font-size: 2.5em;
   color: #007d8b;
-  margin: 0;
+  margin-bottom: 10px;
+}
+
+.horizontal-line {
+  width: 80px;
+  height: 6px;
+  background-color: #0391a4;
+  margin-bottom: 15px;
 }
 
 .header-text p {
@@ -184,14 +183,12 @@
 </head>
 <body>
 
-  <header>
+<header>
   <div class="header-container">
     <div class="header-text">
-      <div class="line"></div>
-      <div>
-        <h1>Paana</h1>
-        <p>Base de connaissances dédiée à la santé publique en Polynésie française</p>
-      </div>
+      <h1>Paana</h1>
+      <div class="horizontal-line"></div>
+      <p>Base de connaissances dédiée à la santé publique en Polynésie française</p>
     </div>
     <div class="header-image">
       <div class="image-bg">
