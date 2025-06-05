@@ -16,8 +16,10 @@ body {
 }
 
 .header-container {
-  max-width: 1200px;
-  padding-left: 3rem; 
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding: 0 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -74,8 +76,10 @@ body {
 }
 
 .container {
-  max-width: 1000px;
-  padding-left: 2rem; padding-right: 2rem;;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding: 0 1.5rem;
 }
 
