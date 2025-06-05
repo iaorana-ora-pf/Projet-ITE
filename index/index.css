@@ -59,11 +59,10 @@ body {
 }
 /* section */
 .section {
-  padding: 4rem 1.5rem;
+  padding: 1rem 1.5rem;
 }
-/* section a propos */
 .section-a-propos {
-  background-color: #f0f8f8;
+  background-color: #ffffff;
 }
 
 .section-explorer {
@@ -80,7 +79,7 @@ body {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #2a9d8f;
   margin-bottom: 1rem;
 }
