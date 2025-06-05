@@ -1,67 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <title>PAANA</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-  body { font-family: 'Inter', sans-serif; }
-  </style>
+  <link rel="stylesheet" href="index/index.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-
+<body>
 
 <!-- HEADER STICKY -->
-<header class="bg-white shadow fixed top-0 w-full z-50">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-6xl font-bold" style="font-family: 'Poppins', sans-serif; color: #2a9d8f;">
-      Paana
-    </h1>
-    <nav class="space-x-6 text-sm text-gray-600 font-medium uppercase">
-      <a href="#a-propos" class="hover:text-[#2a9d8f]">À PROPOS</a>
-      <a href="#explorer" class="hover:text-[#2a9d8f]">EXPLORER</a>
-      <a href="#contribuer" class="hover:text-[#2a9d8f]">CONTRIBUER</a>
+<header class="header">
+  <div class="header-container">
+    <h1 class="logo">Paana</h1>
+    <nav class="main-nav">
+      <a href="#a-propos" class="nav-link">À PROPOS</a>
+      <a href="#explorer" class="nav-link">EXPLORER</a>
+      <a href="#contribuer" class="nav-link">CONTRIBUER</a>
     </nav>
   </div>
 </header>
-
-<main class="pt-20">
-
-  <!-- SECTION À PROPOS -->
-  <section id="a-propos" class="py-20 bg-blue-50">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-blue-800 mb-4">À propos de PAANA</h2>
-      <p class="text-gray-600">[Contenu à ajouter ici]</p>
-    </div>
-  </section>
-
-  <!-- SECTION FRISE -->
-  <section id="frise" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-blue-700 mb-4">Frise Chronologique</h2>
-      <p class="text-gray-600">[Zone pour intégrer la frise]</p>
-    </div>
-  </section>
-
-  <!-- SECTION SOUMETTRE -->
-  <section id="soumettre" class="py-20 bg-gray-100">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-yellow-600 mb-4">Soumettre un événement</h2>
-      <p class="text-gray-700">[Zone pour le formulaire de contribution]</p>
-    </div>
-  </section>
-
-</main>
-
-<!-- FOOTER -->
-<footer class="bg-white py-8 border-t">
-  <div class="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500">
-    © 2025 PAANA — Tous droits réservés • <a href="#" class="underline">Mentions légales</a>
-  </div>
-</footer>
 
 </body>
 </html>
