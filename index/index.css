@@ -149,7 +149,7 @@ body {
   background-image: url('user-group-solid.svg'); /* ton image ici */
   background-repeat: no-repeat;
   background-size: contain;
-  opacity: 0.04;
+  opacity: 0.02;
   pointer-events: none;
   z-index: 0;
 }
