@@ -5,7 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
 }
-
+/* header */
 .header {
   position: fixed;
   top: 0;
@@ -25,14 +25,14 @@ body {
 }
 
 .logo {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #2a9d8f;
 }
 
 .main-nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .nav-link {
