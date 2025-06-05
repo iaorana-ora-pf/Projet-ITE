@@ -63,10 +63,21 @@ body {
 .section {
   padding: 1rem 1.5rem;
 }
+/* a propos */
 .section-a-propos {
   background-color: #ffffff;
 }
+.a-propos-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
+.a-propos-texte {
+  flex: 2;
+  min-width: 250px;
+}
 .section-explorer {
   background-color: #ffffff;
 }
@@ -108,7 +119,11 @@ body {
   font-style: italic;
 }
 /* encart */
+
+
 .encart {
+  flex: 1;
+  min-width: 280px;
   background-color: #F8FBF1;
   border-left: 5px solid #2a9d8f;
   padding: 1.5rem;
@@ -140,10 +155,11 @@ body {
   font-weight: 500;
   transition: background-color 0.2s ease;
 }
-
+ 
 .encart-btn:hover {
   background-color: #21867a;
 }
+
 
 /* footer */
 .footer {
