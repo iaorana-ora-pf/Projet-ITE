@@ -76,7 +76,7 @@ body {
 
 .a-propos-texte {
   flex: 2;
-  min-width: 250px;
+  min-width: 300px;
 }
 .section-explorer {
   background-color: #ffffff;
@@ -122,7 +122,9 @@ body {
 
 
 .encart {
-  position: relative;
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;position: relative;
   background-color: #f5eee0;
   border-left: 5px solid #2a9d8f;
   padding: 2rem;
@@ -137,17 +139,17 @@ body {
 
 /* Image de fond décorative */
 .encart::before {
-  content: "";
+ content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   transform: translate(-50%, -50%);
-  background-image: url('user-group-solid.svg'); /* ton image ici */
+  background-image: url('index/user-group-solid.svg'); /* ton image ici */
   background-repeat: no-repeat;
   background-size: contain;
-  opacity: 0.08; /* très doux */
+  opacity: 0.06;
   pointer-events: none;
   z-index: 0;
 }
