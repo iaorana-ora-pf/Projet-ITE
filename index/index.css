@@ -125,7 +125,7 @@ body {
   flex: 1;
   min-width: 320px;
   max-width: 500px;position: relative;
-  background-color: #f5eee0;
+  background-color: #F8FBF1;
   border-left: 5px solid #2a9d8f;
   padding: 2rem;
   border-radius: 8px;
@@ -149,7 +149,7 @@ body {
   background-image: url('user-group-solid.svg'); /* ton image ici */
   background-repeat: no-repeat;
   background-size: contain;
-  opacity: 0.06;
+  opacity: 0.04;
   pointer-events: none;
   z-index: 0;
 }
