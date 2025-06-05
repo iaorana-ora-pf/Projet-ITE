@@ -10,7 +10,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #f5efe6;
+  background-color: #F8FBF1;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 50;
 }
@@ -48,7 +48,7 @@ body {
 
 .nav-link:hover {
   background-color: #2a9d8f;
-  color: #f5efe6;
+  color: #F8FBF1;
 }
 
 
