@@ -107,7 +107,45 @@ body {
   color: #777;
   font-style: italic;
 }
+/* encart */
+.encart {
+  background-color: #fffaf0;
+  border-left: 5px solid #2a9d8f;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
+.encart-titre {
+  font-size: 1.25rem;
+  color: #2a9d8f;
+  margin-bottom: 0.5rem;
+}
+
+.encart-texte {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.encart-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #2a9d8f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.encart-btn:hover {
+  background-color: #21867a;
+}
+
+/* footer */
 .footer {
   background-color: #ffffff;
   padding: 2rem 1.5rem;
