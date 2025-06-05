@@ -134,6 +134,7 @@ body {
 
 .encart-titre {
   font-size: 1.25rem;
+  align-items: center;
   color: #2a9d8f;
   margin-bottom: 0.5rem;
 }
@@ -146,6 +147,7 @@ body {
 
 .encart-btn {
   display: inline-block;
+  align-items: center;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   background-color: #2a9d8f;
