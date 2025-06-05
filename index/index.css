@@ -55,7 +55,7 @@ body {
 /* main */
 
 .main-content {
-  padding-top: 4rem;
+  padding-top: 7rem;
 }
 /* section */
 .section {
@@ -76,6 +76,7 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .section-title {
