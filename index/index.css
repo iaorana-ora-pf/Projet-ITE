@@ -17,7 +17,7 @@ body {
 
 .header-container {
   max-width: 1200px;
-  padding-left: 2rem; padding-right: 2rem;;
+  padding-left: 3rem; 
   padding: 0 1.5rem;
   display: flex;
   justify-content: space-between;
