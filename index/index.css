@@ -461,6 +461,8 @@ flex: 1;
   padding: 1.5rem;
   display: none;
   z-index: 998;
+   max-height: 50vh;
+  overflow-y: auto;
 }
 
 .help-panel-content {
