@@ -19,45 +19,44 @@
 
 <main class="main-content">
     <!-- SECTION explorer -->
-<section id="explorer" class="section section-explorer">
-  <div class="container">
-    <h2 class="section-title">Parcourez les événements de santé publique en Polynésie à travers une frise interactive et des filtres dynamiques.</h2>
-    <p class="section-text"><strong>Trier les événements par :</strong></p>
-    <!-- Filtres -->
-<div class="filtres-ligne">
-  <div class="dropdown-checkbox">
-    <p class="filter-label">Catégorie(s)</p>
-    <div id="categoryDropdown"></div>
+<div id="explorer" class="container">
+  <h2 class="section-title">Parcourez les événements de santé publique en Polynésie à travers une frise interactive et des filtres dynamiques.</h2>
+  <p class="section-text"><strong>Trier les événements par :</strong></p>
+
+  <!-- Filtres -->
+  <div class="filtres-ligne">
+    <div class="dropdown-checkbox">
+      <p class="filter-label">Catégorie(s)</p>
+      <div id="categoryDropdown"></div>
+    </div>
+
+    <div class="dropdown-checkbox">
+      <p class="filter-label">Mots-clés</p>
+      <div id="keywordDropdown"></div>
+    </div>
+
+    <div class="search-box">
+      <p class="filter-label">Recherche dans toutes les métadonnées</p>
+      <input type="text" id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()">
+    </div>
   </div>
 
-  <div class="dropdown-checkbox">
-    <p class="filter-label">Mots-clés</p>
-    <div id="keywordDropdown"></div>
-  </div>
-
-  <div class="search-box">
-    <p class="filter-label">Recherche dans toutes les métadonnées</p>
-    <input type="text" id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()">
-  </div>
-</div>
-
- <div id="active-filters-section">
+  <div id="active-filters-section">
     <p><strong>Filtres sélectionnés :</strong></p>
     <div id="active-filters"></div>
   </div>
   <button class="reset-btn" onclick="resetFilters()">Réinitialiser</button>
 
+  <!-- 📅 Frise chronologique interactive -->
+  <div class="frise-placeholder">
+    Frise à venir ici...
+  </div>
 
-    <!-- 📅 Frise chronologique interactive -->
-    <div class="frise-placeholder">
-      Frise à venir ici...
-    </div>
-
-    <!-- 🗂️ Fiche événement (cachée par défaut, s’affiche quand on clique sur un événement) -->
-    <div class="fiche-evenement">
-      <!-- À remplir plus tard -->
-    </div>
- 
+  <!-- 🗂️ Fiche événement (cachée par défaut, s’affiche quand on clique sur un événement) -->
+  <div class="fiche-evenement">
+    <!-- À remplir plus tard -->
+  </div>
+</div>
    <!-- SECTION À PROPOS -->
 >
   </div>
