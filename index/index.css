@@ -348,7 +348,7 @@ flex: 2 1 60%;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   flex-direction: column;
-flex: 1 1 35%;;
+flex: 1;
   margin-top: 1.5rem;
   max-width: 500px;
   min-width: 320px;
