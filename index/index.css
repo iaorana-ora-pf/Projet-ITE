@@ -38,10 +38,12 @@ body {
   color: #FEBB5F;
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 0;
 }
 .title-2 {
   font-size: 1.6rem;
   color: #166F76;
+   margin-top: 0; 
  }
 .title-3 {
   text-align: left;
