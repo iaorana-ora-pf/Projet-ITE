@@ -80,6 +80,14 @@
     const panel = document.getElementById('help-panel');
     panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
   }
+  window.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector(".header");
+    const main = document.querySelector(".main-content");
+    if (header && main) {
+      const headerHeight = header.offsetHeight;
+      main.style.paddingTop = headerHeight + "px";
+    }
+  });
 </script>
   <!-- Bouton flottant -->
 <div class="floating-buttons">
@@ -216,5 +224,6 @@ Ce regroupement s’inspire aussi de l’organisation observée à l’OMS et en
 </section
   </div>
 </div>
+
 </body>
 </html>
