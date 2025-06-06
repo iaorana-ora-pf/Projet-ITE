@@ -69,6 +69,11 @@ body {
 .dropdown-checkbox {
   flex: 1 1 220px;
 }
+/* Texte gris dans le placeholder */
+#searchInput::placeholder {
+  color: #5F5F5F;
+  opacity: 1;
+}
 /*____________________________________________________________________________________*/
 .main-nav {
   display: flex;
@@ -323,11 +328,7 @@ flex: 2 1 60%;
   width: 85%;
 }
 
-/* Texte gris dans le placeholder */
-#searchInput::placeholder {
-  color: #999999;
-  opacity: 1;
-}
+
 
 /* BOUTON Réinitialiser */
 .reset-btn {
