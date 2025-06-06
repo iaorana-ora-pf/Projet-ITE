@@ -111,10 +111,41 @@ body {
   margin-bottom: 0.5rem;
 }
 /*____________________________________________________________________________________*/
-
+/* explorer  */
 .section-explorer {
   background-color: #ffffff;
 }
+
+.filtres-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  align-items: center;
+}
+
+.filtres-horizontal select,
+.filtres-horizontal input[type="text"] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.filtres-horizontal button {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  background-color: #2a9d8f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filtres-horizontal button:hover {
+  background-color: #21867a;
+}
+
 /*____________________________________________________________________________________*/
 .section-contribuer {
   background-color: #f5f5f5;
