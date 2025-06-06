@@ -176,7 +176,54 @@ body {
   border-radius: 5px;
   border: none;
 }
+.filtres-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  align-items: flex-end;
+}
 
+.dropdown-checkbox {
+  flex: 1 1 28%;
+  min-width: 250px;
+}
+
+.search-box {
+  flex: 1 1 35%;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.filtres-selection-ligne {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+#active-filters-section {
+  flex: 1;
+}
+
+.reset-btn {
+  background-color: #fff3b0;
+  color: #00587a;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  width: fit-content;
+  white-space: nowrap;
+}
 /* Icones */
 
 .info-icon {
