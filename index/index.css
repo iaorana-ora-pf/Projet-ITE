@@ -116,34 +116,39 @@ body {
   background-color: #ffffff;
 }
 
-.filtres-horizontal {
+.filtres-horizontaux {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin: 1.5rem 0;
-  align-items: center;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-.filtres-horizontal select,
-.filtres-horizontal input[type="text"] {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+.filtres-horizontaux .dropdown-checkbox,
+.filtres-horizontaux input[type="text"],
+.filtres-horizontaux .reset-btn {
+  flex: 1 1 250px;
 }
 
-.filtres-horizontal button {
-  padding: 0.5rem 1.2rem;
-  font-size: 1rem;
-  background-color: #2a9d8f;
+#active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-badge {
+  background-color: #007b7f;
   color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
 }
 
-.filtres-horizontal button:hover {
-  background-color: #21867a;
+.remove-badge {
+  margin-left: 8px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 /*____________________________________________________________________________________*/
