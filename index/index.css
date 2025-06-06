@@ -432,25 +432,50 @@ flex: 1;
 }
 /*____________________________________________________________________________________*/
 /* bouton flottant */
-.btn-flottant {
+.help-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
   background-color: #2a9d8f;
-  color: #fff;
+  color: white;
+  width: 50px;
+  height: 50px;
   font-size: 1.5rem;
   font-weight: bold;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
   text-align: center;
-  line-height: 48px;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
   z-index: 999;
-  transition: background-color 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
-.btn-flottant:hover {
-  background-color: #21867a;
+.help-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f9f9f9;
+  border-top: 3px solid #2a9d8f;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  display: none;
+  z-index: 998;
+}
+
+.help-panel-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.close-help {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
