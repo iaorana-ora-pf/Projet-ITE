@@ -1,10 +1,9 @@
-/* style.css */
-
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
 }
+/*____________________________________________________________________________________*/
 /* header */
 .header {
   position: fixed;
@@ -25,13 +24,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+/*____________________________________________________________________________________*/
 .logo {
   font-size: 2rem;
   font-weight: bold;
   color: #2a9d8f;
 }
-
+/*____________________________________________________________________________________*/
 .main-nav {
   display: flex;
   gap: 2.5rem;
@@ -52,52 +51,17 @@ body {
   background-color: #2a9d8f;
   color: #F8FBF1;
 }
-
-
+/*____________________________________________________________________________________*/
 /* main */
 
 .main-content {
   padding-top: 7rem;
 }
+/*____________________________________________________________________________________*/
 /* section */
 .section {
   padding: 1rem 1.5rem;
 }
-/* a propos */
-.section-a-propos {
-  background-color: #ffffff;
-}
-.a-propos-layout {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.a-propos-texte {
-  flex: 2;
-  min-width: 300px;
-}
-.a-propos-texte ul {
-  color: #444;
-  font-size: 1rem;
-  line-height: 1;
-  margin-top: 0rem;
-  padding-left: 1rem;
-}
-.a-propos-texte li {
-  margin-bottom: 0rem;
-}
-
-
-.section-explorer {
-  background-color: #ffffff;
-}
-
-.section-contribuer {
-  background-color: #f5f5f5;
-}
-
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -117,7 +81,45 @@ body {
   color: #444;
   line-height: 1.6;
 }
+/*____________________________________________________________________________________*/
+/* a propos */
+.section-a-propos {
+  background-color: #ffffff;
+}
+.a-propos-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
+.a-propos-texte {
+  flex: 2;
+  min-width: 300px;
+}
+.a-propos-texte ul {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.a-propos-texte li {
+  margin-bottom: 0.5rem;
+}
+/*____________________________________________________________________________________*/
+
+.section-explorer {
+  background-color: #ffffff;
+}
+/*____________________________________________________________________________________*/
+.section-contribuer {
+  background-color: #f5f5f5;
+}
+/*____________________________________________________________________________________*/
 .frise-placeholder,
 .form-placeholder {
   background-color: #e0e0e0;
@@ -130,6 +132,7 @@ body {
   color: #777;
   font-style: italic;
 }
+/*____________________________________________________________________________________*/
 /* encart */
 
 
@@ -208,7 +211,7 @@ body {
   background-color: #21867a;
 }
 
-
+/*____________________________________________________________________________________*/
 /* footer */
 .footer {
   background-color: #ffffff;
