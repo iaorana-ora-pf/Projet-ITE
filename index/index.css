@@ -78,6 +78,18 @@ body {
   flex: 2;
   min-width: 300px;
 }
+.a-propos-texte ul {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0rem;
+  padding-left: 1rem;
+}
+.a-propos-texte li {
+  margin-bottom: 0.5rem;
+}
+
+
 .section-explorer {
   background-color: #ffffff;
 }
