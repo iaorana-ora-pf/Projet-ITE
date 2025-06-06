@@ -59,9 +59,16 @@ body {
   margin-bottom: 1rem;
 }
 /*____________________________________________________________________________________*/
-
-
-
+/* Filtres*/
+.filtres-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.dropdown-checkbox {
+  flex: 1 1 220px;
+}
 /*____________________________________________________________________________________*/
 .main-nav {
   display: flex;
@@ -163,9 +170,7 @@ flex: 2 1 60%;
   margin-top: 1.5rem;
 }
 
-.dropdown-checkbox {
-  flex: 1 1 220px;
-}
+
 .dropdown-checkbox,
 .search-box {
   flex: 1 1 30%;
@@ -305,12 +310,7 @@ flex: 2 1 60%;
   font-weight: bold;
   margin-left: 8px;
 }
-.filtres-ligne {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
-}
+
 /* Zone RECHERCHE */
 #searchInput {
   background-color: #ffffff;
