@@ -9,14 +9,19 @@ body {
   font-size: 2rem;
   font-weight: bold;
 }
-
-
 .title-2 {
   text-align: center;
   font-size: 1.8rem;
   color: #2a9d8f;
   margin-bottom: 1rem;
 }
+.title-3 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #2a9d8f;
+  margin-bottom: 1rem;
+}
+
 /*____________________________________________________________________________________*/
 /* header */
 .header {
