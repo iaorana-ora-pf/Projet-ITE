@@ -73,13 +73,14 @@ body {
 .search-box {
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: flex-start;
+  flex: 1 1 220px;
 }
 .dropdown-checkbox div {
   background: #fff;
   border: 1px solid #ccc;
   margin-top: 5px;
-  max-height: 1000px;
+  max-height: 100px;
   overflow-y: auto;
   padding: 10px;
   position: relative;
@@ -100,7 +101,7 @@ body {
   margin-top: 0;
   padding: 12px 15px;
   width: 100%;
-  height: 100%; /* ou la même hauteur que le bloc .dropdown-checkbox */
+  height: 100px; /* ou la même hauteur que le bloc .dropdown-checkbox */
   box-sizing: border-box;
 }
 /* Texte gris dans le placeholder */
