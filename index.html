@@ -58,9 +58,29 @@ Un formulaire est à votre disposition pour participer simplement.
     <h2 class="section-title">Explorer</h2>
     <p class="section-text">Parcourez les événements de santé publique en Polynésie à travers une frise interactive et des filtres dynamiques.</p>
 
-    <!-- 🔍 Filtres (catégories, mots-clés, années) -->
-    <div class="filtres">
-      <!-- À remplir -->
+    <!-- Filtres -->
+    <div class="filtres-horizontal">
+      <select id="select-category">
+        <option value="">Catégorie</option>
+        <option value="institutions">Institutions</option>
+        <option value="documents">Documents</option>
+        <option value="campagnes">Campagnes</option>
+        <option value="infrastructures">Infrastructures</option>
+        <option value="lois">Lois</option>
+        <option value="international">International</option>
+      </select>
+
+      <select id="select-period">
+        <option value="">Période</option>
+        <option value="1700-1799">1700-1799</option>
+        <option value="1800-1899">1800-1899</option>
+        <option value="1900-1999">1900-1999</option>
+        <option value="2000-2099">2000-2099</option>
+      </select>
+
+      <input type="text" id="keyword-input" placeholder="Mot-clé..." />
+
+      <button id="reset-btn">Réinitialiser</button>
     </div>
 
     <!-- 📅 Frise chronologique interactive -->
@@ -72,6 +92,8 @@ Un formulaire est à votre disposition pour participer simplement.
     <div class="fiche-evenement">
       <!-- À remplir plus tard -->
     </div>
+ 
+    <div class="frise-placeholder">[ Frise à insérer ici ]</div>
   </div>
 </section>
 
