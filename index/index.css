@@ -502,3 +502,52 @@ flex: 1;
 .btn-contact:hover {
   background-color: #21867a;
 }
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+  z-index: 1000;
+}
+
+/* Bouton Aide */
+.help-btn {
+  background-color: #2a9d8f;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.2s ease;
+}
+
+.help-btn:hover {
+  background-color: #21867a;
+}
+
+/* Bouton Contact */
+.contact-btn {
+  background-color: #2a9d8f;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.2s ease;
+}
+
+.contact-btn:hover {
+  background-color: #21867a;
+}
