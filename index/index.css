@@ -115,42 +115,40 @@ body {
 .section-explorer {
   background-color: #ffffff;
 }
-
 .filtres-horizontaux {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1rem;
   align-items: flex-start;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 1.5rem;
 }
 
-.filtres-horizontaux .dropdown-checkbox,
-.filtres-horizontaux input[type="text"],
-.filtres-horizontaux .reset-btn {
-  flex: 1 1 250px;
+.dropdown-checkbox {
+  flex: 1 1 220px;
 }
 
-#active-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.filter-label {
+  font-weight: bold;
+  color: #007b7f;
+  margin-bottom: 0.25rem;
 }
 
 .filter-badge {
   background-color: #007b7f;
-  color: #fff;
-  padding: 5px 10px;
+  color: white;
+  padding: 4px 10px;
   border-radius: 20px;
-  font-size: 0.9em;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  display: inline-block;
+  font-size: 0.9rem;
 }
 
 .remove-badge {
-  margin-left: 8px;
   cursor: pointer;
+  margin-left: 8px;
   font-weight: bold;
 }
-
 /*____________________________________________________________________________________*/
 .section-contribuer {
   background-color: #f5f5f5;
