@@ -430,4 +430,27 @@ flex: 1;
   color: #2a9d8f;
   text-decoration: underline;
 }
+/*____________________________________________________________________________________*/
+/* bouton flottant */
+.btn-flottant {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2a9d8f;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: background-color 0.2s ease;
+}
 
+.btn-flottant:hover {
+  background-color: #21867a;
+}
