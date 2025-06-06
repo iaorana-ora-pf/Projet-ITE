@@ -20,7 +20,7 @@
 /*____________________________________________________________________________________*/
 /* Corps du site */
 .main-content {
-  min-height: 100vh; /* ou au moins assez pour que ça descende */
+  padding-top: 60px;
 }
 .container {
   max-width: 1400px;
