@@ -48,8 +48,14 @@ body {
  }
 .title-3 {
   text-align: left;
-  font-size: 1.4rem;
-  color: #000000;
+  font-size: 1.2rem;
+  color: #166F76;
+  margin-bottom: 1rem;
+}
+.title-4 {
+  text-align: left;
+  font-size: 1.1rem;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 /*____________________________________________________________________________________*/
