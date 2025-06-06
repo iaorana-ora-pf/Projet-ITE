@@ -27,7 +27,7 @@ function getIconForCategory(cat) {
   return fixedCategoryIcons[cat] || "fa-circle";
 }
 
-fetch('./explorer.json')
+fetch('explorer.json')
   .then(r => r.json())
   .then(data => {
     events = expandMultiYearEvents(data);
