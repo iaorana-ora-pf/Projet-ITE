@@ -481,3 +481,24 @@ flex: 1;
   border-radius: 6px;
   cursor: pointer;
 }
+.btn-contact {
+  position: fixed;
+  bottom: 80px; /* juste au-dessus du ? */
+  right: 20px;
+  background-color: #2a9d8f;
+  color: #fff;
+  font-size: 1.4rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: background-color 0.2s ease;
+}
+
+.btn-contact:hover {
+  background-color: #21867a;
+}
