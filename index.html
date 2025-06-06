@@ -1,95 +1,118 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>'ITE</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
+<!-- HEADER STICKY -->
 <header class="header">
-  <div class="container header-container">
+  <div class="container header-container">  
     <h1 class="logo">'ITE</h1>
     <nav class="main-nav">
       <a href="#a-propos" class="nav-link">À PROPOS</a>
       <a href="#explorer" class="nav-link">EXPLORER</a>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_ZNcG1XMZxoZVdUDn_4yV5BXX-BMAuJs9nraIeS9ziBcqNQ/viewform" class="nav-link">CONTRIBUER</a>
-      <a href="mailto:paanaconseil@outlook.com" class="nav-link contact-icon" title="Contact">
-        <i class="fa-regular fa-envelope"></i>
-      </a>
+      <a href="Mailto:paanaconseil@outlook.com" class="nav-link contact-icon" title="Contact">
+    <i class="fa-regular fa-envelope"></i></a> 
     </nav>
   </div>
 </header>
 
 <main class="main-content">
+  <!-- SECTION À PROPOS -->
   <section id="a-propos" class="container a-propos-layout">
-    <div class="a-propos-texte">
-      <h2 class="section-title">À propos du projet 'ITE</h2>
-      <p class="section-text">
-        Paana est une <strong>base de connaissances sur la santé publique en Polynésie française</strong>, plus particulièrement sur la prévention et la promotion de la santé.
-        Elle vise à rassembler, organiser et partager des informations issues de diverses sources.
-        L’objectif est simple : garder une trace, mieux comprendre, mieux transmettre.
-        C’est un projet personnel, mené par Emmanuelle RUPP-TERRIS, construit progressivement, et qui ne prétend pas à l’exhaustivité.
-      </p>
-      <p class="section-text"><strong>Ce que vous pouvez faire sur la plateforme :</strong></p>
-      <ul>
-        <li>Explorer les événements de santé publique par année, catégories fonctionnelles et mots-clés.</li>
-        <li>Consulter des fiches descriptives détaillées.</li>
-        <li>Suivre l’évolution de thématiques à travers le temps.</li>
-      </ul>
-    </div>
-
+      <div class="a-propos-texte">
+      <h2 class="section-title">À propos du projet 'ITE </h2>
+      <p class="section-text">Paana est une <strong>base de connaissances sur la santé publique en Polynésie française</strong>, 
+        et plus particulièrement sur la prévention et la promotion de la santé.
+Elle vise à rassembler, organiser et partager des informations issues de diverses sources.
+L’objectif est simple : garder une trace, mieux comprendre, mieux transmettre.
+C’est un projet personnel, mené par Emmanuelle RUPP-TERRIS, construit progressivement, et qui ne prétend pas à l’exhaustivité.</p>
+<p class="section-text"><strong>Ce que vous pouvez faire sur la plateforme : </strong></p>
+<ul>
+  <li>Explorer les événements de santé publique par année, catégories fonctionnelles et mots-clés. </li>
+  <li>Consulter des fiches descriptives détaillées.</li>
+  <li>Suivre l’évolution de thématiques à travers le temps.</li>
+</ul>
+   </div>
+    
     <div class="encart">
-      <h3 class="encart-titre">Contribuer au projet 'ITE</h3>
-      <p class="encart-texte">
-        Vous pouvez suggérer un document, un témoignage, une source ou une piste à explorer.
-        Chaque proposition est étudiée avec attention, dans un esprit de collaboration.
-        Un formulaire est à votre disposition pour participer simplement.
-      </p>
+  <h3 class="encart-titre">Contribuer au projet 'ITE </h3>
+  <p class="encart-texte">
+    Vous pouvez suggérer un document, un témoignage, une source ou une piste à explorer.
+Chaque proposition est étudiée avec attention, dans un esprit de collaboration.
+Un formulaire est à votre disposition pour participer simplement.
+  </p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_ZNcG1XMZxoZVdUDn_4yV5BXX-BMAuJs9nraIeS9ziBcqNQ/viewform" class="encart-btn">Proposer un événement</a>
-    </div>
-  </section>
+</div>
+</section>
 
-  <section id="explorer" class="section section-explorer">
-    <div class="container">
-      <h2 class="section-title">Explorer</h2>
-      <p class="section-text">Parcourez les événements de santé publique en Polynésie à travers une frise interactive et des filtres dynamiques.</p>
-      <h3 class="filters-title">Trier les événements par :</h3>
-
-      <div class="dropdown-checkbox">
-        <p class="filter-label">Catégorie(s)</p>
-        <div id="categoryDropdown"></div>
-      </div>
-
-      <div class="dropdown-checkbox">
-        <p class="filter-label">Mots-clés (issus du DeCS)</p>
-        <div id="keywordDropdown"></div>
-      </div>
-
-      <input type="text" id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()">
-
-      <div id="active-filters-section" style="display: none; margin-top: 20px;">
-        <p><strong>Filtres sélectionnés :</strong></p>
-        <div id="active-filters"></div>
-      </div>
-
-      <button class="reset-btn" onclick="resetFilters()">Réinitialiser</button>
-
-      <div class="frise-placeholder">Frise à venir ici...</div>
-      <div class="fiche-evenement"></div>
-      <div class="frise-placeholder">[ Frise à insérer ici ]</div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
+    <!-- SECTION explorer -->
+<section id="explorer" class="section section-explorer">
   <div class="container">
-    <p class="footer-text">© 2025 'ITE — Tous droits réservés •</p>
-  </div>
-</footer>
+    <h2 class="section-title">Explorer</h2>
+    <p class="section-text">Parcourez les événements de santé publique en Polynésie à travers une frise interactive et des filtres dynamiques.</p>
+    <h3 class="filters-title">Trier les événements par :</h3>
+    <!-- Filtres -->
+     
+ <div class="dropdown-checkbox">
+          <p class="filter-label">
+            Catégorie(s)
+           </p>
+          <div id="categoryDropdown"></div>
+        </div>
 
-<script src="section2-explorer.js"></script>
-</body>
+        <div class="dropdown-checkbox">
+          <p class="filter-label">
+            Mots-clés (issus du DeCS)
+            </p>
+          <div id="keywordDropdown"></div>
+        </div>
+
+        <input type="text" id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()">
+
+        <div id="active-filters-section" style="display: none; margin-top: 20px;">
+          <p><strong>Filtres sélectionnés :</strong></p>
+          <div id="active-filters"></div>
+        </div>
+
+        <button class="reset-btn" onclick="resetFilters()">Réinitialiser</button>
+      </div>
+
+    
+
+    <!-- 📅 Frise chronologique interactive -->
+    <div class="frise-placeholder">
+      Frise à venir ici...
+    </div>
+
+    <!-- 🗂️ Fiche événement (cachée par défaut, s’affiche quand on clique sur un événement) -->
+    <div class="fiche-evenement">
+      <!-- À remplir plus tard -->
+    </div>
+ 
+    <div class="frise-placeholder">[ Frise à insérer ici ]</div>
+  </div>
+</section>
+
+
+
+  
+ </main>
+  
+   <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        © 2025 'ITE — Tous droits réservés •
+      </p>
+    </div>
+  </footer>
+  <script src="section2-explorer.js"></script>
+ </body>
 </html>
