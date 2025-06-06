@@ -69,9 +69,31 @@ body {
 .dropdown-checkbox {
   flex: 1 1 220px;
 }
+.dropdown-checkbox,
+.search-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.search-box input {
+  flex-grow: 1;
+}
+/* Zone RECHERCHE */
+#searchInput {
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  color: #555555;
+  font-size: 1rem;
+  margin-top: 0;
+  padding: 12px 15px;
+  width: 100%;
+  height: 80px; /* ou la même hauteur que le bloc .dropdown-checkbox */
+  box-sizing: border-box;
+}
 /* Texte gris dans le placeholder */
 #searchInput::placeholder {
-  color: #5F5F5F;
+  color: #EDE7E3;
   opacity: 1;
 }
 /*____________________________________________________________________________________*/
@@ -176,11 +198,7 @@ flex: 2 1 60%;
 }
 
 
-.dropdown-checkbox,
-.search-box {
-  flex: 1 1 30%;
-  min-width: 250px;
-}
+
 
 .filter-label {
   color: #007b7f;
