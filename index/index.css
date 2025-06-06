@@ -6,14 +6,13 @@ body {
 /*____________________________________________________________________________________*/
 /* titres */
 .title-1 {
-  color: #2a9d8f;
+  color: #FEBB5F;
   font-size: 2rem;
   font-weight: bold;
 }
 .title-2 {
-  text-align: left;
   font-size: 1.6rem;
-  color: #2a9d8f;
+  color: #166F76;
   margin-bottom: 1rem;
 }
 .title-3 {
