@@ -109,8 +109,23 @@ Un formulaire est à votre disposition pour participer simplement.
     </div>
   </footer>
   <script src="explorer.js"></script>
-<a href="#aide" class="btn-flottant" title="Aide">
-  ?
-</a>
+
+  <!-- Bouton flottant -->
+<div class="help-btn" onclick="toggleHelpPanel()">?</div>
+
+<!-- Bandeau flottant -->
+<div id="help-panel" class="help-panel">
+  <div class="help-panel-content">
+    <h3>À propos du projet 'ITE</h3>
+    <p>Ce projet vise à rassembler les événements de santé publique en Polynésie.</p>
+    <h4>Aide à la saisie</h4>
+    <ul>
+      <li>Utilisez des mots-clés précis.</li>
+      <li>Sélectionnez une ou plusieurs catégories.</li>
+      <li>Les filtres peuvent être combinés.</li>
+    </ul>
+    <button onclick="toggleHelpPanel()" class="close-help">Fermer</button>
+  </div>
+</div>
 </body>
 </html>
