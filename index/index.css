@@ -117,14 +117,16 @@ body {
 }
 .filtres-horizontaux {
   display: flex;
+  gap: 2rem;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: space-between;
   align-items: flex-start;
   margin-top: 1.5rem;
 }
 
 .dropdown-checkbox {
-  flex: 1 1 220px;
+  flex: 1 1 48%;
+  min-width: 280px;
 }
 
 .filter-label {
