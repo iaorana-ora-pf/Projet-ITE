@@ -21,7 +21,14 @@ body {
   color: #2a9d8f;
   margin-bottom: 1rem;
 }
-
+.main-content {
+  padding-top: 7rem;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
 /*____________________________________________________________________________________*/
 /* header */
 .header {
