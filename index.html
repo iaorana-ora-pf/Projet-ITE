@@ -70,14 +70,21 @@ Un formulaire est à votre disposition pour participer simplement.
     <div id="keywordDropdown"></div>
   </div>
 
-  <input type="text" id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()">
-
-  <div id="active-filters-section" style="display: none; margin-top: 20px;">
-    <p><strong>Filtres sélectionnés :</strong></p>
-    <div id="active-filters"></div>
+  <div class="dropdown-checkbox">
+    <p class="filter-label">Recherche globale</p>
+    <input type="text" id="searchInput" placeholder="ex : vaccination">
   </div>
 
-  <button class="reset-btn" onclick="resetFilters()">Réinitialiser</button>
+  <div class="dropdown-checkbox">
+    <p class="filter-label">Filtres sélectionnés :</p>
+    <div id="active-filters-section" style="display: none;">
+      <div id="active-filters"></div>
+    </div>
+  </div>
+
+  <div class="dropdown-checkbox">
+    <button class="reset-btn" onclick="resetFilters()">Réinitialiser</button>
+  </div>
 </div>
 
     <!-- 📅 Frise chronologique interactive -->
@@ -107,5 +114,5 @@ Un formulaire est à votre disposition pour participer simplement.
     </div>
   </footer>
   <script src="section2-explorer.js"></script>
-</body>
+ </body>
 </html>
