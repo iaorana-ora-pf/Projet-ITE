@@ -109,7 +109,12 @@ Un formulaire est à votre disposition pour participer simplement.
     </div>
   </footer>
   <script src="explorer.js"></script>
-
+<script>
+  function toggleHelpPanel() {
+    const panel = document.getElementById('help-panel');
+    panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
   <!-- Bouton flottant -->
 <div class="help-btn" onclick="toggleHelpPanel()">?</div>
 
