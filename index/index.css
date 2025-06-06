@@ -3,7 +3,8 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }
-
+/*____________________________________________________________________________________*/
+/* titres */
 .title-1 {
   color: #2a9d8f;
   font-size: 2rem;
@@ -21,6 +22,8 @@ body {
   color: #2a9d8f;
   margin-bottom: 1rem;
 }
+/*____________________________________________________________________________________*/
+/* Corps du site */
 .main-content {
   padding-top: 7rem;
 }
@@ -28,6 +31,11 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+body {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 /*____________________________________________________________________________________*/
 /* header */
