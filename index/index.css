@@ -77,8 +77,8 @@ body {
 }
 
 .section-title {
-  color: #2a9d8f;
-  font-size: 2rem;
+  text-align: center;color: #2a9d8f;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
