@@ -57,14 +57,42 @@ Un formulaire est à votre disposition pour participer simplement.
   <div class="container">
     <h2 class="section-title">Explorer</h2>
     <p class="section-text">Parcourez les événements de santé publique en Polynésie à travers une frise interactive et des filtres dynamiques.</p>
-
+    <h3 class="filters-title">Trier les événements par :</h3>
     <!-- Filtres -->
-<div class="filtres-horizontaux">
-  <div class="dropdown-checkbox">
-    <p class="filter-label">Catégorie(s)</p>
-    <div id="categoryDropdown"></div>
-  </div>
+     
 
+        <div class="dropdown-checkbox">
+          <p class="filter-label">
+            Catégorie(s)
+           </p>
+          <div id="categoryDropdown"></div>
+        </div>
+
+        <div class="dropdown-checkbox">
+          <p class="filter-label">
+            Mots-clés (issus du DeCS)
+            </p>
+          <div id="keywordDropdown"></div>
+        </div>
+
+        <input type="text" id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()">
+
+        <div id="active-filters-section" style="display: none; margin-top: 20px;">
+          <p><strong>Filtres sélectionnés :</strong></p>
+          <div id="active-filters"></div>
+        </div>
+
+        <button class="reset-btn" onclick="resetFilters()">Réinitialiser</button>
+      </div>
+    </div>
+
+    <div class="center-col">
+      <div class="timeline" id="timeline"></div>
+    </div>
+
+
+
+  
   <div class="dropdown-checkbox">
     <p class="filter-label">Mots-clés (issus du DeCS)</p>
     <div id="keywordDropdown"></div>
@@ -86,6 +114,10 @@ Un formulaire est à votre disposition pour participer simplement.
     <button class="reset-btn" onclick="resetFilters()">Réinitialiser</button>
   </div>
 </div>
+
+
+
+    
 
     <!-- 📅 Frise chronologique interactive -->
     <div class="frise-placeholder">
