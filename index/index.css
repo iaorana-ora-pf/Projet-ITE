@@ -151,7 +151,24 @@ body {
   margin-left: 8px;
   font-weight: bold;
 }
+.filtres-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start; /* <-- important */
+}
 
+.dropdown-checkbox,
+.search-box {
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 .filters {
   display: flex;
   flex-direction: column;
