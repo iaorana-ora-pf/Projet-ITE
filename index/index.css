@@ -116,12 +116,13 @@ ul {
 .encart {
   width: 100%;
   max-width: 100%;
-  background-color:#EDE7E3;
-  border-left: 5px solid #166F76;
-  padding: 2rem;
+  background-color: #F1EBE7; /* ou #F8FBF1 selon ton thème */
+  border-left: 5px solid #2a9d8f;
+  padding: 1rem 1.5rem 1.5rem 1.5rem; /* 🔧 réduit le padding-top */
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .encart-texte {
@@ -147,8 +148,9 @@ ul {
   background-color: #21867a;
 }
 
-
-
+/*____________________________________________________________________________________*/
+/*____________________________________________________________________________________*/
+/*____________________________________________________________________________________*/
 
 /*____________________________________________________________________________________*/
 .main-nav {
