@@ -124,6 +124,7 @@ ul {
 
 /* BOUTON Réinitialiser */
 .reset-btn {
+  font-family: 'Poppins', sans-serif; /* ✅ même police que body */
   background-color: #166F76;
   color: #fff;
   font-weight: 500;
