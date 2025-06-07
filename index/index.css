@@ -182,6 +182,9 @@ p + ul {
   flex: 2 1 60%;
   min-width: 300px;
 }
+.a-propos-texte p + ul {
+  margin-top: 0.25rem; /* ou 0 si tu veux vraiment coller */
+}
 .encart-texte {
   font-size: 1rem;
   color:#363B40;
