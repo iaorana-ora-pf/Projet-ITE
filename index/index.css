@@ -179,12 +179,13 @@ ul {
   .a-propos-layout {
     flex-direction: column;
   }
-
-  .a-propos-texte {
-    flex: 2 1 60%;
-    min-width: 300px;
-  }
 }
+
+.a-propos-texte {
+  flex: 2 1 60%;
+  min-width: 300px;
+}
+
 
 .encart-texte {
   font-size: 1rem;
