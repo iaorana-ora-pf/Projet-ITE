@@ -6,6 +6,7 @@
   top: 0;
   width: 100%;
   z-index: 50;
+  
 }
 .header-container {
   display: flex;
@@ -66,9 +67,9 @@ ul {
 /* Filtres*/
 .filtres-ligne {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start; /* Aligne tous les enfants en haut */
   gap: 2rem;
+  
 }
 
 /* Colonne de filtre */
@@ -78,6 +79,9 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  border: 1px dashed red;
+}
+
 }
 /* Titres (H4) harmonisés */
 .dropdown-checkbox h4,
