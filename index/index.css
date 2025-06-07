@@ -189,7 +189,6 @@ ul {
   color:#363B40;
   line-height: 1.2;
 }
-
 .encart-btn {
   display: inline-block;
   margin-top: 1rem;
@@ -202,7 +201,6 @@ ul {
   font-weight: 500;
   transition: background-color 0.2s ease;
 }
-
 .encart-btn:hover {
   background-color: #166F76;
  } 
