@@ -67,49 +67,46 @@ ul {
 /* Filtres*/
 .filtres-ligne {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start; /* Aligne tous les enfants en haut */
   gap: 2rem;
-  
 }
-
 /* Colonne de filtre */
 .dropdown-checkbox,
 .search-box {
   flex: 1 1 250px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  border: 1px dashed red;
-}
-
 }
 /* Titres (H4) harmonisés */
 .dropdown-checkbox h4,
 .search-box h4 {
   margin: 0 0 5px 0;
   padding: 0;
-  line-height: 1.2;
+  font-size: 1.1rem;
 }
-/* Gère la hauteur du bloc déroulant */
+/* Contenu scrollable dropdown */
 .dropdown-checkbox div {
-  margin-top: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
   padding: 10px;
   max-height: 100px;
   overflow-y: auto;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  flex-grow: 1;
+  box-sizing: border-box;
+  height: 100px; /* Important pour aligner */
 }
 /* Zone de saisie */
 #searchInput {
-  height: 100px;
-  resize: none;
-  flex-grow: 1;
+  height: 100px;               /* 📏 même que dropdown */
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
   padding: 12px 15px;
   font-size: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background: #fff;
+  resize: none;
+  overflow-y: auto;
   box-sizing: border-box;
 }
 /* Texte du placeholder */
