@@ -180,6 +180,7 @@ p + ul {
   padding: 1rem 1.5rem ;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 .a-propos-layout {
   display: flex;
@@ -216,6 +217,8 @@ p + ul {
   border-radius: 6px;
   font-weight: 500;
   transition: background-color 0.2s ease;
+  margin-left: auto;
+  margin-right: auto;
 }
 .encart-btn:hover {
   background-color: #166F76;
