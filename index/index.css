@@ -164,6 +164,15 @@ p + ul {
   margin: 0 auto;
   padding: 2rem 1.5rem; /* ✅ même marges que `.container` */
 }
+.help-panel-content section {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #EDE7E3;
+}
+
+.help-panel-content section:last-child {
+  border-bottom: none;
+}
 .encart {
   flex: 1 1 33%;
   background-color: #F1EBE7;
