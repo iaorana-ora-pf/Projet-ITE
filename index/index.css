@@ -68,7 +68,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  align-items: stretch; /* 🔧 Assure même hauteur des enfants */
+  align-items: flex-start; /* 🧠 clé : aligner tous les blocs en haut */
 }
 
 .dropdown-checkbox,
