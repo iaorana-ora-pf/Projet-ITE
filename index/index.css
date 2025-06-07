@@ -183,7 +183,7 @@ p + ul {
   min-width: 300px;
 }
 .a-propos-texte p + ul {
-  margin-top: 0.25rem; /* ou 0 si tu veux vraiment coller */
+  margin-top: 0.25rem; /* ou 0 si tu veux coller complètement */
 }
 .appel-contribution {
   display: block;
