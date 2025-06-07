@@ -37,6 +37,8 @@ body {
 ul {
   margin-left: 0;
   padding-left: 1rem; /* ou 0 si tu veux coller à gauche sans puces indentées */
+ }
+p + ul {
   margin-top: 0;
 }
 /*____________________________________________________________________________________*/
