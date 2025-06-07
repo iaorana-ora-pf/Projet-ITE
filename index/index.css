@@ -210,7 +210,7 @@ ul {
   gap: 1rem;
   z-index: 150;
 }
-
+/* ✅ Style commun pour les deux boutons */
 .help-btn,
 .contact-btn {
   width: 50px;
@@ -223,15 +223,17 @@ ul {
   justify-content: center;
   font-size: 1.5rem;
   text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border: none;
 }
 
 .help-btn:hover,
 .contact-btn:hover {
   background-color: #128c8c;
 }
+
 /*__________________________________________________________________________*/
 /* footer */
 .footer {
