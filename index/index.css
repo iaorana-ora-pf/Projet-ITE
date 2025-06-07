@@ -111,6 +111,24 @@ ul {
   color: #EDE7E3;
   opacity: 1;
 }
+
+/* BOUTON Réinitialiser */
+.reset-btn {
+  background-color: #166F76;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reset-btn:hover {
+  background-color: #166F76;
+}
 /*____________________________________________________________________________________*/
 /* Encart*/
 .encart {
@@ -416,23 +434,7 @@ flex: 2 1 60%;
 
 
 
-/* BOUTON Réinitialiser */
-.reset-btn {
-  background-color: #2a9d8f;
-  color: #fff;
-  font-weight: 500;
-  border: none;
-  border-radius: 6px;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
 
-.reset-btn:hover {
-  background-color: #21867a;
-}
 
 /*____________________________________________________________________________________*/
 .section-contribuer {
