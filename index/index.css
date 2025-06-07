@@ -64,56 +64,63 @@ ul {
   margin-bottom: 1rem;
 }
 /*____________________________________________________________________________________*/
-/* Filtres*/
+/* Filtres */
 .filtres-ligne {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start; /* Aligne tous les enfants en haut */
+  align-items: flex-start; /* Aligne en haut */
   gap: 2rem;
 }
-/* Colonne de filtre */
+
+/* Colonne */
 .dropdown-checkbox,
 .search-box {
   flex: 1 1 250px;
   display: flex;
   flex-direction: column;
 }
-/* Titres (H4) harmonisés */
+
+/* Titres */
 .dropdown-checkbox h4,
 .search-box h4 {
-  margin: 0 0 5px 0;
-  padding: 0;
+  margin: 0 0 0.25rem 0;
   font-size: 1.1rem;
+  line-height: 1.1;
 }
-/* Contenu scrollable dropdown */
+
+/* Contenu scrollable (dropdown) */
 .dropdown-checkbox div {
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 10px;
-  max-height: 100px;
+  height: 100px;
   overflow-y: auto;
   box-sizing: border-box;
-  height: 100px; /* Important pour aligner */
+  margin: 0;
 }
-/* Zone de saisie */
-#searchInput {
-  height: 100px;               /* 📏 même que dropdown */
+
+/* Zone de saisie texte (textarea) */
+.search-box textarea {
+  height: 100px;
+  margin: 0;
+  resize: none;
+  padding: 12px 15px;
+  box-sizing: border-box;
   width: 100%;
-  background: #fff;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 12px 15px;
-  font-size: 1rem;
-  resize: none;
   overflow-y: auto;
-  box-sizing: border-box;
+  background-color: #fff;
 }
-/* Texte du placeholder */
-#searchInput::placeholder {
+
+/* Placeholder cohérent */
+.search-box textarea::placeholder {
   color: #EDE7E3;
   opacity: 1;
 }
+
 
 /* BOUTON Réinitialiser */
 .reset-btn {
