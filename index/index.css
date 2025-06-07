@@ -67,47 +67,47 @@ ul {
 .filtres-ligne {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start; /* 👈 Aligne les enfants en haut */
+  align-items: flex-start; /* Aligne tous les enfants en haut */
   gap: 2rem;
-  border: 1px dashed red; /* temporaire */
 }
 
+/* Colonne de filtre */
 .dropdown-checkbox,
 .search-box {
-  flex: 1 1 250px; /* largeur de base, adaptatif */
+  flex: 1 1 250px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
-
+/* Titres (H4) harmonisés */
+.dropdown-checkbox h4,
+.search-box h4 {
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-size: 1.1rem;
+}
+/* Contenu scrollable dropdown */
 .dropdown-checkbox div {
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 6px;
-  margin-top: 5px;
+  padding: 10px;
   max-height: 100px;
   overflow-y: auto;
-  padding: 10px;
-  flex-grow: 1; /* 👈 pour s'aligner verticalement */
-}
-.search-box textarea {
-  flex-grow: 1;
-  height: 100px; /* même que les dropdowns */
-}
-/* Zone recherche */
-#searchInput {
-  background-color: #ffffff;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  color: #555555;
-  font-size: 1rem;
-  padding: 12px 15px;
-  width: 100%;
   box-sizing: border-box;
+  height: 100px; /* Important pour aligner */
+}
+/* Zone de saisie */
+#searchInput {
+  height: 100px;               /* 📏 même que dropdown */
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px 15px;
+  font-size: 1rem;
   resize: none;
-  line-height: 1.4;
   overflow-y: auto;
-  white-space: pre-wrap;
+  box-sizing: border-box;
 }
 /* Texte du placeholder */
 #searchInput::placeholder {
