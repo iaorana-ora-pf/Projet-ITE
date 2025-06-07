@@ -206,7 +206,7 @@ ul {
   bottom: 1.5rem;
   right: 1.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* ✅ Horizontal au lieu de vertical */
   gap: 1rem;
   z-index: 150;
 }
