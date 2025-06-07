@@ -77,36 +77,35 @@ ul {
   flex: 1 1 250px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 /* Titres (H4) harmonisés */
 .dropdown-checkbox h4,
 .search-box h4 {
   margin: 0 0 5px 0;
   padding: 0;
-  font-size: 1.1rem;
+  line-height: 1.2;
 }
-/* Contenu scrollable dropdown */
+/* Gère la hauteur du bloc déroulant */
 .dropdown-checkbox div {
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  margin-top: 5px;
   padding: 10px;
   max-height: 100px;
   overflow-y: auto;
-  box-sizing: border-box;
-  height: 100px; /* Important pour aligner */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex-grow: 1;
 }
 /* Zone de saisie */
 #searchInput {
-  height: 100px;               /* 📏 même que dropdown */
-  width: 100%;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  height: 100px;
+  resize: none;
+  flex-grow: 1;
   padding: 12px 15px;
   font-size: 1rem;
-  resize: none;
-  overflow-y: auto;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
   box-sizing: border-box;
 }
 /* Texte du placeholder */
