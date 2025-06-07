@@ -117,7 +117,7 @@ ul {
   width: 100%;
   max-width: 100%;
   background-color: #F1EBE7; /* ou #F8FBF1 selon ton thème */
-  border-left: 5px solid #2a9d8f;
+  border-left: 5px solid #166F76;
   padding: 1rem 1.5rem 1.5rem 1.5rem; /* 🔧 réduit le padding-top */
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -145,7 +145,7 @@ ul {
 }
 
 .encart-btn:hover {
-  background-color: #21867a;
+  background-color: #166F76;
 }
 /*____________________________________________________________________________________*/
 /* Bandeau flottant*/
@@ -155,12 +155,12 @@ ul {
   right: 0;
   left: 0;
   max-height: 90vh;
-  background: #F1EBE7;
+  background: white;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
   overflow-y: auto;
   z-index: 100;
   display: none;
-  border-top: 5px solid #2a9d8f;
+  border-top: 5px solid #166F76;
 }
 
 .help-panel-content {
