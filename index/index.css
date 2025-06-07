@@ -200,6 +200,39 @@ ul {
   background-color: #166F76;
  } 
 /*__________________________________________________________________________*/
+/* Boutons flottants (en bas à droite) */
+.floating-buttons {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 150;
+}
+
+.help-btn,
+.contact-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #166F76;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.help-btn:hover,
+.contact-btn:hover {
+  background-color: #128c8c;
+}
+/*__________________________________________________________________________*/
 /* footer */
 .footer {
   background-color: #ffffff;
