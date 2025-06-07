@@ -162,28 +162,30 @@ ul {
   padding: 2rem 1.5rem; /* ✅ même marges que `.container` */
 }
 .encart {
-  flex: 1 1 35%;
+  flex: 1 1 33%;
   background-color: #F1EBE7;
   border-left: 5px solid #166F76;
   padding: 1rem 1.5rem ;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  margin-top: 0;
 }
 .a-propos-layout {
   display: flex;
-  gap: 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
   align-items: flex-start;
 }
 @media (max-width: 768px) {
   .a-propos-layout {
     flex-direction: column;
   }
-.a-propos-texte {
-  flex: 2 1 60%;
-  min-width: 300px;
+
+  .a-propos-texte {
+    flex: 2 1 60%;
+    min-width: 300px;
+  }
 }
+
 .encart-texte {
   font-size: 1rem;
   color:#363B40;
