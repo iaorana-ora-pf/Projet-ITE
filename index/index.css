@@ -185,6 +185,12 @@ p + ul {
 .a-propos-texte p + ul {
   margin-top: 0.25rem; /* ou 0 si tu veux vraiment coller */
 }
+.appel-contribution {
+  display: block;
+  font-size: 1.2rem;     /* ✅ plus gros */
+  margin-bottom: 0.75rem; /* ✅ espace dessous */
+  color: #166F76;         /* facultatif : couleur mise en valeur */
+}
 .encart-texte {
   font-size: 1rem;
   color:#363B40;
