@@ -64,17 +64,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  align-items: flex-start;
-}
-.dropdown-checkbox {
-  flex: 1 1 220px;
+  align-items: stretch;
 }
 .dropdown-checkbox,
 .search-box {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex: 1 1 220px;
+  flex: 1 1 250px;
 }
 .dropdown-checkbox div {
   background: #fff;
@@ -109,6 +106,51 @@ body {
   color: #EDE7E3;
   opacity: 1;
 }
+/*____________________________________________________________________________________*/
+/* Encart*/
+.encart {
+  flex: 1;
+  min-width: 320px;
+  max-width: 600px;
+  position: relative;
+  background-color: #F8FBF1;
+  border-left: 5px solid #2a9d8f;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.encart-texte {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.encart-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #2a9d8f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.encart-btn:hover {
+  background-color: #21867a;
+}
+
+
+
+
 /*____________________________________________________________________________________*/
 .main-nav {
   display: flex;
@@ -390,85 +432,7 @@ flex: 2 1 60%;
   margin-top: 1rem;
 }
 
-/*____________________________________________________________________________________*/
-/* encart */
-
-
-.encart {
-  /* pour que l’image ne déborde pas */;
-  display: flex;
-  align-items: center;
-  background-color: #F8FBF1;
-  border-left: 5px solid #2a9d8f;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  flex-direction: column;
-flex: 1;
-  margin-top: 1.5rem;
-  max-width: 500px;
-  min-width: 320px;
-  overflow: hidden;
-  padding: 2rem;
-  position: relative;
-}
-
-/* Image de fond décorative */
-.encart::before {
-  /* ton image ici */;
-  background-repeat: no-repeat;
-  background-image: url('user-group-solid.svg');
-  background-size: contain;
-  content: "";
-  height: 250px;
-  left: 50%;
-  opacity: 0.03;
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 250px;
-  z-index: 0;
-}
-
-/* contenu au-dessus */
-.encart > * {
-  position: relative;
-  z-index: 1;
-}
-
-.encart-titre {
-  color: #2a9d8f;
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-.encart-texte {
-  color: #444;
-  font-size: 1rem;
-  line-height: 1.6;
-  text-align: left;
-}
-
-.encart-btn {
-  align-self: center;
-  background-color: #2a9d8f;
-  border-radius: 6px;
-  color: #fff;
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 500;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.encart-btn:hover {
-  background-color: #21867a;
-}
-
-/*____________________________________________________________________________________*/
+/*__________________________________________________________________________*/
 /* footer */
 .footer {
   background-color: #ffffff;
