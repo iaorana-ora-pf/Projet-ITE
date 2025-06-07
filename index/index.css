@@ -141,17 +141,34 @@ ul {
   background-color: #166F76;
 }
 /*____________________________________________________________________________________*/
-/* Encart*/
+/* Bandeau flottant*/
+.help-panel {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-height: 90vh;
+  background: white;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  z-index: 100;
+  display: none;
+  border-top: 5px solid #166F76;
+}
+
+.help-panel-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem; /* ✅ même marges que `.container` */
+}
 .encart {
-  width: 100%;
-  max-width: 100%;
-  background-color: #F1EBE7; /* ou #F8FBF1 selon ton thème */
+  flex: 1 1 35%;
+  background-color: #F1EBE7;
   border-left: 5px solid #166F76;
-  padding: 1rem 1.5rem 1.5rem 1.5rem; /* 🔧 réduit le padding-top */
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin-top: 0;
 }
 
 .encart-texte {
@@ -175,28 +192,22 @@ ul {
 
 .encart-btn:hover {
   background-color: #166F76;
+.a-propos-layout {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
-/*____________________________________________________________________________________*/
-/* Bandeau flottant*/
-.help-panel {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  max-height: 90vh;
-  background: white;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-  overflow-y: auto;
-  z-index: 100;
-  display: none;
-  border-top: 5px solid #166F76;
+@media (max-width: 768px) {
+  .a-propos-layout {
+    flex-direction: column;
+  }
+}
+.a-propos-texte {
+  flex: 2 1 60%;
+  min-width: 300px;
 }
 
-.help-panel-content {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem; /* ✅ même marges que `.container` */
-}
 /*__________________________________________________________________________*/
 /* footer */
 .footer {
@@ -278,17 +289,6 @@ ul {
   background-color: #ffffff;
 }
 
-.a-propos-layout {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.a-propos-texte {
-flex: 2 1 60%;
-  min-width: 300px;
-}
 
 .a-propos-texte ul {
   color: #444;
