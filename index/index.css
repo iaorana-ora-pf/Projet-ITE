@@ -197,6 +197,22 @@ ul {
   margin: 0 auto;
   padding: 2rem 1.5rem; /* ✅ même marges que `.container` */
 }
+/*__________________________________________________________________________*/
+/* footer */
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+  color: #666;
+  font-size: 0.875rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.footer-link {
+  color: #2a9d8f;
+  text-decoration: underline;
+}
+/*____________________________________________________________________________________*/
 /*____________________________________________________________________________________*/
 /*____________________________________________________________________________________*/
 /*____________________________________________________________________________________*/
@@ -466,22 +482,7 @@ flex: 2 1 60%;
   margin-top: 1rem;
 }
 
-/*__________________________________________________________________________*/
-/* footer */
-.footer {
-  background-color: #ffffff;
-  border-top: 1px solid #ccc;
-  color: #666;
-  font-size: 0.875rem;
-  padding: 2rem 1.5rem;
-  text-align: center;
-}
 
-.footer-link {
-  color: #2a9d8f;
-  text-decoration: underline;
-}
-/*____________________________________________________________________________________*/
 /* bouton flottant */
 .help-btn {
   position: fixed;
