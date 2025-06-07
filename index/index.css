@@ -258,6 +258,24 @@ p + ul {
 .contact-btn:hover {
   background-color: #128c8c;
 }
+.close-help {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #166F76;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.close-help:hover {
+  background-color: #128c8c;
+}
 
 /*__________________________________________________________________________*/
 /* footer */
