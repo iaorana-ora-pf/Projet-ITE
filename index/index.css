@@ -197,6 +197,7 @@ a {
   flex: 2 1 60%;
   min-width: 300px;
 }
+
 .a-propos-texte p + ul {
   margin-top: 0.25rem; /* ou 0 si tu veux coller complètement */
 }
@@ -279,6 +280,12 @@ a {
 .close-help:hover {
   background-color: #128c8c;
 }
+
+.help-title2 {
+  font-size: 1.4rem;
+  color: #166F76;
+   margin-top: 0; 
+ }
 
 /*__________________________________________________________________________*/
 /* footer */
