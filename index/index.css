@@ -155,7 +155,7 @@ a {
   bottom: 0;
   right: 0;
   left: 0;
-  max-height: 90vh;
+  max-height: 45vh;
   background: white;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
   overflow-y: auto;
