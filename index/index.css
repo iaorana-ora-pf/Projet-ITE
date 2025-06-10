@@ -41,6 +41,14 @@ ul {
 p + ul {
   margin-top: 0;
 }
+a {
+  color: #2a9d8f; /* Choisissez une couleur distinctive */
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #166F76; /* Couleur au survol */
+}
 /*____________________________________________________________________________________*/
 /* titres */
 .title-1 {
