@@ -22,6 +22,7 @@
 /* Corps du site */
 .main-content {
   padding-top: 60px;
+  padding-bottom: 300px
 }
 .container {
   max-width: 1400px;
