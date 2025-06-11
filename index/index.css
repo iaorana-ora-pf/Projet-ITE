@@ -164,23 +164,6 @@ a:hover {
   opacity: 1;
 }
 
-.reset-btn {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--main-green);
-  color: #fff;
-  font-weight: 500;
-  border: none;
-  border-radius: 6px;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.reset-btn:hover {
-  background-color: var(--main-green);
-}
 
 /* Help panel */
 .help-panel {
@@ -253,25 +236,6 @@ a:hover {
   line-height: 1.2;
 }
 
-.encart-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  font-size: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--main-green);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 500;
-  transition: background-color 0.2s ease;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.encart-btn:hover {
-  background-color: var(--main-green);
-}
-
 /* Floating buttons */
 .floating-buttons {
   position: fixed;
@@ -281,29 +245,6 @@ a:hover {
   flex-direction: row;
   gap: 1rem;
   z-index: 150;
-}
-
-.help-btn,
-.contact-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--main-green);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border: none;
-}
-
-.help-btn:hover,
-.contact-btn:hover {
-  background-color: var(--hover-green);
 }
 
 .close-help {
