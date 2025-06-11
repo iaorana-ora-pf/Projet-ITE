@@ -38,7 +38,7 @@ a:hover {
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
   font-style: italic;
-  color: var(--dark-text);
+  color: var(--neutral-tex);
 }
 /* Buttons */
 .button {
