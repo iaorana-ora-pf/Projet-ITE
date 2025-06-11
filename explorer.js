@@ -4,7 +4,7 @@ let currentEvents = [];
 let currentIndex = -1;
 
 // Catégories fixes avec icônes associées
-coconsole.log("explorer.js chargé");nst fixedCategories = [
+const fixedCategories = [
   "Gouvernance et pilotage stratégique",
   "Données, surveillance et recherche",
   "Promotion de la santé et prévention",
