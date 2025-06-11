@@ -31,7 +31,15 @@ a {
 a:hover {
   color: var(--main-green);
 }
-
+/* Intro */
+.intro-bloc {
+  background-color: #f9f9f2;
+  border-left: 4px solid var(--main-green);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--dark-text);
+}
 /* Buttons */
 .button {
   font-family: 'Poppins', sans-serif;
