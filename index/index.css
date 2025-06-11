@@ -188,18 +188,12 @@ a.button {
   margin-bottom: 0.75rem;
 }
 .year-block {
-  position: relative;
   padding-left: 40px;
   margin-bottom: 3rem;
 }
 .year-block h3 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 1rem;
-  color: #555;
-  background-color: #fff;
-  padding-right: 10px;
+  position: relative;
+  padding-left: 0.5rem;
 }
 .year-block::before {
   content: "";
@@ -210,6 +204,13 @@ a.button {
   width: 2px;
   background-color: #ccc; /* couleur de la ligne */
   z-index: 0;
+}
+.year-block::before,
+.year-block::after,
+.year-block h3::before,
+.year-block h3::after {
+  display: none !important;
+  content: none !important;
 }
 .year-block h3::before {
   content: "";
