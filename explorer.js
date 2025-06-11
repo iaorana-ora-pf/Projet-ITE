@@ -88,9 +88,8 @@ function updateTimeline() {
       const block = document.createElement("div");
       block.className = "year-block";
       block.innerHTML = `
-    <div class="timeline-point"></div>
-    <h3 class="timeline-year">${year}</h3>
-        <div class="event-grid">
+      <h3 class="timeline-year">${year}</h3>
+        <ul class="event-grid">
           ${filtered.map((ev, i) => {
             const id = `event-${year}-${i}`;
             window[id] = ev;
