@@ -277,3 +277,7 @@ function resetFilters() {
   updateTimeline();
   updateActiveFilterBadges();
 }
+function toggleFilters() {
+  const el = document.getElementById("filters");
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
