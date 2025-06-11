@@ -1,5 +1,5 @@
 // === Fichier JavaScript complet avec catégories fixes et gestion du filtre ===
-
+console.log("explorer.js chargé");
 let events = {};
 let currentEvents = [];
 let currentIndex = -1;
