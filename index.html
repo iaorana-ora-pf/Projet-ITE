@@ -34,7 +34,8 @@ Chaque contribution est étudiée avec attention.
 </p>
 
 <h2 class="title-2"> Explorer la base de données</h2>   
-    
+    <button class="button" onclick="toggleFilters()">Afficher / Masquer les filtres</button>
+    <div id="filters" class="filters-block">
   <!-- Filtres -->
   <div class="filters-block">
     <h3 class="title-3">Trier les événements</h3>
@@ -61,7 +62,7 @@ Chaque contribution est étudiée avec attention.
   </div>
   <button class="button" onclick="resetFilters()">Réinitialiser</button>
  </div>
-    
+</div>    
 <div class="timeline-layout">
   <div id="timeline" class="timeline-section"></div>
   <div id="event-details-container" class="event-details-container">
