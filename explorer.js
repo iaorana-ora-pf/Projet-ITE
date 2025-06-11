@@ -48,7 +48,9 @@ function expandMultiYearEvents(data) {
   if (!expanded[yStr]) expanded[yStr] = [];
   const key = `${ev.name}-${ev.start || year}-${ev.end || year}`;
   if (!expanded[yStr].some(e => `${e.name}-${e.start || year}-${e.end || year}` === key)) {
-    expanded[yStr].push({ ...ev });
+    const clone = { ...ev };
+clone.uid = key;
+expanded[yStr].push(clone);
   }
 }
         });
@@ -157,7 +159,7 @@ document.getElementById("keywordDropdown").innerHTML =
 
 function showDetails(ev, year) {
   currentEvents = collectFilteredEvents();
-  currentIndex = currentEvents.findIndex(e => e.name === ev.name);
+  currentIndex = currentEvents.findIndex(e => e.uid === ev.uid);
   const container = document.getElementById("event-details-container");
   const isMulti = ev.start && ev.end && ev.start !== ev.end;
   const catList = (Array.isArray(ev.category) ? ev.category : [ev.category]).map(cat => `<li><i class="fas ${getIconForCategory(cat)}"></i> ${cat}</li>`).join("");
@@ -186,12 +188,28 @@ container.innerHTML += `
   const selected = document.querySelector(`li[data-uid="${ev.name}-${year}"]`);
   if (selected) selected.classList.add("selected-event");
 }
-
 function navigateEvent(dir) {
   if (currentEvents.length === 0 || currentIndex === -1) return;
-  currentIndex = (currentIndex + dir + currentEvents.length) % currentEvents.length;
-  const next = currentEvents[currentIndex];
-  showDetails(next, Object.keys(events).find(year => events[year].some(e => e.name === next.name)));
+
+  const currentUid = currentEvents[currentIndex].uid;
+  let nextIndex = currentIndex + dir;
+
+  while (
+    nextIndex >= 0 &&
+    nextIndex < currentEvents.length &&
+    currentEvents[nextIndex].uid === currentUid
+  ) {
+    nextIndex += dir;
+  }
+
+  if (nextIndex >= 0 && nextIndex < currentEvents.length) {
+    currentIndex = nextIndex;
+    const nextEvent = currentEvents[nextIndex];
+    const year = Object.keys(events).find(y =>
+      events[y].some(e => e.uid === nextEvent.uid)
+    );
+    showDetails(nextEvent, year);
+  }
 }
 
 function collectFilteredEvents() {
