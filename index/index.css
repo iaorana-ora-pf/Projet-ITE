@@ -180,18 +180,6 @@ a.button {
   position: relative;
   padding-left: 2rem;
 }
-.timeline-point {
-  position: absolute;
-  left: -2.2rem;
-  top: 0.2rem;
-  width: 14px;
-  height: 14px;
-  background-color: var(--main-green);
-  border-radius: 50%;
-  border: 2px solid white;
-  z-index: 2;
-}
-
 .timeline-year {
   font-size: 1rem;
   color: var(--main-green);
