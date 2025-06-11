@@ -76,8 +76,10 @@ a.button {
   display: flex;
   align-items: flex-start;
   gap: 1.5rem;
-   padding: 0; /* ✅ supprime le padding inutile */
-  width: 100%; /* ✅ pour qu'elle prenne la largeur du container */
+  width: 100%;
+  max-width: 1400px;  /* ✅ même que .container */
+  margin: 0 auto;      /* ✅ centrer */
+  padding: 0 1.5rem;   /* ✅ même padding que .container */
 }
 
 /* Header */
