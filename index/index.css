@@ -344,10 +344,79 @@ a.button {
   background-color: #f4f0ec;
 }
 /* fiche evenements */
-.event-details-container {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background-color: #fff;
+#event-details-container {
+  background: white;
   border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+/* Timeline principale */
+.timeline-section {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Bloc par année */
+.year-block {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 2rem;
+  border-left: 3px solid #007bff;
+}
+
+/* Année */
+.year-block h3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  color: #555;
+  background-color: #fff;
+  padding-right: 10px;
+}
+
+/* Liste des événements */
+.event-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+/* Événement individuel */
+.event-grid li {
+  list-style: none;
+  padding: 0.75rem 1rem;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.event-grid li:hover {
+  background: #e6f7ff;
+}
+
+.event-grid li .multi-year-badge {
+  background: #eee;
+  color: #333;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+.selected-event {
+  border-left: 4px solid #007bff;
+  background-color: #eaf4ff;
 }
