@@ -230,7 +230,11 @@ a.button {
 .context-event {
   background-color: #f4f0ec;
 }
-
+@media (max-width: 768px) {
+  #filters {
+    display: none;
+  }
+}
 /* Event Details */
 .event-details-container {
   flex: 1;
