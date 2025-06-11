@@ -103,7 +103,7 @@ a.button {
 /* Titles */
 .title-1 { color: var(--main-green); font-size: 2rem; font-weight: bold; margin-bottom: 0; }
 .title-2 { font-size: 1.4rem; color: var(--neutral-text); margin-top: 0; }
-.title-3 { text-align: left; font-size: 1.2rem; color: var(--main-green); margin-bottom: 1rem; }
+.title-3 { text-align: left; font-size: 1.2rem; color: var(--main-green); margin-top: 2rem; margin-bottom: 1rem; }
 .title-4 { text-align: left; font-size: 1.1rem; color: var(--dark-text); margin-bottom: 1rem; }
 
 /* Filters */
