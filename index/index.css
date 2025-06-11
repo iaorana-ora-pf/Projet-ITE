@@ -251,24 +251,28 @@ a.button {
   z-index: 150;
 }
 
-.close-help {
-  font-family: 'Poppins', sans-serif;
+.help-btn,
+.contact-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   background-color: var(--main-green);
-  color: #fff;
-  font-weight: 500;
-  border: none;
-  border-radius: 6px;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s ease;
+  border: none;
 }
 
-.close-help:hover {
+.help-btn:hover,
+.contact-btn:hover {
   background-color: var(--hover-green);
 }
-
 /* Footer */
 .footer {
   background-color: #ffffff;
