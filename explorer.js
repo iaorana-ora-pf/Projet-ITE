@@ -6,12 +6,12 @@ let currentIndex = -1;
 
 // Catégories fixes avec icônes associées
 const fixedCategories = [
-  "Gouvernance et pilotage stratégique",
-  "Données, surveillance et recherche",
-  "Promotion de la santé et prévention",
-  "Protection sanitaire et gestion des risques",
-  "Accès aux services et aux moyens",
-  "Contexte"
+  "Gouvernance et pilotage stratégique": "#007b7f",
+  "Données, surveillance et recherche": "#4b0082",
+  "Promotion de la santé et prévention": "#e76f51",
+  "Protection sanitaire et gestion des risques": "#f4a261",
+  "Accès aux services et aux moyens": "#2a9d8f",
+  "Contexte": "#6c757d"
 ];
 
 const fixedCategoryIcons = {
@@ -24,7 +24,9 @@ const fixedCategoryIcons = {
 };
 
 function getIconForCategory(cat) {
-  return fixedCategoryIcons[cat] || "fa-circle";
+  const icon = fixedCategoryIcons[cat] || "fa-circle";
+  const color = categoryColors[cat] || "#888";
+  return `<i class="fas ${icon}" title="${cat}" style="margin-right:4px;color:${color}"></i>`;
 }
 
 fetch('explorer.json')
