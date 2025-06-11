@@ -189,6 +189,10 @@ container.innerHTML += `
   document.querySelectorAll(".year-block li").forEach(li => li.classList.remove("selected-event"));
   const selected = document.querySelector(`li[data-uid="${ev.name}-${year}"]`);
   if (selected) selected.classList.add("selected-event");
+  if (selected) {
+  selected.classList.add("selected-event");
+  selected.scrollIntoView({ behavior: "smooth", block: "center" });
+}
 }
 function navigateEvent(dir) {
   if (currentEvents.length === 0 || currentIndex === -1) return;
