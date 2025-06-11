@@ -52,10 +52,17 @@
     Frise à venir ici...
   </div>
 
-  <!-- 🗂️ Fiche événement (cachée par défaut, s’affiche quand on clique sur un événement) -->
-  <div class="fiche-evenement">
-    <!-- À remplir plus tard -->
-  </div>
+<!-- 📅 Frise chronologique interactive -->
+<div id="timeline" class="timeline-section">
+  <!-- Les blocs annuels avec événements seront injectés ici par JS -->
+</div>
+
+<!-- 🗂️ Fiche événement détaillée -->
+<div id="event-details-container" class="event-details-container"></div>
+
+    <div class="nav-buttons">
+  <button onclick="navigateEvent(-1)" class="button">◀ Précédent</button>
+  <button onclick="navigateEvent(1)" class="button">Suivant ▶</button>
 </div>
    <!-- SECTION Contribuer -->
 <div class="encart">
