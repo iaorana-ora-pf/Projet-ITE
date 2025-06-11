@@ -163,7 +163,8 @@ function showDetails(ev, year) {
   currentIndex = currentEvents.findIndex(e => e.uid === ev.uid);
   const container = document.getElementById("event-details-container");
   const isMulti = ev.start && ev.end && ev.start !== ev.end;
-  const catList = (Array.isArray(ev.category) ? ev.category : [ev.category]).map(cat => `<li><i class="fas ${getIconForCategory(cat)}"></i> ${cat}</li>`).join("");
+ const catList = (Array.isArray(ev.category) ? ev.category : [ev.category])
+  .map(cat => `<li>${getIconForCategory(cat)} ${cat}</li>`).join("");
   const sourceList = (ev.sources || []).map(src => src.startsWith("http") ? `<a href="${src}" target="_blank">${src}</a>` : src).join("<br>");
   const keywordList = (ev.keywords || []).map(k => `• ${k}`).join("<br>");
 
