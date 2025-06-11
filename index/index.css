@@ -168,13 +168,6 @@ a.button {
   color: #c0392b;
 }
 /* Timeline */
-.filters-block,
-.timeline-layout,
-.encart,
-.footer .container {
-  margin-left: auto;
-  margin-right: auto;
-}
 .timeline-section {
   flex: 2;
   padding: 1rem;
