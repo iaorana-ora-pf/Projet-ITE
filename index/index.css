@@ -107,6 +107,15 @@ a.button {
 .title-4 { text-align: left; font-size: 1.1rem; color: var(--dark-text); margin-bottom: 1rem; }
 
 /* Filters */
+
+.filters-block {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
 .filtres-ligne {
   display: flex;
   flex-wrap: wrap;
