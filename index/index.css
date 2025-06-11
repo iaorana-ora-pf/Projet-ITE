@@ -169,15 +169,11 @@ a.button {
 }
 /* Timeline */
 .timeline-section {
-  flex: 2;
-  padding: 1rem;
-  margin-top: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-   /* border-left: 3px solid var(--main-green); */
-  margin-left: 2rem;
   position: relative;
-  padding-left: 2rem;
+  flex: 2;
+  padding: 1rem 1rem 1rem 2rem; /* OK si tu veux un peu d'air à gauche */
+  margin-top: 2rem;
+  
 }
 .timeline-year {
   font-size: 1rem;
@@ -192,12 +188,13 @@ a.button {
 }
 .year-block h3 {
   position: relative;
-  padding-left: 0.5rem;
+  padding-left: 1.5rem;
+  margin-left: 0; /* Ajoute-le si nécessaire */
 }
 .year-block::before {
   content: "";
   position: absolute;
-  left: 10px;
+  left: 0px;
   top: 0;
   bottom: 0;
   width: 2px;
