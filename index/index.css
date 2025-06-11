@@ -171,7 +171,7 @@ a.button {
 .timeline-section {
   position: relative;
   flex: 2;
-  padding: 1rem 1rem 1rem 2rem; /* OK si tu veux un peu d'air à gauche */
+  padding: 1rem;
   margin-top: 2rem;
   max-height: 650px; /* ajustable selon hauteur moyenne de 15 événements */
   overflow-y: auto;
@@ -202,13 +202,6 @@ a.button {
   width: 2px;
   background-color: #ccc; /* couleur de la ligne */
   z-index: 0;
-}
-.year-block::before,
-.year-block::after,
-.year-block h3::before,
-.year-block h3::after {
-  display: none !important;
-  content: none !important;
 }
 .year-block h3::before {
   content: "";
