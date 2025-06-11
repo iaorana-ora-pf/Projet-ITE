@@ -88,7 +88,8 @@ function updateTimeline() {
       const block = document.createElement("div");
       block.className = "year-block";
       block.innerHTML = `
-        <h3>${year}</h3>
+    <div class="timeline-point"></div>
+    <h3 class="timeline-year">${year}</h3>
         <div class="event-grid">
           ${filtered.map((ev, i) => {
             const id = `event-${year}-${i}`;
@@ -100,7 +101,8 @@ function updateTimeline() {
               .map(cat => `<i class="fas ${getIconForCategory(cat)}" title="${cat}" style="margin-right:4px;color:#007b7f"></i>`).join("");
             return `<li class="${contextClass}" data-uid="${ev.name}-${year}" onclick='showDetails(window["${id}"], "${year}")'>${iconHTML}<span>${ev.name}</span>${isMulti ? `<span class="multi-year-badge">Pluriannuel</span>` : ""}</li>`;
           }).join("")}
-        </div>`;
+        </ul>
+`;
       container.appendChild(block);
     }
   }
