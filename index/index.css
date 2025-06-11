@@ -240,7 +240,7 @@ a.button {
   align-items: center;
   gap: 0.5rem;
   font-weight: 500;
-  font-size: 0.95rem; /*
+  font-size: 0.95rem;
 }
 .event-grid li:hover {
   background: #e6f7ff;
@@ -254,8 +254,8 @@ a.button {
   margin-left: auto;
 }
 .selected-event {
-  border-left: 4px solid #007bff;
-  background-color: #eaf4ff;
+  border-left: 4px solid var(--main-green);
+  background-color: #fff8cc; /* ✅ Jaune clair */
 }
 .context-event {
   background-color: #f4f0ec;
