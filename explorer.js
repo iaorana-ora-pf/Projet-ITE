@@ -1,11 +1,11 @@
 // === Fichier JavaScript complet avec catégories fixes et gestion du filtre ===
-console.log("explorer.js chargé");
+alert("explorer.js fonctionne !");
 let events = {};
 let currentEvents = [];
 let currentIndex = -1;
 
 // Catégories fixes avec icônes associées
-const fixedCategories = [
+coconsole.log("explorer.js chargé");nst fixedCategories = [
   "Gouvernance et pilotage stratégique",
   "Données, surveillance et recherche",
   "Promotion de la santé et prévention",
