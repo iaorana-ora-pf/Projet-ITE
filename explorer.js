@@ -175,7 +175,12 @@ function showDetails(ev, year) {
     <p><strong>Mots-clés :</strong><br>${keywordList}</p>
     <p><strong>Description :</strong><br>${ev.description || "N/A"}</p>
     <p><strong>Source(s) :</strong><br>${sourceList || "N/A"}</p>`;
-
+container.innerHTML += `
+  <div style="display:flex; justify-content: space-between; margin-top: 1.5rem;">
+    <button class="button" onclick="navigateEvent(-1)">◀ Précédent</button>
+    <button class="button" onclick="navigateEvent(1)">Suivant ▶</button>
+  </div>
+`;
   document.querySelectorAll(".year-block li").forEach(li => li.classList.remove("selected-event"));
   const selected = document.querySelector(`li[data-uid="${ev.name}-${year}"]`);
   if (selected) selected.classList.add("selected-event");
