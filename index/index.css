@@ -287,3 +287,67 @@ a.button {
   color: var(--link-green);
   text-decoration: underline;
 }
+/* Frise */
+.timeline-section {
+  margin-top: 2rem;
+}
+
+.year-block {
+  margin-bottom: 2rem;
+}
+
+.year-block h3 {
+  font-size: 1.4rem;
+  color: var(--main-green);
+  border-bottom: 1px solid var(--light-bg);
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.event-grid li {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.event-grid li:hover {
+  background: #eef8f8;
+}
+
+.event-grid li.selected-event {
+  border: 2px solid var(--main-green);
+  background-color: #dff2f2;
+}
+
+.multi-year-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  background: #ccc;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.context-event {
+  background-color: #f4f0ec;
+}
+/* fiche evenements */
+.event-details-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
