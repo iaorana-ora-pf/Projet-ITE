@@ -255,7 +255,7 @@ a.button {
 }
 .selected-event {
   border-left: 4px solid var(--main-green);
-  background-color: #fff8cc; /* ✅ Jaune clair */
+  background-color: #f5ef87; /* ✅ Jaune clair */
 }
 .context-event {
   background-color: #f4f0ec;
