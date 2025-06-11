@@ -101,8 +101,8 @@ function updateTimeline() {
             const isMulti = ev.start && ev.end && ev.start !== ev.end;
             const isContext = Array.isArray(ev.category) ? ev.category.includes("Contexte") : ev.category === "Contexte";
             const contextClass = isContext ? "context-event" : "";
-            const iconHTML = (Array.isArray(ev.category) ? ev.category : [ev.category])
-              .map(cat => `<i class="fas ${getIconForCategory(cat)}" title="${cat}" style="margin-right:4px;color:#007b7f"></i>`).join("");
+           const iconHTML = (Array.isArray(ev.category) ? ev.category : [ev.category])
+            .map(cat => getIconForCategory(cat)).join("");;
             return `<li class="${contextClass}" data-uid="${ev.name}-${year}" onclick='showDetails(window["${id}"], "${year}")'>${iconHTML}<span>${ev.name}</span>${isMulti ? `<span class="multi-year-badge">Pluriannuel</span>` : ""}</li>`;
           }).join("")}
         </ul>
@@ -138,7 +138,7 @@ function updateDependentFilters() {
 
 function initDropdowns() {
   const keywords = new Set();
-  const categories = new Set();
+  const categories = fixedCategories;
 
  Object.values(events).flat().forEach(e => {
   e.keywords.forEach(k => keywords.add(k));
