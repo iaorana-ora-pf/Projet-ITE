@@ -144,7 +144,6 @@ a.button {
   position: relative;
   padding-left: 40px;
   margin-bottom: 2rem;
-  border-left: 3px solid #007bff;
 }
 .year-block h3 {
   position: absolute;
@@ -154,6 +153,27 @@ a.button {
   color: #555;
   background-color: #fff;
   padding-right: 10px;
+}
+.year-block::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ccc; /* couleur de la ligne */
+  z-index: 0;
+}
+.year-block h3::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-green);
+  border-radius: 50%;
+  z-index: 1;
 }
 .event-grid {
   display: flex;
