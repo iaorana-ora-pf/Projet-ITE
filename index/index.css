@@ -148,7 +148,26 @@ a.button {
   color: var(--light-bg);
   opacity: 1;
 }
+.filter-badge {
+  display: inline-block;
+  background-color: #d0e9e9; /* un peu plus foncé que le fond général */
+  color: #166F76; /* couleur texte assortie à ta palette */
+  padding: 0.4rem 0.75rem;
+  margin: 0.3rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
 
+.remove-badge {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #128c8c;
+}
+.remove-badge:hover {
+  color: #c0392b;
+}
 /* Timeline */
 .timeline-section {
   flex: 2;
