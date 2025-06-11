@@ -185,34 +185,13 @@ a.button {
   margin-bottom: 0.75rem;
 }
 .year-block {
-  padding-left: 40px;
+  padding-left: 0;
   margin-bottom: 3rem;
 }
 .year-block h3 {
   position: relative;
   padding-left: 1.5rem;
   margin-left: 0; /* Ajoute-le si nécessaire */
-}
-.year-block::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background-color: #ccc; /* couleur de la ligne */
-  z-index: 0;
-}
-.year-block h3::before {
-  content: "";
-  position: absolute;
-  left: 4px;
-  top: 4px;
-  width: 12px;
-  height: 12px;
-  background-color: var(--main-green);
-  border-radius: 50%;
-  z-index: 1;
 }
 .event-grid {
   display: flex;
