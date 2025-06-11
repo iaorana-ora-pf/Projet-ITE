@@ -1,4 +1,3 @@
-
 :root {
   --main-green: #166F76;
   --hover-green: #128c8c;
@@ -296,4 +295,24 @@ a.button {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   text-align: center;
   margin-top: 2rem;
+}
+
+/* Limiter le nombre d'événements visibles avec un scroll */
+.timeline-section {
+  max-height: 1200px; /* ajustable selon hauteur moyenne de 15 événements */
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+/* Fixer l'encart "Vous voulez contribuer à 'ITE ?" en bas de la page */
+.encart {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.footer {
+  margin-top: 0;
 }
