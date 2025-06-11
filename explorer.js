@@ -138,26 +138,24 @@ function updateDependentFilters() {
 
 function initDropdowns() {
   const keywords = new Set();
-  const categories = fixedCategories;
-
+  
  Object.values(events).flat().forEach(e => {
   e.keywords.forEach(k => keywords.add(k));
-  (Array.isArray(e.category) ? e.category : [e.category]).forEach(cat => categories.add(cat));
-});
+  });
 
-  document.getElementById("categoryDropdown").innerHTML =
+   document.getElementById("categoryDropdown").innerHTML =
     fixedCategories.map(c => {
-    const iconClass = getIconForCategory(c);
-    return `<label>
-      <input type="checkbox" class="category-filter" value="${c}" onchange="updateTimeline(); updateDependentFilters(); updateActiveFilterBadges()">
-      <i class="fas ${iconClass}" style="margin-right:6px;"></i> ${c}
-    </label><br>`;
-  }).join("");
+      const iconHTML = getIconForCategory(c);
+      return `<label>
+        <input type="checkbox" class="category-filter" value="${c}" onchange="updateTimeline(); updateDependentFilters(); updateActiveFilterBadges()">
+        ${iconHTML} ${c}
+      </label><br>`;
+    }).join("");
 
-document.getElementById("keywordDropdown").innerHTML =
-  Array.from(keywords).map(k => `
-    <label><input type="checkbox" class="keyword-filter" value="${k}" onchange="updateTimeline(); updateDependentFilters(); updateActiveFilterBadges()"> ${k}</label><br>
-  `).join("");
+  document.getElementById("keywordDropdown").innerHTML =
+    Array.from(keywords).map(k => `
+      <label><input type="checkbox" class="keyword-filter" value="${k}" onchange="updateTimeline(); updateDependentFilters(); updateActiveFilterBadges()"> ${k}</label><br>
+    `).join("");
 }
 
 function showDetails(ev, year) {
