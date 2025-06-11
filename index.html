@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,93 +11,93 @@
 </head>
 <body>
 
+<!-- HEADER STICKY ---------------------------------------------------------------------------------------------------------------------------------------->
 <header class="header">
   <div class="container header-container">
     <h1 class="title-1">Projet 'ITE</h1>
-  </div>
+    </div>
 </header>
 
 <main class="main-content">
-
-  <!-- Intro -->
+  <!--TITRE ---------------------------------------------------------------------------------------------------------------------------------------->
   <div class="container">
-    <p class="intro-bloc">
-      'ITE est une <strong>base de connaissances sur la santé publique en Polynésie française</strong>.  
-      Elle vise à rassembler, organiser et partager des informations issues de diverses sources...  
-      <strong>N'hésitez pas à proposer un événement grâce au 
-      <a href="https://forms.gle/KYdBJ4PTWJfuWVFU6" target="_blank" rel="noopener noreferrer">formulaire en ligne</a>.</strong>
-    </p>
-    <h2 class="title-2">Explorer la base de données</h2>
-  </div>
 
+<p class="intro-bloc">
+'ITE est une <strong>base de connaissances sur la santé publique en Polynésie française</strong>.
+Elle vise à rassembler, organiser et partager des informations issues de diverses sources. L’objectif est simple : mieux connaître pour mieux transmettre. 
+Présenté sous forme de frise chronologique interactive, 'ITE permet d'explorer les événements de santé publique (par année, catégories et mots-clés) 
+et de consulter des fiches descriptives détaillées.<br>
+Porté par Emmanuelle RUPP-TERRIS, 'ITE est un projet personnel, en développement continu et ouvert à tous. 
+Il ne prétend pas à l’exhaustivité, mais s’enrichit progressivement grâce à une démarche collaborative et aux données recueillies au fil du temps.
+<strong>N'hésitez pas à proposer un événement grâce au <a href="https://forms.gle/KYdBJ4PTWJfuWVFU6" target="_blank" rel="noopener noreferrer">formulaire en ligne </a>.</strong> 
+Chaque contribution est étudiée avec attention.
+</p>
+
+<h2 class="title-2"> Explorer la base de données</h2>   
+    
   <!-- Filtres -->
-  <div class="container">
-    <div class="filters-block">
-      <h3 class="title-3">Trier les événements</h3>
-      <div class="filtres-ligne">
-        <div class="dropdown-checkbox">
-          <h4 class="title-4">Catégories</h4>
-          <div id="categoryDropdown"></div>
-        </div>
-        <div class="dropdown-checkbox">
-          <h4 class="title-4">Mots-clés</h4>
-          <div id="keywordDropdown"></div>
-        </div>
-        <div class="search-box">
-          <h4 class="title-4">Recherche dans toutes les métadonnées</h4>
-          <textarea id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()"></textarea>
-        </div>
-      </div>
-      <div id="active-filters-section">
-        <h4 class="title-4">Filtres sélectionnés :</h4>
-        <div id="active-filters"></div>
-      </div>
-      <button class="button" onclick="resetFilters()">Réinitialiser</button>
+  <div class="filters-block">
+    <h3 class="title-3">Trier les événements</h3>
+    <div class="filtres-ligne">
+    <div class="dropdown-checkbox">
+      <h4 class="title-4">Catégories</h4>
+      <div id="categoryDropdown"></div>
     </div>
-  </div>
 
-  <!-- Frise + Fiche -->
-  <div class="container">
-    <div class="timeline-layout">
-      <div id="timeline" class="timeline-section"></div>
-      <div id="event-details-container" class="event-details-container">
-        <p style="text-align:center; font-style:italic; color:#555;">
-          Cliquez sur un événement pour accéder à sa fiche détaillée.
-        </p>
-      </div>
+    <div class="dropdown-checkbox">
+      <h4 class="title-4">Mots-clés</h4>
+      <div id="keywordDropdown"></div>
     </div>
+
+    <div class="search-box">
+  <h4 class="title-4">Recherche dans toutes les métadonnées</h4>
+  <textarea id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()"></textarea>
+</div>
+</div>
+
+  <div id="active-filters-section">
+    <h4 class="title-4">Filtres sélectionnés :</h4>
+    <div id="active-filters"></div>
   </div>
-
-  <!-- Encart de contribution -->
-  <div class="container">
-    <div class="encart">
-      <strong class="appel-contribution">Vous voulez contribuer à 'ITE&nbsp;?</strong><br>
-      <p>
-        Vous pouvez suggérer un document, un témoignage, une source ou une piste à explorer.<br>
-        Chaque proposition est étudiée avec attention. Un formulaire est à votre disposition pour participer simplement.
-      </p>
-      <a href="https://forms.gle/qkyWwbFrB9bPqTyf6" class="button" target="_blank" rel="noopener noreferrer">Proposer un événement</a>
-    </div>
-  </div>
-
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <p class="footer-text">
-      © 2025 • 'ITE • Tous droits réservés •
+  <button class="button" onclick="resetFilters()">Réinitialiser</button>
+ </div>
+    
+<div class="timeline-layout">
+  <div id="timeline" class="timeline-section"></div>
+  <div id="event-details-container" class="event-details-container">
+    <p style="text-align:center; font-style:italic; color:#555;">
+      Cliquez sur un événement pour accéder à sa fiche détaillée.
     </p>
   </div>
-</footer>
+</div>
 
-<!-- Scripts -->
-<script src="explorer.js"></script>
+  </div>
+   <!-- SECTION Contribuer -->
+<div class="encart">
+   <strong class="appel-contribution">Vous voulez contribuer à 'ITE&nbsp;?</strong><br>
+          <p>
+            Vous pouvez suggérer un document, un témoignage, une source ou une piste à explorer.<br>
+            Chaque proposition est étudiée avec attention. Un formulaire est à votre disposition pour participer simplement.
+          <br>
+          <br>
+     </p>
+          <a href="https://forms.gle/qkyWwbFrB9bPqTyf6" class="button "target="_blank" rel="noopener noreferrer">Proposer un événement</a>
+        </div> 
+   </main>
+  
+   <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        © 2025 • 'ITE • Tous droits réservés •
+      </p>
+    </div>
+  </footer>
+  <script src="explorer.js"></script>
 <script>
   function toggleHelpPanel() {
     const panel = document.getElementById('help-panel');
     panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
   }
-
   window.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector(".header");
     const main = document.querySelector(".main-content");
@@ -106,35 +107,60 @@
     }
   });
 </script>
-
-<!-- Boutons flottants -->
+  <!-- Bouton flottant -->
 <div class="floating-buttons">
   <div class="help-btn" onclick="toggleHelpPanel()" title="Aide">?</div>
   <a href="mailto:contact@paanapf.com" class="contact-btn" title="Contact">
     <i class="fa-solid fa-envelope"></i>
   </a>
 </div>
-
-<!-- Aide flottante -->
 <div id="help-panel" class="help-panel">
   <div class="help-panel-content">
+
+    <!-- Section À propos-->
     <section class="section-a-propos">
       <div class="a-propos-layout">
-        <div class="a-propos-texte">
-          <h3 class="title-3">À propos du projet 'ITE</h3>
-          <h3 class="title-3">Aide à l'utilisation</h3>
-          <p>Les événements peuvent être filtrés...</p>
-          <ul>
-            <li>Chaque événement est affiché...</li>
-            <li>Un badge “Pluriannuel” signale...</li>
-            <li>Utilisez les flèches pour naviguer...</li>
-          </ul>
-          <button onclick="toggleHelpPanel()" class="button">Fermer</button>
-        </div>
-      </div>
-    </section>
+       <div class="a-propos-texte">
+   <h3 class="title-3">À propos du projet 'ITE</h3>
+          
+     <h3 class="title-3">Aide à l'utilisation</h3>
+      <p> Les événements peuvent être filtrés par <strong>"Catégorie"</strong>. Ce filtre s’appuie sur les <a href="https://iris.who.int/bitstream/handle/10665/376579/9789240091436-eng.pdf" target="_blank">
+          Fonctions Essentielles de Santé Publique (FESP)</a> établies par l’OMS. Pour faciliter leur utilisation, les 12 FESP ont été regroupées en 5 grandes catégories :</p>
+      <ul>     
+      <li><strong>Gouvernance et pilotage stratégique :</strong> coordination, planification, participation, qualité et équité des politiques et services </li>
+       <li><strong>Données, surveillance et recherche :</strong> production, analyse et utilisation de l'information sanitaire</li>
+      <li><strong>Promotion de la santé et prévention :</strong> actions comportementales, sociales et populationnelles</li>
+      <li><strong>Protection sanitaire et gestion des risques :</strong> réponse aux menaces sanitaires, environnementales ou réglementaires</li>
+      <li><strong>Accès aux services et aux moyens :</strong>  ressources humaines, infrastructures, technologies, accès aux soins </li>
+        </ul>
+    <p> La catégorie <strong>"Contexte"</strong> regroupe des événements ayant un impact indirect sur la santé publique. Un événement peut appartenir à plusieurs catégories.<br>
+    Les événements peuvent également être filtrés par <strong>mots-clés</strong> issus autant que possible du thésaurus <a href="https://decs.bvsalud.org/fr" target="_blank">DeCS</a>. Plusieurs mots-clés peuvent être combinés.<br>
+    La fonctionnalité <strong>recherche globale</strong> permet de filtrer les événements par tout mot présent dans le titre, la description, la catégorie ou les mots-clés.</p>
+
+  <h3 class="title-3">Affichage dans la frise</h3>
+ <ul> 
+    <li>Chaque événement est affiché avec son icône de catégorie et son titre.</li>
+    <li>Un badge “Pluriannuel” signale les événements couvrant plusieurs années.</li>
+    <li>Cliquez sur un événement pour consulter sa fiche descriptive.</li>
+    <li>Utilisez les flèches “◀” et “▶” pour naviguer entre les événements filtrés.</li>
+   <li>Le bouton "Réinitialiser" efface tous les filtres et permet de revenir à l'affichage complet.</li>
+</ul>
+
+   <button onclick="toggleHelpPanel()" class="button">Fermer</button>
   </div>
 </div>
+</section>
+
+  </div> <!-- help-panel-content -->
+</div> <!-- help-panel -->
+
+   
+<script>
+  function toggleHelpPanel() {
+    const panel = document.getElementById('help-panel');
+    panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
 
 </body>
 </html>
