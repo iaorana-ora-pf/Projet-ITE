@@ -77,7 +77,7 @@ a.button {
   align-items: flex-start;
   gap: 2rem;
   padding: 2rem;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -169,6 +169,14 @@ a.button {
   color: #c0392b;
 }
 /* Timeline */
+.filters-block,
+.timeline-layout,
+.encart,
+.footer .container {
+  max-width: 1200px; /* même valeur partout */
+  margin-left: auto;
+  margin-right: auto;
+}
 .timeline-section {
   flex: 2;
   padding: 1rem;
@@ -246,7 +254,7 @@ a.button {
   background: #e6f7ff;
 }
 .event-grid li .multi-year-badge {
-  background: #eee;
+  background: #fff9c4;
   color: #333;
   font-size: 0.75rem;
   padding: 2px 6px;
@@ -270,6 +278,7 @@ a.button {
   padding: 2rem;
   max-width: 450px;
   min-width: 300px;
+  width: 100%;
   font-size: 0.95rem;
   color: #333;
 }
