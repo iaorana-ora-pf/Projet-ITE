@@ -355,3 +355,6 @@ a.button {
 .footer {
   margin-top: 0;
 }
+.help-panel-content {
+  padding: 1rem 1.5rem;
+}
