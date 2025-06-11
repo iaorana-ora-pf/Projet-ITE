@@ -356,5 +356,7 @@ a.button {
   margin-top: 0;
 }
 .help-panel-content {
-  padding: 1rem 1.5rem;
+  max-width: 1400px;      /* même largeur que .container */
+  margin: 0 auto;         /* centre le contenu dans le panneau */
+  padding: 1rem 1.5rem;   /* déjà présent, c’est bien */
 }
