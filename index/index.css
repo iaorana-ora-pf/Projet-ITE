@@ -248,3 +248,52 @@ a.button {
   color: var(--link-green);
   text-decoration: underline;
 }
+
+
+
+/* Floating buttons */
+.floating-buttons {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  z-index: 150;
+}
+
+.help-btn,
+.contact-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--main-green);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.help-btn:hover,
+.contact-btn:hover {
+  background-color: var(--hover-green);
+}
+
+
+/* Encart bas de page */
+.encart {
+  flex: 1 1 33%;
+  background-color: #F1EBE7;
+  border-left: 5px solid var(--main-green);
+  padding: 2.5rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-top: 2rem;
+}
