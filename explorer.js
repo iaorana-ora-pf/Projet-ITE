@@ -5,14 +5,14 @@ let currentEvents = [];
 let currentIndex = -1;
 
 // Catégories fixes avec icônes associées
-const fixedCategories = [
+const categoryColors = {
   "Gouvernance et pilotage stratégique": "#007b7f",
   "Données, surveillance et recherche": "#4b0082",
   "Promotion de la santé et prévention": "#e76f51",
   "Protection sanitaire et gestion des risques": "#f4a261",
   "Accès aux services et aux moyens": "#2a9d8f",
   "Contexte": "#6c757d"
-];
+};
 
 const fixedCategoryIcons = {
   "Gouvernance et pilotage stratégique": "fa-scale-balanced",
@@ -22,6 +22,7 @@ const fixedCategoryIcons = {
   "Accès aux services et aux moyens": "fa-hospital",
   "Contexte": "fa-landmark"
 };
+const fixedCategories = Object.keys(categoryColors);
 
 function getIconForCategory(cat) {
   const icon = fixedCategoryIcons[cat] || "fa-circle";
@@ -188,7 +189,6 @@ container.innerHTML += `
 `;
   document.querySelectorAll(".year-block li").forEach(li => li.classList.remove("selected-event"));
   const selected = document.querySelector(`li[data-uid="${ev.name}-${year}"]`);
-  if (selected) selected.classList.add("selected-event");
   if (selected) {
   selected.classList.add("selected-event");
   selected.scrollIntoView({ behavior: "smooth", block: "center" });
