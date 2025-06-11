@@ -173,13 +173,15 @@ a.button {
   flex: 2;
   padding: 1rem 1rem 1rem 2rem; /* OK si tu veux un peu d'air à gauche */
   margin-top: 2rem;
-  
+  max-height: 650px; /* ajustable selon hauteur moyenne de 15 événements */
+  overflow-y: auto;
 }
 .timeline-year {
   font-size: 1rem;
   color: var(--main-green);
   font-weight: bold;
-  margin-left: 0.5rem;
+  margin-left: 0;
+  padding-left: 0;
   margin-bottom: 0.75rem;
 }
 .year-block {
@@ -223,7 +225,7 @@ a.button {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-left: 1rem;
+  margin-left: 0;
 }
 .event-grid li {
   list-style: none;
@@ -361,6 +363,8 @@ a.button {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   text-align: center;
   margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .help-panel {
   position: fixed;
@@ -376,26 +380,6 @@ a.button {
   border-top: 5px solid var(--main-green);
   padding: 1.5rem;
 }
-/* Limiter le nombre d'événements visibles avec un scroll */
-.timeline-section {
-  max-height: 650px; /* ajustable selon hauteur moyenne de 15 événements */
-  overflow-y: auto;
-  padding-right: 1rem;
-}
-
-/* Fixer l'encart "Vous voulez contribuer à 'ITE ?" en bas de la page */
-.encart {
- background-color: #F1EBE7;
-  border-left: 5px solid var(--main-green);
-  padding: 2.5rem 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  text-align: center;
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .footer {
   margin-top: 0;
 }
