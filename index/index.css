@@ -53,6 +53,9 @@ a:hover {
 .button:hover {
   background-color: var(--hover-green);
 }
+a.button {
+  text-decoration: none;
+}
 /* Header */
 .header {
   background-color: var(--light-bg);
