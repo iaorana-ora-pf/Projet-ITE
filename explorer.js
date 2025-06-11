@@ -165,7 +165,7 @@ function showDetails(ev, year) {
   const keywordList = (ev.keywords || []).map(k => `• ${k}`).join("<br>");
 
   container.innerHTML = `
-    <h2 style="color:#007b7f">${ev.name}</h2>
+    <h2 style="color:#007b7f; font-size:1.2rem; margin-bottom: 1rem;">${ev.name}</h2>
     <p><strong>${isMulti ? "Période" : "Année"} :</strong> ${isMulti ? `${ev.start} – ${ev.end}` : year}</p>
     <div>
   <strong>Catégorie(s) :</strong>
