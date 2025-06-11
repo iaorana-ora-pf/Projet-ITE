@@ -240,6 +240,7 @@ a.button {
   align-items: center;
   gap: 0.5rem;
   font-weight: 500;
+  font-size: 0.95rem; /*
 }
 .event-grid li:hover {
   background: #e6f7ff;
