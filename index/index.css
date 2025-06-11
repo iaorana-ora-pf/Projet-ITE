@@ -420,3 +420,28 @@ a.button {
   border-left: 4px solid #007bff;
   background-color: #eaf4ff;
 }
+.timeline-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.timeline-section {
+  flex: 2;
+  padding: 1rem;
+}
+
+.event-details-container {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  max-width: 450px;
+  min-width: 300px;
+  font-size: 0.95rem;
+  color: #333;
+}
