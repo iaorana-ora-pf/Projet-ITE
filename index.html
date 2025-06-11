@@ -47,13 +47,14 @@
   </div>
   <button class="button" onclick="resetFilters()">Réinitialiser</button>
 
-<!-- 📅 Frise chronologique interactive -->
-<div id="timeline" class="timeline-section">
-  <!-- Les blocs annuels avec événements seront injectés ici par JS -->
+<div class="timeline-layout">
+  <div id="timeline" class="timeline-section"></div>
+  <div id="event-details-container" class="event-details-container">
+    <p style="text-align:center; font-style:italic; color:#555;">
+      Cliquez sur un événement pour accéder à sa fiche détaillée.
+    </p>
+  </div>
 </div>
-
-<!-- 🗂️ Fiche événement détaillée -->
-<div id="event-details-container" class="event-details-container"></div>
 
     <div class="nav-buttons">
   <button onclick="navigateEvent(-1)" class="button">◀ Précédent</button>
