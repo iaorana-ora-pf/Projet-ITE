@@ -33,12 +33,12 @@ a:hover {
 }
 /* Intro */
 .intro-bloc {
-  background-color: none;
+  background-color: transparent;
   border-left: 4px solid var(--main-green);
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
   font-style: italic;
-  color: var(--neutral-tex);
+  color: var(--neutral-text);
 }
 /* Buttons */
 .button {
