@@ -247,3 +247,8 @@ function resetFilters() {
   updateTimeline();
   updateActiveFilterBadges();
 }
+document.addEventListener("DOMContentLoaded", () => {
+  loadJSONData().then(() => {
+    generateTimeline(); // Affiche la frise dès que les données sont prêtes
+  });
+});
