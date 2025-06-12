@@ -38,6 +38,26 @@
   transition: background-color 0.2s ease;
   margin-top: 2rem;
 }
+
+.new-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff5722; /* Vous pouvez changer la couleur */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.new-btn:hover {
+  background-color: #e64a19; /* Couleur de survol */
+}
 .button:hover {
   background-color: #128c8c;
 }
