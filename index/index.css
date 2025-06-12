@@ -664,7 +664,7 @@ a.button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
   justify-content: center;
   margin-top: 1rem;
 }
