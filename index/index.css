@@ -51,7 +51,7 @@
   color: var(--main-green);
   font-weight: 700;
   margin: 0;
-  margin-Top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .side-subtitle {
@@ -95,13 +95,12 @@ a:hover {
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 1.5rem;
-  margin-left: 300px;
 }
 
 .main-content {
  padding-left: 300px;
-  padding-top: 30px;
-  padding-bottom: 2rem;
+ padding-top: 30px;
+ padding-bottom: 2rem;
 }
 html, body {
   height: 100%;
@@ -556,6 +555,8 @@ a.button {
   align-items: center;
   padding: 1rem;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
 }
 
 .side-panel-text {
@@ -565,12 +566,12 @@ a.button {
   margin: 1rem 0;
   color: var(--main-green);
 }
-
 .side-panel-buttons {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 
 .side-panel button,
 .side-panel a {
@@ -639,17 +640,6 @@ a.button {
   padding-left: 1.5rem; /* ou comme tu veux */
 }
 
-.side-panel {
-  width: 200px;
-  flex-shrink: 0;
-}
-.side-panel-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 2rem;
-  align-items: center;
-}
 
 .side-btn {
   width: 50px;
