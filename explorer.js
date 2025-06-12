@@ -327,3 +327,24 @@ function toggleCategoryInfo() {
   const box = document.getElementById("category-info-box");
   box.classList.toggle("hidden");
 }
+function toggleCategoryTooltip(event) {
+  event.stopPropagation(); // évite que le clic se propage
+
+  const tooltip = document.getElementById("categoryTooltip");
+  const isVisible = !tooltip.classList.contains("hidden");
+  
+  document.querySelectorAll(".tooltip-floating").forEach(el => el.classList.add("hidden"));
+  
+  if (!isVisible) {
+    tooltip.classList.remove("hidden");
+    document.addEventListener("click", closeTooltipOnClickOutside);
+  }
+}
+
+function closeTooltipOnClickOutside(e) {
+  const tooltip = document.getElementById("categoryTooltip");
+  if (!tooltip.contains(e.target) && !e.target.classList.contains("info-icon")) {
+    tooltip.classList.add("hidden");
+    document.removeEventListener("click", closeTooltipOnClickOutside);
+  }
+}
