@@ -94,6 +94,10 @@ Chaque contribution est étudiée avec attention.
       main.style.paddingTop = headerHeight + "px";
     }
   });
+  function toggleHelpModal() {
+    const modal = document.getElementById("help-modal");
+    modal.style.display = modal.style.display === "flex" ? "none" : "flex";
+  }
 </script>
 <!-- Bouton flottant d'aide -->
 <div class="floating-buttons">
