@@ -53,23 +53,28 @@
        <div class="dropdown-checkbox" style="position: relative;">
   <h4 class="title-4" style="display: flex; align-items: center;">
     Catégories
-    <i class="fa-solid fa-circle-info info-icon" onclick="toggleCategoryTooltip(event)"></i>
-    <div id="categoryTooltip" class="tooltip-floating hidden">
-  <p> Les événements peuvent être filtrés par <strong>"Catégorie"</strong>. Ce filtre s’appuie sur les <a href="https://iris.who.int/bitstream/handle/10665/376579/9789240091436-eng.pdf" target="_blank">
-          Fonctions Essentielles de Santé Publique (FESP)</a> établies par l’OMS. Pour faciliter leur utilisation, les 12 FESP ont été regroupées en 5 grandes catégories :</p>
-      <ul>     
-      <li><strong>Gouvernance et pilotage stratégique :</strong> coordination, planification, participation, qualité et équité des politiques et services </li>
-       <li><strong>Données, surveillance et recherche :</strong> production, analyse et utilisation de l'information sanitaire</li>
-      <li><strong>Promotion de la santé et prévention :</strong> actions comportementales, sociales et populationnelles</li>
-      <li><strong>Protection sanitaire et gestion des risques :</strong> réponse aux menaces sanitaires, environnementales ou réglementaires</li>
-      <li><strong>Accès aux services et aux moyens :</strong>  ressources humaines, infrastructures, technologies, accès aux soins </li>
-        </ul>
-    <p> La catégorie <strong>"Contexte"</strong> regroupe des événements ayant un impact indirect sur la santé publique. Un événement peut appartenir à plusieurs catégories.<br>
-  </div>
-  </h4>
+     <i class="fa-solid fa-circle-info info-icon" onclick="toggleInfoModal()"></i>
+     </h4>
   <div id="categoryDropdown"></div>
 </div>
-       
+
+<div id="infoModal" class="info-modal hidden">
+  <div class="info-modal-content">
+    <button class="info-close-btn" onclick="toggleInfoModal()">×</button>
+    <h3 class="title-3">À propos des catégories</h3>
+    <p>Ce filtre s’appuie sur les <a href="https://iris.who.int/bitstream/handle/10665/376579/9789240091436-eng.pdf" target="_blank">Fonctions Essentielles de Santé Publique (FESP)</a> de l’OMS, regroupées en 5 grandes familles :</p>
+    <ul>
+      <li><strong>Gouvernance et pilotage stratégique</strong> : coordination, planification, participation, qualité et équité</li>
+      <li><strong>Données, surveillance et recherche</strong></li>
+      <li><strong>Promotion de la santé et prévention</strong></li>
+      <li><strong>Protection sanitaire et gestion des risques</strong></li>
+      <li><strong>Accès aux services et aux moyens</strong></li>
+    </ul>
+    <p>La catégorie <strong>Contexte</strong> regroupe des événements ayant un impact indirect sur la santé publique.</p>
+  </div>
+</div>
+
+         
       </div>   
         
          <div class="dropdown-checkbox">
