@@ -513,9 +513,6 @@ a.button {
   margin-right: 0.5rem;
 }
 .side-panel {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 200px;
   height: 100vh;
   background-color: #f0f8f8;
@@ -525,7 +522,7 @@ a.button {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  z-index: 1000;
+  transition: all 0.3s ease;
 }
 
 .side-panel-text {
