@@ -76,16 +76,14 @@ a:hover {
 }
 
 .container {
-  max-width: 2300px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem;
-  margin-left: 200px;
 }
 
 .main-content {
-  padding-top: 20px;
-  padding-bottom: 1rem;
-   padding-left: 200px;
+ flex: 1;
+  padding: 2rem 1.5rem; /* ✅ plus de padding à gauche suffisant */
 }
 html, body {
   height: 100%;
