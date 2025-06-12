@@ -82,11 +82,7 @@ Chaque contribution est étudiée avec attention.
   </footer>
   <script src="explorer.js"></script>
 <script>
-  function toggleHelpPanel() {
-    const panel = document.getElementById('help-panel');
-    panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
-  }
-  window.addEventListener("DOMContentLoaded", function () {
+   window.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector(".header");
     const main = document.querySelector(".main-content");
     if (header && main) {
@@ -96,7 +92,11 @@ Chaque contribution est étudiée avec attention.
   });
   function toggleHelpModal() {
     const modal = document.getElementById("help-modal");
-    modal.style.display = modal.style.display === "flex" ? "none" : "flex";
+    if (modal.style.display === "flex") {
+      modal.style.display = "none";
+    } else {
+      modal.style.display = "flex";
+    }
   }
 </script>
 <!-- Bouton flottant d'aide -->
