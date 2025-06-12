@@ -14,30 +14,29 @@
   <div class="container">
     <h1 class="title-1">Le projet 'ITE</h1>
     <h2 class="title-2">Base de connaissances dédiée à la santé publique en Polynésie française</h2>
-     <h3 class="title-3">Filtres</h3>
+    <h3 class="title-3">Filtres</h3>
    
     <div id="filters" class="filters-block">
-      <div class="filtres-ligne">
-       <div class="dropdown-checkbox">
-        <h4 class="title-4">Catégories</h4>
-        <div id="categoryDropdown"></div>
-      </div>
-      <div class="dropdown-checkbox">
-        <h4 class="title-4">Mots-clés</h4>
-        <div id="keywordDropdown"></div>
-      </div>
-      <div class="search-box">
-        <h4 class="title-4">Recherche dans toutes les métadonnées</h4>
-        <textarea id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()"></textarea>
-      </div>
+       <div class="filtres-ligne">
+         <div class="dropdown-checkbox">
+            <h4 class="title-4">Catégories</h4>
+            <div id="categoryDropdown"></div>
+         </div>
+         <div class="dropdown-checkbox">
+            <h4 class="title-4">Mots-clés</h4>
+            <div id="keywordDropdown"></div>
+        </div>
+        <div class="search-box">
+          <h4 class="title-4">Recherche dans toutes les métadonnées</h4>
+          <textarea id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()"></textarea>
+        </div>
+    </div> 
+    <div id="active-filters-section">
+        <h4 class="title-4">Filtres sélectionnés :</h4>
+        <div id="active-filters"></div>
     </div>
-      
-  <div id="active-filters-section">
-    <h4 class="title-4">Filtres sélectionnés :</h4>
-    <div id="active-filters"></div>
-  </div>
     <button class="button" onclick="resetFilters()">Réinitialiser</button>
- </div>
+    </div>
 </div>   
 
   
