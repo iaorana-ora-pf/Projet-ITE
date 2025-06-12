@@ -6,44 +6,120 @@
   --neutral-text: #5F5F5F;
   --dark-text: #363B40;
 }
-/* Titles -----------*/
-.title-1 { text-align: center; color: #166F76; font-size: 2.4rem; font-weight: bold; margin-bottom: 0; }
-.title-2 { text-align: center; font-size: 1.6rem; color: #5F5F5F; margin-top: 0; margin-bottom: 3rem;}
-.title-3 { text-align: left; font-size: 1.4rem; color: #166F76; margin-top: 0.25rem; margin-bottom: 0.5rem; }
-.title-4 { text-align: left; font-size: 1.2rem; color: #363B40; margin-top: 0.25rem; margin-bottom: 0.5rem; }
 
-/*Corps de texte -----------*/
+/*-----------------------------------
+  TYPOGRAPHIE & TITRES
+-----------------------------------*/
+.title-1 {
+  text-align: center;
+  color: var(--main-green);
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.title-2 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--neutral-text);
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.title-3 {
+  text-align: left;
+  font-size: 1.4rem;
+  color: var(--main-green);
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.title-4 {
+  text-align: left;
+  font-size: 1.2rem;
+  color: var(--dark-text);
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/*-----------------------------------
+  STRUCTURE GÉNÉRALE
+-----------------------------------*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-top: 0;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 1rem;
+}
+
+p + ul {
+  margin-top: 0;
+}
+
+a {
+  color: var(--link-green);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--main-green);
+}
+
 .container {
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
 .main-content {
   padding-top: 30px;
   padding-bottom: 2rem;
 }
 
-/* Buttons  -----------*/
-.button {
+/*-----------------------------------
+  BOUTONS
+-----------------------------------*/
+.button, .close-btn-bottom {
   font-family: 'Poppins', sans-serif;
-  background-color: #166F76;
+  background-color: var(--main-green);
   color: #fff;
   font-weight: 500;
   border: none;
   border-radius: 6px;
-  padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  text-align: center;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s ease;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  text-align: center;
   margin-top: 2rem;
 }
 
-.new-btn {
+.button:hover, .close-btn-bottom:hover {
+  background-color: var(--hover-green);
+}
+
+a.button {
+  text-decoration: none;
+}
+
+.new-btn,
+.help-btn,
+.contact-btn {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #ff5722; /* Vous pouvez changer la couleur */
   color: white;
   display: flex;
   align-items: center;
@@ -55,143 +131,77 @@
   border: none;
 }
 
+.new-btn {
+  background-color: #ff5722;
+}
+
 .new-btn:hover {
-  background-color: #e64a19; /* Couleur de survol */
+  background-color: #e64a19;
 }
-.button:hover {
-  background-color: #128c8c;
-}
-a.button {
+
+.help-btn,
+.contact-btn {
+  background-color: var(--main-green);
   text-decoration: none;
 }
 
-/* Filters -----------*/
+.help-btn:hover,
+.contact-btn:hover {
+  background-color: var(--hover-green);
+}
+
+/*-----------------------------------
+  BLOCS FILTRES
+-----------------------------------*/
 .filters-block {
-  background: #EDE7E3;
-  padding: 1rem 1.5rem 1.5rem 1.5rem; /* top, right, bottom, left */
+  background: var(--light-bg);
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   margin-bottom: 2rem;
 }
+
 .filtres-ligne {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 2rem;
 }
-/* Checkbox -----------*/
-.dropdown-checkbox, .search-box {
-  flex: 1 1 250px;
-  display: flex;
-  flex-direction: column;
-}
-.dropdown-checkbox div {
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 10px;
-  height: 100px;
-  overflow-y: auto;
-}
-.search-box textarea {
-  height: 100px;
-  resize: none;
-  padding: 12px 15px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background-color: #fff;
-}
-.search-box textarea::placeholder {
-  color: var(--light-bg);
-  opacity: 1;
-}
-
-
-
-
-/* Reset and base styles */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-body {
-  background-color: #ffffff;
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding-top: 0;
-}
-ul {
-  margin-left: 0;
-  padding-left: 1rem;
-}
-p + ul {
-  margin-top: 0;
-}
-a {
-  color: var(--link-green);
-  text-decoration: underline;
-}
-a:hover {
-  color: var(--main-green);
-}
-/* Intro */
-.intro-bloc {
-  background-color: transparent;
-  border-left: 4px solid var(--link-green);
-  padding: 1rem 1.5rem;
-  margin: 1.5rem 0;
-  font-style: italic;
-  color: var(--neutral-text);
-}
-
-
-/* Layout */
-
-.timeline-layout {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  width: 100%;
-  max-width: 1400px;  /* ✅ même que .container */
-  margin: 0 auto;      /* ✅ centrer */
-  padding: 0 1.5rem;   /* ✅ même padding que .container */
-}
-
-
-
-
-
 
 .dropdown-checkbox, .search-box {
   flex: 1 1 250px;
   display: flex;
   flex-direction: column;
 }
-.dropdown-checkbox div {
+
+.dropdown-checkbox div,
+.search-box textarea {
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 10px;
   height: 100px;
+}
+
+.dropdown-checkbox div {
+  padding: 10px;
   overflow-y: auto;
 }
+
 .search-box textarea {
-  height: 100px;
   resize: none;
   padding: 12px 15px;
   font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background-color: #fff;
 }
+
 .search-box textarea::placeholder {
   color: var(--light-bg);
   opacity: 1;
 }
+
 .filter-badge {
   display: inline-block;
-  background-color: #d0e9e9; /* un peu plus foncé que le fond général */
-  color: #166F76; /* couleur texte assortie à ta palette */
+  background-color: #d0e9e9;
+  color: var(--main-green);
   padding: 0.4rem 0.75rem;
   margin: 0.3rem;
   border-radius: 999px;
@@ -203,20 +213,35 @@ a:hover {
   margin-left: 0.5rem;
   cursor: pointer;
   font-weight: bold;
-  color: #128c8c;
+  color: var(--hover-green);
 }
+
 .remove-badge:hover {
   color: #c0392b;
 }
-/* Timeline */
+
+/*-----------------------------------
+  LAYOUT FRISE
+-----------------------------------*/
+.timeline-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 .timeline-section {
   position: relative;
   flex: 2;
   padding: 1rem;
   margin-top: 2rem;
-  max-height: 650px; /* ajustable selon hauteur moyenne de 15 événements */
+  max-height: 650px;
   overflow-y: auto;
 }
+
 .timeline-year {
   font-size: 1rem;
   color: var(--main-green);
@@ -225,21 +250,25 @@ a:hover {
   padding-left: 0;
   margin-bottom: 0.75rem;
 }
+
 .year-block {
   padding-left: 0;
   margin-bottom: 3rem;
 }
+
 .year-block h3 {
   position: relative;
   padding-left: 1.5rem;
-  margin-left: 0; /* Ajoute-le si nécessaire */
+  margin-left: 0;
 }
+
 .event-grid {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-left: 0;
 }
+
 .event-grid li {
   list-style: none;
   padding: 0.75rem 1rem;
@@ -253,9 +282,11 @@ a:hover {
   font-weight: 500;
   font-size: 0.95rem;
 }
+
 .event-grid li:hover {
   background: #e6f7ff;
 }
+
 .event-grid li .multi-year-badge {
   background: #fff9c4;
   color: #333;
@@ -264,19 +295,25 @@ a:hover {
   border-radius: 4px;
   margin-left: auto;
 }
+
 .selected-event {
   border-left: 4px solid var(--main-green);
-  background-color: #f5ef87; /* ✅ Jaune clair */
+  background-color: #f5ef87;
 }
+
 .context-event {
   background-color: #f4f0ec;
 }
+
 @media (max-width: 768px) {
   #filters {
     display: none;
   }
 }
-/* Event Details */
+
+/*-----------------------------------
+  DÉTAILS ÉVÉNEMENT
+-----------------------------------*/
 .event-details-container {
   flex: 1;
   background: white;
@@ -290,52 +327,9 @@ a:hover {
   color: #333;
 }
 
-/* Floating buttons */
-.floating-buttons {
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  z-index: 150;
-}
-.help-btn, .contact-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--main-green);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border: none;
-}
-.help-btn:hover, .contact-btn:hover {
-  background-color: var(--hover-green);
-}
-
-/* Footer */
-.footer {
-  background-color: #ffffff;
-  border-top: 1px solid #ccc;
-  color: #666;
-  font-size: 0.875rem;
-  padding: 2rem 1.5rem;
-  text-align: center;
-}
-.footer-link {
-  color: var(--link-green);
-  text-decoration: underline;
-}
-
-
-
-/* Floating buttons */
+/*-----------------------------------
+  BLOCS FLOTTANTS
+-----------------------------------*/
 .floating-buttons {
   position: fixed;
   bottom: 1.5rem;
@@ -346,31 +340,18 @@ a:hover {
   z-index: 150;
 }
 
-.help-btn,
-.contact-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--main-green);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border: none;
+/*-----------------------------------
+  INTRO & ENCART
+-----------------------------------*/
+.intro-bloc {
+  background-color: transparent;
+  border-left: 4px solid var(--link-green);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--neutral-text);
 }
 
-.help-btn:hover,
-.contact-btn:hover {
-  background-color: var(--hover-green);
-}
-
-
-/* Encart bas de page */
 .encart {
   flex: 1 1 33%;
   background-color: #F1EBE7;
@@ -383,6 +364,28 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*-----------------------------------
+  FOOTER
+-----------------------------------*/
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+  color: #666;
+  font-size: 0.875rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.footer-link {
+  color: var(--link-green);
+  text-decoration: underline;
+}
+
+/*-----------------------------------
+  PANNEAU D'AIDE
+-----------------------------------*/
 .help-panel {
   position: fixed;
   bottom: 0;
@@ -393,106 +396,27 @@ a:hover {
   box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
   overflow-y: auto;
   z-index: 100;
-  display: none; /* caché par défaut */
+  display: none;
   border-top: 5px solid var(--main-green);
   padding: 1.5rem;
 }
-.footer {
-  margin-top: 0;
-}
+
 .help-panel-content {
-  max-width: 1400px;      /* même largeur que .container */
-  margin: 0 auto;         /* centre le contenu dans le panneau */
-  padding: 1rem 1.5rem;   /* déjà présent, c’est bien */
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
 }
-/* MODALE D'AIDE */
+
+/*-----------------------------------
+  MODALE D'AIDE
+-----------------------------------*/
 .help-modal {
   display: none;
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-}
-
-.help-modal-content {
-  background: white;
-  border-radius: 10px;
-  padding: 2rem;
-  width: 90%;
-  max-width: 600px;
-  max-height: 80vh;
-  overflow-y: auto;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-  position: relative;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-/* MODALE D'AIDE */
-.help-modal {
-  display: none;
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-}
-
-.help-modal-content {
-  background: white;
-  border-radius: 10px;
-  padding: 2rem;
-  width: 90%;
-  max-width: 600px;
-  max-height: 80vh;
-  overflow-y: auto;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-  position: relative;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-/* Bouton de fermeture en bas */
-.close-btn-bottom {
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--main-green);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.close-btn-bottom:hover {
-  background-color: var(--hover-green);
-}
-
-/* Modale positionnée à droite avec une marge */
-.help-modal {
-  display: none;
-  position: fixed;
-  top: 0; bottom: 0;
-  right: 2rem; /* marge droite */
-  justify-content: flex-end; /* pousser à droite */
+  top: 0;
+  bottom: 0;
+  right: 2rem;
+  justify-content: flex-end;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
@@ -508,5 +432,15 @@ a:hover {
   overflow-y: auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   position: relative;
-  margin-right: 2rem; /* espace par rapport au bord droit */
+  margin-right: 2rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
