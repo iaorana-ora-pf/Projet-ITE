@@ -666,17 +666,17 @@ a.button {
 
 
 .side-btn {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: var(--main-green);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.1s ease;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
