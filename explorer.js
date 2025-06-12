@@ -360,3 +360,18 @@ function toggleKeywordModal() {
   const modal = document.getElementById("keywordModal");
   modal.classList.toggle("hidden");
 }
+function toggleFilters() {
+  const content = document.getElementById("filters-content");
+  const icon = document.getElementById("filtersArrow");
+  
+  content.classList.toggle("filters-collapsed");
+
+  // Change l'icône flèche haut/bas
+  if (content.classList.contains("filters-collapsed")) {
+    icon.classList.remove("fa-chevron-up");
+    icon.classList.add("fa-chevron-down");
+  } else {
+    icon.classList.remove("fa-chevron-down");
+    icon.classList.add("fa-chevron-up");
+  }
+}
