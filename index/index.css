@@ -736,3 +736,20 @@ a.button {
 .side-inline-btn:hover {
   background-color: var(--hover-green);
 }
+.tooltip-floating {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 260px;
+  z-index: 9999;
+  margin-top: 8px;
+}
+
+.hidden {
+  display: none;
+}
