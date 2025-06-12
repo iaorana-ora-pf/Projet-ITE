@@ -23,9 +23,7 @@
   <button class="side-btn" onclick="toggleNewModal()" title="À propos">
     <i class="fa-solid fa-circle-info"></i>
   </button>
-  <button class="side-btn" onclick="toggleHelpModal()" title="Aide">
-    <i class="fa-solid fa-question"></i>
-  </button>
+ 
   <a href="mailto:contact@paanapf.com" class="side-btn" title="Contact">
     <i class="fa-solid fa-envelope"></i>
   </a>
@@ -104,7 +102,7 @@
 
   </div> <!-- .filtres-ligne -->
 
-  <button class="button" onclick="resetFilters()">Réinitialiser</button>
+  <button class="button" onclick="resetFilters()">Réinitialiser les filtres </button>
 </div>
 
 
@@ -115,7 +113,8 @@
     <div id="timeline" class="timeline-section"></div>
     <div id="event-details-container" class="event-details-container">
       <p style="text-align:center; font-style:italic; color:#5F5F5;">
-      Cliquez sur un événement pour accéder à sa fiche détaillée.
+      Cliquez sur un événement pour accéder à sa fiche détaillée.<br>
+        Utilisez les flèches “◀” et “▶” pour naviguer entre les événements (filtrés).
       </p>
     </div>
   </div>
@@ -141,24 +140,6 @@ Chaque contribution est étudiée avec attention.
     <button class="close-btn-bottom" onclick="toggleNewModal()">Fermer</button>
   
  <!-- Fenêtre modale d'aide -->
-<div id="help-modal" class="help-modal">
-  <div class="help-modal-content">
-    <button class="close-btn" onclick="toggleHelpModal()">×</button>
-  
-    Les événements peuvent également être filtrés par <strong>mots-clés</strong> issus autant que possible du thésaurus <a href="https://decs.bvsalud.org/fr" target="_blank">DeCS</a>. Plusieurs mots-clés peuvent être combinés.<br>
-    La fonctionnalité <strong>recherche globale</strong> permet de filtrer les événements par tout mot présent dans le titre, la description, la catégorie ou les mots-clés.</p>
-
-  <h3 class="title-3">Affichage dans la frise</h3>
- <ul> 
-    <li>Chaque événement est affiché avec son icône de catégorie et son titre.</li>
-    <li>Un badge “Pluriannuel” signale les événements couvrant plusieurs années.</li>
-    <li>Cliquez sur un événement pour consulter sa fiche descriptive.</li>
-    <li>Utilisez les flèches “◀” et “▶” pour naviguer entre les événements (filtrés).</li>
-   <li>Le bouton "Réinitialiser" efface tous les filtres et permet de revenir à l'affichage complet.</li>
-</ul>
-<button class="close-btn-bottom" onclick="toggleHelpModal()">Fermer</button>
-  </div>
-</div>
  </div> <!-- help-panel-content -->
 </div> <!-- help-panel -->
 </body>
