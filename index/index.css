@@ -1,6 +1,4 @@
-/* =========================
-   VARIABLES ET BASE
-========================= */
+/* VARIABLES */
 :root {
   --main-green: #166F76;
   --hover-green: #128c8c;
@@ -8,148 +6,171 @@
   --light-bg: #EDE7E3;
   --neutral-text: #5F5F5F;
   --dark-text: #363B40;
-  --bg-gray: #f9f9f9;
 }
 
+/* RESET */
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 body {
-  margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #ffffff;
+  margin: 0;
+  background-color: #fff;
   color: var(--dark-text);
-  line-height: 1.6;
 }
-
 a {
   color: var(--link-green);
   text-decoration: underline;
 }
-
 a:hover {
   color: var(--main-green);
 }
 
-/* =========================
-   CONTAINERS ET TITRES
-========================= */
-
-.container {
-  max-width: 1200px;
+/* HEADER */
+.header {
+  background-color: var(--light-bg);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+.header-container {
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .title-1 {
   font-size: 2rem;
   font-weight: bold;
   color: var(--main-green);
-  margin: 0 0 1rem;
-  text-align: center;
+  margin: 0;
 }
-
 .title-2 {
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.6rem;
   color: var(--main-green);
-  margin-bottom: 0.5rem;
-  text-align: center;
+  margin-top: 2rem;
 }
-
 .subtitle {
   color: var(--neutral-text);
-  font-size: 1rem;
   font-style: italic;
-  margin-bottom: 2rem;
+  margin: 0.5rem 0 2rem;
   text-align: center;
 }
 
-/* =========================
-   SECTIONS & BLOCS
-========================= */
-
+/* INTRO */
 .intro-section {
-  background-color: var(--light-bg);
-  padding: 4rem 1.5rem;
+  background-color: #f9f9f9;
+  padding: 5rem 1.5rem 2rem;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  margin-top: 60px;
 }
-
 .intro-text {
-  max-width: 700px;
-  margin: 1rem auto;
   font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 1rem;
   color: var(--neutral-text);
 }
 
+/* BANNER */
+.contribution-banner {
+  background-color: #e0f7f5;
+  border-left: 5px solid var(--main-green);
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 800px;
+  font-size: 1rem;
+}
+.contribution-banner a {
+  font-weight: bold;
+  color: var(--main-green);
+}
+.contribution-banner a:hover {
+  color: var(--hover-green);
+}
+
+/* SEPARATOR */
 .separator-wave {
   height: 40px;
   background: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
   margin: -1rem 0 1rem;
 }
 
-.contribution-banner {
-  background-color: #e0f7f5;
-  border-left: 5px solid var(--main-green);
-  padding: 1.2rem 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-  font-size: 1rem;
+/* EXPLORE */
+.explore-section {
+  padding: 2rem 1.5rem;
+}
+.explore-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
-  text-align: center;
 }
-
-.contribution-banner a {
-  font-weight: bold;
-}
-
-/* =========================
-   BOUTONS
-========================= */
-
 .button {
-  background-color: var(--main-green);
-  color: #fff;
+  padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 6px;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
   font-weight: 500;
+  cursor: pointer;
+  background: var(--main-green);
+  color: white;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
-
 .button:hover {
   background-color: var(--hover-green);
 }
-
 .button.secondary {
   background-color: #e0e0e0;
   color: var(--main-green);
 }
 
-.explore-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-bottom: 1.5rem;
+/* FILTERS */
+.filters-block {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-/* =========================
-   TIMELINE ET DÉTAILS
-========================= */
-
-.timeline-layout {
+.filtres-ligne {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 2rem;
-  animation: fadeInUp 0.8s ease both;
+}
+.dropdown-checkbox, .search-box {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-checkbox div, .search-box textarea {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  max-height: 100px;
+  overflow-y: auto;
 }
 
+/* TIMELINE */
+.timeline-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 1400px;
+  margin: auto;
+  animation: fadeInUp 0.8s ease both;
+}
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -160,82 +181,29 @@ a:hover {
     transform: translateY(0);
   }
 }
-
 .timeline-section {
   flex: 2;
-  background: var(--bg-gray);
-  border-radius: 8px;
+  background: #f9f9f9;
   padding: 2rem;
-  min-height: 300px;
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 600px;
 }
-
 .event-details-container {
   flex: 1;
-  background: var(--bg-gray);
-  border-radius: 8px;
+  background: #f9f9f9;
   padding: 2rem;
+  border-radius: 8px;
   min-width: 300px;
+  max-width: 450px;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
+/* FOOTER */
 .footer {
-  background-color: #ffffff;
+  background: #ffffff;
   border-top: 1px solid #ccc;
-  color: #666;
-  font-size: 0.875rem;
   padding: 2rem 1.5rem;
   text-align: center;
-  margin-top: 3rem;
-}
-
-/* =========================
-   AIDE (MODALE)
-========================= */
-
-.help-modal {
-  display: none;
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-}
-
-.help-modal-content {
-  background: white;
-  border-radius: 10px;
-  padding: 2rem;
-  width: 90%;
-  max-width: 600px;
-  max-height: 80vh;
-  overflow-y: auto;
-  position: relative;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* =========================
-   RÉACTIF (MOBILE)
-========================= */
-
-@media (max-width: 768px) {
-  .timeline-layout {
-    flex-direction: column;
-  }
-  .explore-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
+  font-size: 0.875rem;
+  color: #666;
 }
