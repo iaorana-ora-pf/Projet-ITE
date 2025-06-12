@@ -568,10 +568,11 @@ a.button {
 }
 .side-panel-buttons {
   display: flex;
-  flex-direction: column;
-  gap: 1.2rem; /* espace entre les boutons */
-  align-items: center;
+  flex-direction: row; /* ✅ alignement horizontal */
+  gap: 1rem;            /* ✅ espace entre les boutons */
+  justify-content: center;
   margin-top: 2rem;
+  flex-wrap: wrap;      /* ✅ au cas où ça déborde en hauteur */
 }
 
 
