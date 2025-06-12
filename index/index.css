@@ -251,14 +251,15 @@ a.button {
   color: #c0392b;
 }
 .contribution-invite {
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
 .contribution-text {
+  margin-top: 3rem
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--dark-text);
   line-height: 1.5;
 }
@@ -580,7 +581,7 @@ a.button {
 .side-panel-buttons {
   display: flex;
   flex-direction: row; /* ✅ alignement horizontal */
-  gap: 1rem;            /* ✅ espace entre les boutons */
+  gap: 1.3rem;            /* ✅ espace entre les boutons */
   justify-content: center;
   margin-top: 2rem;
   flex-wrap: wrap;      /* ✅ au cas où ça déborde en hauteur */
@@ -612,7 +613,6 @@ a.button {
   padding: 0.5rem 0.75rem;
   width: auto;
   background-color: #FEBB5F;
-font-weight: 700; 
 }
 
 .side-panel .contribute-btn:hover {
