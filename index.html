@@ -11,21 +11,28 @@
 </head>
 <body>
   <div id="app-layout" class="layout-with-sidebar">
-<div id="side-panel" class="side-panel">
- <div class="side-panel-buttons">
-  <div class="side-btn" onclick="toggleNewModal()" title="À propos">
-    <i class="fa-solid fa-circle-info"></i>
-  </div>
-  <div class="side-btn" onclick="toggleHelpModal()" title="Aide">
-    <i class="fa-solid fa-question"></i>
-  </div>
-  <a href="mailto:contact@paanapf.com" class="side-btn" title="Contact">
-    <i class="fa-solid fa-envelope"></i>
-  </a>
-</div>
+
+    <!-- ✅ Barre latérale -->
+    <div id="side-panel" class="side-panel">
+      <div class="side-panel-buttons">
+        <div class="side-btn" onclick="toggleNewModal()" title="À propos">
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <div class="side-btn" onclick="toggleHelpModal()" title="Aide">
+          <i class="fa-solid fa-question"></i>
+        </div>
+        <a href="mailto:contact@paanapf.com" class="side-btn" title="Contact">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://forms.gle/KYdBJ4PTWJfuWVFU6" class="contribute-btn" target="_blank" rel="noopener noreferrer">
+          Ajouter
+        </a>
+      </div>
+    </div>
   
-<main class="main-content">
-  <div class="container">
+ <!-- ✅ Contenu principal -->
+    <main class="main-content">
+      <div class="container">
     <h1 class="title-1">Le projet 'ITE</h1>
     <h2 class="title-2">Base de connaissances dédiée à la santé publique en Polynésie française</h2>
     <!-- Filtres ------------------------------------------>
@@ -79,7 +86,6 @@
     Proposer un événement
   </a>
 </div>
-  
 </main>
   
    <footer class="footer">
