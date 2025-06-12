@@ -436,3 +436,33 @@ a.button {
   background: linear-gradient(to bottom, transparent 0%, #f9f9f9 100%);
   margin: -1rem 0 1rem;
 }
+/* Animation d’apparition */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Appliquer à la frise */
+.timeline-layout {
+  animation: fadeInUp 0.8s ease both;
+}
+
+/* Fond doux sur la frise */
+.timeline-section {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+/* Harmonisation fiche détail */
+.event-details-container {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 2rem;
+}
