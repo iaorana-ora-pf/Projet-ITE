@@ -43,10 +43,14 @@
     <main class="main-content">
       <div class="container">
        <!-- Filtres ------------------------------------------>
-    <div id="filters" class="filters-block">
+    <div class="filters-block"> 
+      <div class="filters-block-header" style="display: flex; align-items: center; justify-content: space-between;">
   <h3 class="title-3">Filtres</h3>
-  
-  <div class="filtres-ligne">
+  <button id="toggleFiltersBtn" onclick="toggleFilters()" style="background: none; border: none; cursor: pointer;">
+    <i id="filtersArrow" class="fa-solid fa-chevron-up"></i>
+  </button>
+</div>
+  <div id="filters-content">
     
     <!-- Bloc Catégories -->
     <div class="dropdown-checkbox" style="position: relative;">
@@ -100,7 +104,7 @@
       <textarea id="searchInput" placeholder="Tapez le mot souhaité et il sera recherché dans les champs titre, description, catégorie et mots-clés." oninput="updateTimeline()"></textarea>
     </div>
 
-  </div> <!-- .filtres-ligne -->
+  </div> <!-- ✅ #filters-content -->
       <div id="active-filters-section">
   <h4 class="title-4">Filtres sélectionnés :</h4>
   <div id="active-filters"></div>
@@ -108,7 +112,7 @@
 
   <button class="button" onclick="resetFilters()">Réinitialiser les filtres </button>
 </div>
-
+</div>
 
 <!-- Fin Filtres ------------------------------------------>
  <!-- Frise et fiche ------------------------------------------> 
