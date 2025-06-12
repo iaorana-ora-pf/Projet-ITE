@@ -242,7 +242,7 @@ a.button {
 }
 
 .timeline-year {
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--main-green);
   font-weight: bold;
   margin-left: 0;
@@ -279,7 +279,7 @@ a.button {
   align-items: center;
   gap: 0.5rem;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 
 .event-grid li:hover {
