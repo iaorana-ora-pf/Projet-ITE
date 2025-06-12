@@ -466,3 +466,11 @@ a.button {
   border-radius: 8px;
   padding: 2rem;
 }
+.subtitle {
+  color: var(--neutral-text);
+  font-size: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  text-align: center;
+}
