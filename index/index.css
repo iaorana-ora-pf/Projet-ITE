@@ -81,6 +81,58 @@
 .hidden {
   display: none;
 }
+.filtres-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.dropdown-checkbox,
+.search-box {
+  flex: 1 1 300px;
+  display: block;
+  min-width: 280px;
+}
+
+/* Modale d’info */
+.info-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.info-modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.info-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #666;
+}
+
+.hidden {
+  display: none;
+}
+
 /*-----------------------------------
   STRUCTURE GÉNÉRALE
 -----------------------------------*/
