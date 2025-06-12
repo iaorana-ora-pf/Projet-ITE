@@ -226,7 +226,7 @@ a.button {
   }
 
 .search-box textarea::placeholder {
-  color: #363B40;
+  color: red;
   font-size: 0.9rem;
   opacity:1;
 }
