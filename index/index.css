@@ -251,7 +251,7 @@ a.button {
   color: #c0392b;
 }
 .contribution-invite {
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -608,10 +608,11 @@ a.button {
 
 .side-panel .contribute-btn {
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   padding: 0.5rem 0.75rem;
   width: auto;
   background-color: #FEBB5F;
+font-weight: 700; 
 }
 
 .side-panel .contribute-btn:hover {
