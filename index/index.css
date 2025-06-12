@@ -31,14 +31,14 @@
   font-size: 1.2rem;
   color: var(--main-green);
   margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.1rem;
 }
 
 .title-4 {
   text-align: left;
   font-size: 1rem;
   color: var(--dark-text);
-  margin-top: 0.4rem;
+  margin-top: 0.6rem;
   margin-bottom: 0.25rem;
 }
 .side-panel-header {
