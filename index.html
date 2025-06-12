@@ -12,14 +12,17 @@
 <body>
   <div id="app-layout" class="layout-with-sidebar">
 <div id="side-panel" class="side-panel">
-  <div class="side-panel-buttons">
-  
-    </div>
+ <div class="side-panel-buttons">
+  <div class="side-btn" onclick="toggleNewModal()" title="À propos">
+    <i class="fa-solid fa-circle-info"></i>
+  </div>
+  <div class="side-btn" onclick="toggleHelpModal()" title="Aide">
+    <i class="fa-solid fa-question"></i>
+  </div>
+  <a href="mailto:contact@paanapf.com" class="side-btn" title="Contact">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
 </div>
-
-<!-- Bouton pour rouvrir la bande -->
-<button id="open-panel-btn" class="open-panel-btn" onclick="toggleSidePanel()" style="display: none;">☰</button>
-
   
 <main class="main-content">
   <div class="container">
