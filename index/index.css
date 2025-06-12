@@ -132,11 +132,11 @@ a.button {
 }
 
 .new-btn {
-  background-color: #ff5722;
+  background-color: var(--main-green);
 }
 
 .new-btn:hover {
-  background-color: #e64a19;
+  background-color: var(--hover-green);
 }
 
 .help-btn,
@@ -456,4 +456,25 @@ a.button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-align: center;
+}
+.contrib-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff5722; /* orange pour attirer l'attention */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.contrib-btn:hover {
+  background-color:#e64a19;
+  transform: scale(1.1);
 }
