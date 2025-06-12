@@ -296,3 +296,7 @@ function toggleSidePanel() {
     openBtn.style.display = 'block';
   }
 }
+function toggleSidePanel() {
+  const layout = document.getElementById("app-layout");
+  layout.classList.toggle("sidebar-hidden");
+}
