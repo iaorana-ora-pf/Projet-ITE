@@ -45,19 +45,38 @@
     <main class="main-content">
       <div class="container">
        <!-- Filtres ------------------------------------------>
+    <div id="filters" class="filters-block">
+  <h3 class="title-3">Filtres</h3>
+  
+  <div class="filtres-ligne">
     
-      <div id="filters" class="filters-block">
-        <h3 class="title-3">Filtres</h3>
-       <div class="filtres-ligne">
-       
-       <div class="dropdown-checkbox" style="position: relative;">
-  <h4 class="title-4" style="display: flex; align-items: center;">
-    Catégories
-     <i class="fa-solid fa-circle-info info-icon" onclick="toggleInfoModal()"></i>
-     </h4>
-  <div id="categoryDropdown"></div>
+    <!-- Bloc Catégories -->
+    <div class="dropdown-checkbox" style="position: relative;">
+      <h4 class="title-4" style="display: flex; align-items: center; justify-content: space-between;">
+        Catégories
+        <i class="fa-solid fa-circle-info info-icon" onclick="toggleInfoModal()"></i>
+      </h4>
+      <div id="categoryDropdown"></div>
+    </div>
+
+    <!-- Bloc Mots-clés -->
+    <div class="dropdown-checkbox">
+      <h4 class="title-4">Mots-clés</h4>
+      <div id="keywordDropdown"></div>
+    </div>
+
+    <!-- Bloc Recherche -->
+    <div class="search-box">
+      <h4 class="title-4">Chercher dans tous les champs</h4>
+      <textarea id="searchInput" placeholder="Tapez le mot recherché" oninput="updateTimeline()"></textarea>
+    </div>
+
+  </div> <!-- .filtres-ligne -->
+
+  <button class="button" onclick="resetFilters()">Réinitialiser</button>
 </div>
 
+<!-- Modale flottante pour l’info Catégories -->
 <div id="infoModal" class="info-modal hidden">
   <div class="info-modal-content">
     <button class="info-close-btn" onclick="toggleInfoModal()">×</button>
@@ -65,36 +84,15 @@
     <p>Ce filtre s’appuie sur les <a href="https://iris.who.int/bitstream/handle/10665/376579/9789240091436-eng.pdf" target="_blank">Fonctions Essentielles de Santé Publique (FESP)</a> de l’OMS, regroupées en 5 grandes familles :</p>
     <ul>
       <li><strong>Gouvernance et pilotage stratégique</strong> : coordination, planification, participation, qualité et équité</li>
-      <li><strong>Données, surveillance et recherche</strong>: production, analyse et utilisation de l'information sanitaire</li>
-      <li><strong>Promotion de la santé et prévention</strong>: actions comportementales, sociales et populationnelles</li>
-      <li><strong>Protection sanitaire et gestion des risques</strong>: réponse aux menaces sanitaires, environnementales ou réglementaires</li>
-      <li><strong>Accès aux services et aux moyens</strong>: ressources humaines, infrastructures, technologies, accès aux soins</li>
+      <li><strong>Données, surveillance et recherche</strong> : production, analyse et utilisation de l'information sanitaire</li>
+      <li><strong>Promotion de la santé et prévention</strong> : actions comportementales, sociales et populationnelles</li>
+      <li><strong>Protection sanitaire et gestion des risques</strong> : réponse aux menaces sanitaires, environnementales ou réglementaires</li>
+      <li><strong>Accès aux services et aux moyens</strong> : ressources humaines, infrastructures, technologies, accès aux soins</li>
     </ul>
     <p>La catégorie <strong>Contexte</strong> regroupe des événements ayant un impact indirect sur la santé publique.</p>
   </div>
 </div>
-
-         
-      </div>   
-        
-         <div class="dropdown-checkbox">
-            <h4 class="title-4">Mots-clés</h4>
-            <div id="keywordDropdown"></div>
-         </div>
-                
-         <div class="search-box">
-          <h4 class="title-4">Chercher dans tous les champs</h4>
-          <textarea id="searchInput" placeholder="Tapez le mot recherché" oninput="updateTimeline()"></textarea>
-         </div>
-       </div> <!-- div class="filtres-ligne" -->
-       
-        <div id="active-filters-section">
-          <h4 class="title-4">Filtres sélectionnés :</h4>
-          <div id="active-filters"></div>
-        </div>
       
-    <button class="button" onclick="resetFilters()">Réinitialiser</button>    
-</div>
 
 <!-- Fin Filtres ------------------------------------------>
  <!-- Frise et fiche ------------------------------------------> 
