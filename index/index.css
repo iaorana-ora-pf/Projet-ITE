@@ -507,7 +507,7 @@ a.button {
   background-color: var(--hover-green);
 }
 .icon {
-  font-size: 1.4rem;
+  font-size: 3rem;
   color: var(--main-green);
   margin-right: 0.5rem;
 }
