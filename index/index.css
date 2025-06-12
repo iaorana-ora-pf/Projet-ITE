@@ -258,7 +258,7 @@ a.button {
 
 .contribution-text {
   margin-top: 3rem
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: var(--dark-text);
   line-height: 1.5;
@@ -609,14 +609,14 @@ a.button {
 
 .side-panel .contribute-btn {
   border-radius: 6px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0.5rem 0.75rem;
   width: auto;
-  background-color: #FEBB5F;
+  background-color: #FE9C1A;
 }
 
 .side-panel .contribute-btn:hover {
-  background-color: #FE9C1A;
+  background-color: #FEBB5F;
 }
 .side-footer {
   margin-top: auto;
