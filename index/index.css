@@ -474,3 +474,40 @@ a.button {
   background-color:#a63917;
   transform: scale(1.1);
 }
+.contribution-banner {
+  background-color: #e6f7ff;
+  border-left: 5px solid var(--link-green);
+  padding: 2rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  color: var(--dark-text);
+  font-size: 1.1rem;
+}
+
+.contribution-banner p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.contribute-button {
+  background-color: var(--link-green);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.contribute-button:hover {
+  background-color: var(--hover-green);
+}
+.icon {
+  font-size: 1.4rem;
+  color: var(--main-green);
+  margin-right: 0.5rem;
+}
