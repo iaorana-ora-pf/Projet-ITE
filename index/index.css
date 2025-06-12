@@ -48,10 +48,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-html, body {
-  height: 100%;
-  margin: 0;
-}
 body {
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
@@ -91,6 +87,17 @@ a:hover {
   padding-bottom: 2rem;
    padding-left: 220px;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 main {
   flex: 1;
 }
