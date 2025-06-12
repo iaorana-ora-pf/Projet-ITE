@@ -592,3 +592,21 @@ a.button {
   cursor: pointer;
   z-index: 999;
 }
+.layout-with-sidebar {
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+.layout-with-sidebar.sidebar-hidden .side-panel {
+  display: none;
+}
+
+.layout-with-sidebar.sidebar-hidden .main-content {
+  margin-left: 0;
+  padding-left: 1.5rem; /* ou comme tu veux */
+}
+
+.side-panel {
+  width: 200px;
+  flex-shrink: 0;
+}
