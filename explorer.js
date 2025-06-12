@@ -300,3 +300,26 @@ function toggleSidePanel() {
   const layout = document.getElementById("app-layout");
   layout.classList.toggle("sidebar-hidden");
 }
+function toggleHelpPanel() {
+  const panel = document.getElementById('help-panel');
+  panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
+}
+
+function toggleHelpModal() {
+  const modal = document.getElementById("help-modal");
+  modal.style.display = modal.style.display === "flex" ? "none" : "flex";
+}
+
+function toggleNewModal() {
+  const modal = document.getElementById("new-modal");
+  modal.style.display = modal.style.display === "flex" ? "none" : "flex";
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("header"); // ← tu avais oublié de définir "header"
+  const main = document.querySelector(".main-content");
+  if (header && main) {
+    const headerHeight = header.offsetHeight;
+    main.style.paddingTop = headerHeight + "px";
+  }
+});
