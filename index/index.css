@@ -71,9 +71,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding-top: 0;
-  display: flex;
-  flex-direction: column;
-}
+ }
 
 ul {
   margin-left: 0;
@@ -96,14 +94,14 @@ a:hover {
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   margin-left: 300px;
 }
 
 .main-content {
- flex: 1;
-  padding: 2rem 1.5rem; /* ✅ plus de padding à gauche suffisant */
-  padding-left: 300px;
+ padding-left: 300px;
+  padding-top: 30px;
+  padding-bottom: 2rem;
 }
 html, body {
   height: 100%;
@@ -546,16 +544,18 @@ a.button {
   margin-right: 0.5rem;
 }
 .side-panel {
-  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100vh;
+  width: 300px; /* ou ta valeur choisie */
   background-color: #f0f8f8;
-  border-right: 1px solid #ccc;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  transition: all 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
 }
 
 .side-panel-text {
