@@ -11,26 +11,23 @@
 </head>
 <body>
 
-<!-- HEADER STICKY ---------------------------------------------------------------------------------------------------------------------------------------->
-<header class="header">
-  <div class="container header-container">
-    <h1 class="title-1">Projet 'ITE</h1>
-    </div>
-</header>
 
 <main class="main-content">
-  <!--TITRE ---------------------------------------------------------------------------------------------------------------------------------------->
+<section class="intro-section">
   <div class="container">
-<div class="intro-hero">
-  <h2>'ITE – La frise santé publique de Polynésie</h2>
-  <p>
-    Explorez les événements de santé publique de manière visuelle, filtrable et contributive.<br>
-    <a href="#apropos" class="small-link">En savoir plus ↓</a>
-  </p>
-  <div class="scroll-down">↓</div>
-</div>
+    <h2 class="title-1">Bienvenue sur le projet 'ITE</h2>
+    <p class="intro-text">
+      'ITE est une <strong>base de connaissances sur la santé publique en Polynésie française</strong>. Elle vise à rassembler, organiser et partager des informations issues de diverses sources pour mieux transmettre.
+    </p>
+    <p class="intro-text">
+      <strong>Projet personnel et collaboratif</strong>, 'ITE est en développement continu. Toute personne peut proposer un événement.
+    </p>
+    <a href="https://forms.gle/KYdBJ4PTWJfuWVFU6" class="button" target="_blank">Proposer un événement</a>
+  </div>
+</section>
 
 <div class="separator-wave"></div>
+  
 <div class="contribution-banner">
   <p>
     🆕 Vous connaissez un événement important ?<br>
@@ -38,10 +35,21 @@
   </p>
 </div>
 
-<h2 class="title-2">Explorer la base de données</h2>
-<p class="subtitle">Filtrez, cherchez et explorez les événements de santé publique</p>
-    <button class="button" onclick="toggleFilters()">Afficher / Masquer les filtres</button>
+<section class="explore-section">
+  <div class="container">
+    <h2 class="title-2">Explorer la base de données</h2>
+    <p class="subtitle">Filtrez, cherchez et explorez les événements de santé publique</p>
+    
+    <div class="explore-buttons">
+      <button class="button" onclick="toggleFilters()">Afficher / Masquer les filtres</button>
+      <button class="button secondary" onclick="toggleHelpModal()">Aide</button>
+    </div>
+
     <div id="filters" class="filters-block">
+      <!-- (tes filtres actuels ici) -->
+    </div>
+  </div>
+</section>
   <!-- Filtres -->
     <div class="filtres-ligne">
     <div class="dropdown-checkbox">
