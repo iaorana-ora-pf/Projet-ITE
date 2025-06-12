@@ -36,9 +36,9 @@
 
 .title-4 {
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--dark-text);
-  margin-top: 0.25rem;
+  margin-top: 0.4rem;
   margin-bottom: 0.25rem;
 }
 .side-panel-header {
@@ -234,7 +234,7 @@ a.button {
 .filter-badge {
   display: inline-block;
   background-color: #d0e9e9;
-  color: var(--main-green);
+  color: var(--dark-text);
   padding: 0.4rem 0.75rem;
   margin: 0.3rem;
   border-radius: 999px;
