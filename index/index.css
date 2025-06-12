@@ -250,7 +250,18 @@ a.button {
 .remove-badge:hover {
   color: #c0392b;
 }
+.contribution-invite {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 
+.contribution-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  line-height: 1.5;
+}
 /*-----------------------------------
   LAYOUT FRISE
 -----------------------------------*/
@@ -600,13 +611,19 @@ a.button {
   font-size: 0.9rem;
   padding: 0.5rem 0.75rem;
   width: auto;
-  background-color: var(--link-green);
+  background-color: #FEBB5F;
 }
 
 .side-panel .contribute-btn:hover {
-  background-color: var(--hover-green);
+  background-color: #FE9C1A;
 }
-
+.side-footer {
+  margin-top: auto;
+  font-size: 0.75rem;
+  color: #888;
+  text-align: center;
+  padding-top: 2rem;
+}
 .close-side-panel {
   position: absolute;
   top: 0.5rem;
