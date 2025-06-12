@@ -323,3 +323,7 @@ window.addEventListener("DOMContentLoaded", function () {
     main.style.paddingTop = headerHeight + "px";
   }
 });
+function toggleCategoryInfo() {
+  const box = document.getElementById("category-info-box");
+  box.classList.toggle("hidden");
+}
