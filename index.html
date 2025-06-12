@@ -10,7 +10,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 <body>
+<!-- Bande latérale gauche -->
+<div id="side-panel" class="side-panel">
+  <button class="close-side-panel" onclick="toggleSidePanel()">×</button>
+  <p class="side-panel-text">Participez à l’enrichissement !</p>
+  <div class="side-panel-buttons">
+    <button class="new-btn" onclick="toggleNewModal()" title="À propos">i</button>
+    <button class="help-btn" onclick="toggleHelpModal()" title="Aide">?</button>
+    <a href="mailto:contact@paanapf.com" class="contact-btn" title="Contact">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a href="https://forms.gle/KYdBJ4PTWJfuWVFU6" target="_blank" class="contribute-btn">➕ Proposer</a>
+  </div>
+</div>
 
+<!-- Bouton pour rouvrir la bande -->
+<button id="open-panel-btn" class="open-panel-btn" onclick="toggleSidePanel()" style="display: none;">☰</button>
+
+  
 <main class="main-content">
   <div class="container">
     <h1 class="title-1">Le projet 'ITE</h1>
