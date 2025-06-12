@@ -492,3 +492,60 @@ a.button {
 .contribution-banner a:hover {
   color: var(--hover-green);
 }
+.intro-section {
+  background-color: #f9f9f9;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: var(--neutral-text);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+.separator-wave {
+  height: 40px;
+  background: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  margin: -1rem 0 1rem;
+}
+.subtitle {
+  color: var(--neutral-text);
+  font-size: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.explore-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.button.secondary {
+  background-color: #e0e0e0;
+  color: var(--main-green);
+}
+.timeline-section {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 2rem;
+  animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.event-details-container {
+  background: #f9f9f9;
+}
