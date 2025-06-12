@@ -147,7 +147,7 @@ a.button {
 
 .help-btn:hover,
 .contact-btn:hover {
-  background-color: white;
+  background-color: var(--hover-green);
 }
 
 /*-----------------------------------
@@ -471,6 +471,6 @@ a.button {
 }
 
 .contrib-btn:hover {
-  background-color:white;
+  background-color:#a63917;
   transform: scale(1.1);
 }
