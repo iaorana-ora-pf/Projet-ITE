@@ -8,7 +8,7 @@
 }
 /* Titles -----------*/
 .title-1 { text-align: center; color: #166F76; font-size: 3rem; font-weight: bold; margin-bottom: 0; }
-.title-2 { text-align: center; font-size: 1.8rem; color: #5F5F5F; margin-top: 0; }
+.title-2 { text-align: center; font-size: 1.8rem; color: #5F5F5F; margin-top: 0; margin-bottom: 3rem;}
 .title-3 { text-align: left; font-size: 1.4rem; color: #5F5F5F; margin-top: 2rem; margin-bottom: 1rem; }
 .title-4 { text-align: left; font-size: 1.2rem; color: var(--dark-text); margin-bottom: 1rem; }
 
