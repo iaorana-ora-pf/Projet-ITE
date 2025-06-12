@@ -10,56 +10,38 @@
 </head>
 <body>
 
-<!-- HEADER STICKY ---------------------------------------------------------------------------------------------------------------------------------------->
-<header class="header">
-  <div class="container header-container">
-    <h1 class="title-1">Projet 'ITE</h1>
-    </div>
-</header>
-
 <main class="main-content">
-  <!--TITRE ---------------------------------------------------------------------------------------------------------------------------------------->
   <div class="container">
-
-<p class="intro-bloc">
-'ITE est une <strong>base de connaissances sur la santé publique en Polynésie française</strong>.
-Elle vise à rassembler, organiser et partager des informations issues de diverses sources. L’objectif est simple : mieux connaître pour mieux transmettre. 
-Présenté sous forme de frise chronologique interactive, 'ITE permet d'explorer les événements de santé publique (par année, catégories et mots-clés) 
-et de consulter des fiches descriptives détaillées.<br>
-Porté par Emmanuelle RUPP-TERRIS, 'ITE est un projet personnel, en développement continu et ouvert à tous. 
-Il ne prétend pas à l’exhaustivité, mais s’enrichit progressivement grâce à une démarche collaborative et aux données recueillies au fil du temps.
-<strong>N'hésitez pas à proposer un événement grâce au <a href="https://forms.gle/KYdBJ4PTWJfuWVFU6" target="_blank" rel="noopener noreferrer">formulaire en ligne </a>.</strong> 
-Chaque contribution est étudiée avec attention.
-</p>
-
-<h2 class="title-2"> Explorer la base de données</h2>   
-    <button class="button" onclick="toggleFilters()">Afficher / Masquer les filtres</button>
+    <h1 class="title-1"> LE projet 'ITE, </h1>
+    <h2 class="title-2"> La base de connaissances dédiée à la santé publique en Polynésie française</h2>
+    <h3 class="title-2"> Explorer la base de données</h3>   
+ 
+  <button class="button" onclick="toggleFilters()">MAsquer / afficher les filtres</button>
     <div id="filters" class="filters-block">
-  <!-- Filtres -->
-    <div class="filtres-ligne">
-    <div class="dropdown-checkbox">
-      <h4 class="title-4">Catégories</h4>
-      <div id="categoryDropdown"></div>
+     <div class="filtres-ligne">
+       <div class="dropdown-checkbox">
+        <h4 class="title-4">Catégories</h4>
+        <div id="categoryDropdown"></div>
+      </div>
+      <div class="dropdown-checkbox">
+        <h4 class="title-4">Mots-clés</h4>
+        <div id="keywordDropdown"></div>
+      </div>
+      <div class="search-box">
+        <h4 class="title-4">Recherche dans toutes les métadonnées</h4>
+        <textarea id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()"></textarea>
+      </div>
     </div>
-
-    <div class="dropdown-checkbox">
-      <h4 class="title-4">Mots-clés</h4>
-      <div id="keywordDropdown"></div>
-    </div>
-
-    <div class="search-box">
-  <h4 class="title-4">Recherche dans toutes les métadonnées</h4>
-  <textarea id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()"></textarea>
-</div>
-</div>
-
+      
   <div id="active-filters-section">
     <h4 class="title-4">Filtres sélectionnés :</h4>
     <div id="active-filters"></div>
   </div>
-  <button class="button" onclick="resetFilters()">Réinitialiser</button>
+    <button class="button" onclick="resetFilters()">Réinitialiser</button>
  </div>
-</div>    
+</div>   
+
+  
 <div class="timeline-layout">
   <div id="timeline" class="timeline-section"></div>
   <div id="event-details-container" class="event-details-container">
@@ -132,7 +114,16 @@ Chaque contribution est étudiée avec attention.
     <li>Utilisez les flèches “◀” et “▶” pour naviguer entre les événements (filtrés).</li>
    <li>Le bouton "Réinitialiser" efface tous les filtres et permet de revenir à l'affichage complet.</li>
 </ul>
-
+<p class="intro-bloc">
+'ITE est une <strong>base de connaissances sur la santé publique en Polynésie française</strong>.
+Elle vise à rassembler, organiser et partager des informations issues de diverses sources. L’objectif est simple : mieux connaître pour mieux transmettre. 
+Présenté sous forme de frise chronologique interactive, 'ITE permet d'explorer les événements de santé publique (par année, catégories et mots-clés) 
+et de consulter des fiches descriptives détaillées.<br>
+Porté par Emmanuelle RUPP-TERRIS, 'ITE est un projet personnel, en développement continu et ouvert à tous. 
+Il ne prétend pas à l’exhaustivité, mais s’enrichit progressivement grâce à une démarche collaborative et aux données recueillies au fil du temps.
+<strong>N'hésitez pas à proposer un événement grâce au <a href="https://forms.gle/KYdBJ4PTWJfuWVFU6" target="_blank" rel="noopener noreferrer">formulaire en ligne </a>.</strong> 
+Chaque contribution est étudiée avec attention.
+</p>
   </div>
 </div>
 </section>
