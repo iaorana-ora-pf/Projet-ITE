@@ -59,24 +59,7 @@
       <div id="categoryDropdown"></div>
     </div>
 
-    <!-- Bloc Mots-clés -->
-    <div class="dropdown-checkbox">
-      <h4 class="title-4">Mots-clés</h4>
-      <div id="keywordDropdown"></div>
-    </div>
-
-    <!-- Bloc Recherche -->
-    <div class="search-box">
-      <h4 class="title-4">Chercher dans tous les champs</h4>
-      <textarea id="searchInput" placeholder="Tapez le mot recherché" oninput="updateTimeline()"></textarea>
-    </div>
-
-  </div> <!-- .filtres-ligne -->
-
-  <button class="button" onclick="resetFilters()">Réinitialiser</button>
-</div>
-
-<!-- Modale flottante pour l’info Catégories -->
+    <!-- Modale flottante pour l’info Catégories -->
 <div id="infoModal" class="info-modal hidden">
   <div class="info-modal-content">
     <button class="info-close-btn" onclick="toggleInfoModal()">×</button>
@@ -93,6 +76,37 @@
   </div>
 </div>
       
+
+    <!-- Bloc Mots-clés -->
+ <div class="dropdown-checkbox" style="position: relative;">
+  <h4 class="title-4" style="display: flex; align-items: center; gap: 8px;">
+    <span style="flex-grow: 1;">Mots-clés</span>
+    <i class="fa-solid fa-circle-info info-icon" onclick="toggleKeywordModal()" title="À propos des mots-clés"></i>
+  </h4>
+  <div id="keywordDropdown"></div>
+</div>
+
+<!-- ✅ Modale info mots-clés -->
+<div id="keywordModal" class="info-modal hidden">
+  <div class="info-modal-content">
+    <button class="info-close-btn" onclick="toggleKeywordModal()">×</button>
+    <h3 class="title-3">À propos des mots-clés</h3>
+    <p>Les événements peuvent être filtrés par <strong>mots-clés</strong>, issus autant que possible du thésaurus <a href="https://decs.bvsalud.org/fr" target="_blank">DeCS</a>.</p>
+    <p>Les mots-clés permettent une recherche plus précise selon les thématiques.</p>
+  </div>
+</div>
+
+    <!-- Bloc Recherche -->
+    <div class="search-box">
+      <h4 class="title-4">Chercher dans tous les champs (titre, description, catégorie ou mots-clés).</h4>
+      <textarea id="searchInput" placeholder="Tapez le mot recherché" oninput="updateTimeline()"></textarea>
+    </div>
+
+  </div> <!-- .filtres-ligne -->
+
+  <button class="button" onclick="resetFilters()">Réinitialiser</button>
+</div>
+
 
 <!-- Fin Filtres ------------------------------------------>
  <!-- Frise et fiche ------------------------------------------> 
