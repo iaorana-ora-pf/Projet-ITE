@@ -3,122 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>'ITE - Frise santé publique</title>
-  <link rel="stylesheet" href="index/index.css">
+  <title>'ITE – Base de connaissances</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-<header class="header">
-  <div class="container header-container">
-    <h1 class="title-1">Projet 'ITE</h1>
-  </div>
-</header>
-
-<main class="main-content">
-  <section class="intro-section">
-    <div class="container">
-      <h2 class="title-1">Bienvenue sur le projet 'ITE</h2>
-      <p class="intro-text">
-        'ITE est une <strong>base de connaissances sur la santé publique en Polynésie française</strong>. Elle vise à rassembler, organiser et partager des informations issues de diverses sources pour mieux transmettre.
-      </p>
-      <p class="intro-text">
-        <strong>Projet personnel et collaboratif</strong>, 'ITE est en développement continu. Toute personne peut proposer un événement.
-      </p>
-      <a href="https://forms.gle/KYdBJ4PTWJfuWVFU6" class="button" target="_blank">Proposer un événement</a>
+  <header class="header">
+    <div class="container header-container">
+      <h1 class="title-1">Projet 'ITE</h1>
     </div>
-  </section>
+  </header>
 
-  <div class="separator-wave"></div>
-
-  <div class="contribution-banner">
-    <p>
-      🆕 Vous connaissez un événement important ?<br>
-      <strong><a href="https://forms.gle/KYdBJ4PTWJfuWVFU6" target="_blank" rel="noopener noreferrer">Contribuez à enrichir la frise en le proposant ici</a></strong>.
-    </p>
-  </div>
-
-  <section class="explore-section">
-    <div class="container">
-      <h2 class="title-2">Explorer la base de données</h2>
-      <p class="subtitle">Filtrez, cherchez et explorez les événements de santé publique</p>
-
-      <div class="button-group">
-        <button class="button" onclick="toggleFilters()">Afficher / Masquer les filtres</button>
-        <button class="button secondary" onclick="toggleHelpModal()">Aide</button>
+  <main class="main-content">
+    <section class="intro-section">
+      <div class="container">
+        <h2 class="title-1">Bienvenue sur le projet 'ITE</h2>
+        <p class="intro-text">'ITE est une <strong>base de connaissances sur la santé publique en Polynésie française</strong>. Elle vise à rassembler, organiser et partager des informations issues de diverses sources pour mieux transmettre.</p>
+        <p class="intro-text"><strong>Projet personnel et collaboratif</strong>, 'ITE est en développement continu. Toute personne peut proposer un événement.</p>
+        <a href="https://forms.gle/KYdBJ4PTWJfuWVFU6" class="button" target="_blank">Proposer un événement</a>
       </div>
+    </section>
 
-      <div id="filters" class="filters-block">
-        <div class="filtres-ligne">
-          <div class="dropdown-checkbox">
-            <h4 class="title-4">Catégories</h4>
-            <div id="categoryDropdown"></div>
-          </div>
-          <div class="dropdown-checkbox">
-            <h4 class="title-4">Mots-clés</h4>
-            <div id="keywordDropdown"></div>
-          </div>
-          <div class="search-box">
-            <h4 class="title-4">Recherche dans toutes les métadonnées</h4>
-            <textarea id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()"></textarea>
-          </div>
+    <div class="separator-wave"></div>
+
+    <div class="contribution-banner">
+      <p>🆕 Vous connaissez un événement important ?<br>
+      <strong><a href="https://forms.gle/KYdBJ4PTWJfuWVFU6" target="_blank" rel="noopener noreferrer">Contribuez à enrichir la frise en le proposant ici</a></strong>.</p>
+    </div>
+
+    <section class="explore-section">
+      <div class="container">
+        <h2 class="title-2">Explorer la base de données</h2>
+        <p class="subtitle">Filtrez, cherchez et explorez les événements de santé publique</p>
+
+        <div class="explore-buttons">
+          <button class="button" onclick="toggleFilters()">Afficher / Masquer les filtres</button>
+          <button class="button secondary" onclick="toggleHelpModal()">Aide</button>
         </div>
 
-        <div id="active-filters-section">
-          <h4 class="title-4">Filtres sélectionnés :</h4>
-          <div id="active-filters"></div>
+        <div id="filters" class="filters-block">
+          <div class="filtres-ligne">
+            <div class="dropdown-checkbox">
+              <h4 class="title-4">Catégories</h4>
+              <div id="categoryDropdown"></div>
+            </div>
+
+            <div class="dropdown-checkbox">
+              <h4 class="title-4">Mots-clés</h4>
+              <div id="keywordDropdown"></div>
+            </div>
+
+            <div class="search-box">
+              <h4 class="title-4">Recherche dans toutes les métadonnées</h4>
+              <textarea id="searchInput" placeholder="Recherche globale..." oninput="updateTimeline()"></textarea>
+            </div>
+          </div>
+
+          <div id="active-filters-section">
+            <h4 class="title-4">Filtres sélectionnés :</h4>
+            <div id="active-filters"></div>
+          </div>
+          <button class="button" onclick="resetFilters()">Réinitialiser</button>
         </div>
-        <button class="button" onclick="resetFilters()">Réinitialiser</button>
+      </div>
+    </section>
+
+    <div class="timeline-layout">
+      <div id="timeline" class="timeline-section"></div>
+      <div id="event-details-container" class="event-details-container">
+        <p style="text-align:center; font-style:italic; color:#555;">
+          Cliquez sur un événement pour accéder à sa fiche détaillée.
+        </p>
       </div>
     </div>
-  </section>
+  </main>
 
-  <div class="timeline-layout">
-    <div id="timeline" class="timeline-section"></div>
-    <div id="event-details-container" class="event-details-container">
-      <p style="text-align:center; font-style:italic; color:#555;">
-        Cliquez sur un événement pour accéder à sa fiche détaillée.
-      </p>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2025 • 'ITE • Tous droits réservés •</p>
+    </div>
+  </footer>
+
+  <div class="floating-buttons">
+    <div class="help-btn" onclick="toggleHelpModal()" title="Aide">?</div>
+    <a href="mailto:contact@paanapf.com" class="contact-btn" title="Contact">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+  </div>
+
+  <div id="help-modal" class="help-modal">
+    <div class="help-modal-content">
+      <button class="close-btn" onclick="toggleHelpModal()">×</button>
+      <h3 class="title-3">Aide à l'utilisation</h3>
+      <p>Explication des filtres, métadonnées, frise, navigation, etc.</p>
     </div>
   </div>
-</main>
 
-<footer class="footer">
-  <div class="container">
-    <p class="footer-text">
-      © 2025 • 'ITE • Tous droits réservés
-    </p>
-  </div>
-</footer>
-
-<!-- Aide flottante -->
-<div class="floating-buttons">
-  <div class="help-btn" onclick="toggleHelpModal()" title="Aide">?</div>
-  <a href="mailto:contact@paanapf.com" class="contact-btn" title="Contact">
-    <i class="fa-solid fa-envelope"></i>
-  </a>
-</div>
-
-<div id="help-modal" class="help-modal">
-  <div class="help-modal-content">
-    <button class="close-btn" onclick="toggleHelpModal()">&times;</button>
-    <h3 class="title-3">Aide à l'utilisation</h3>
-    <p>Contenu détaillé de l'aide ici...</p>
-  </div>
-</div>
-
-<script src="explorer.js"></script>
-<script>
-  function toggleFilters() {
-    const el = document.getElementById("filters");
-    el.style.display = el.style.display === "none" ? "block" : "none";
-  }
-
-  function toggleHelpModal() {
-    const modal = document.getElementById("help-modal");
-    modal.style.display = modal.style.display === "flex" ? "none" : "flex";
-  }
-</script>
-
+  <script src="explorer.js"></script>
+  <script>
+    function toggleFilters() {
+      const el = document.getElementById("filters");
+      el.style.display = el.style.display === "none" ? "block" : "none";
+    }
+    function toggleHelpModal() {
+      const modal = document.getElementById("help-modal");
+      modal.style.display = modal.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
 </body>
 </html>
