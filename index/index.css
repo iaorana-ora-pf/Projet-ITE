@@ -574,7 +574,10 @@ a.button {
   margin-top: 2rem;
   flex-wrap: wrap;      /* ✅ au cas où ça déborde en hauteur */
 }
-
+.side-panel-separator {
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
 
 .side-panel button,
 .side-panel a {
