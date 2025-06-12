@@ -518,7 +518,7 @@ a.button {
   height: 100vh;
   background-color: #f0f8f8;
   border-right: 1px solid #ccc;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -559,7 +559,7 @@ a.button {
 .side-panel .contribute-btn {
   border-radius: 6px;
   font-size: 0.9rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem;
   width: auto;
   background-color: var(--link-green);
 }
@@ -577,4 +577,19 @@ a.button {
   font-size: 1.2rem;
   border: none;
   cursor: pointer;
+}
+
+/* Bouton flottant pour rouvrir */
+.open-panel-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background-color: var(--main-green);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 999;
 }
