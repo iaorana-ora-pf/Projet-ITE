@@ -224,19 +224,18 @@ a.button {
   LAYOUT FRISE
 -----------------------------------*/
 .timeline-layout {
-  display: stretch;
-  align-items: flex-start;
+ display: flex;
+  align-items: stretch;
+  justify-content: space-between;
   gap: 1.5rem;
-  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1.5rem;
 }
 
 .timeline-section {
   position: relative;
   flex: 2;
-  padding: 1.5rem 1rem 1.5rem 0; /* pas de padding à droite */
+  padding: 1.5rem 0 1.5rem 0; /* pas de padding à droite */
   margin-top: 2rem;
   overflow-y: auto;
 }
@@ -315,17 +314,13 @@ a.button {
 -----------------------------------*/
 .event-details-container {
   flex: 1;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-  padding: 1.5rem;
   max-width: 450px;
   min-width: 300px;
   width: 100%;
-  font-size: 0.95rem;
-  color: #333;
-  min-height: 100%;
-   height: auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 
 /*-----------------------------------
