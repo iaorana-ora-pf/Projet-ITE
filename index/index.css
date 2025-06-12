@@ -660,3 +660,32 @@ a.button {
 .side-btn:hover {
   background-color: var(--hover-green);
 }
+.side-buttons-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.side-inline-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--main-green);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.side-inline-btn:hover {
+  background-color: var(--hover-green);
+}
