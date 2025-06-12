@@ -147,7 +147,7 @@ a.button {
 
 .help-btn:hover,
 .contact-btn:hover {
-  background-color: var(--hover-green);
+  background-color: white;
 }
 
 /*-----------------------------------
@@ -454,8 +454,8 @@ a.button {
   text-align: center;
 }
 .contrib-btn {
-  width: 50px;
-  height: 50px;
+  width:44px;
+  height: 44px;
   border-radius: 50%;
   background-color: #ff5722; /* orange pour attirer l'attention */
   color: white;
@@ -471,6 +471,6 @@ a.button {
 }
 
 .contrib-btn:hover {
-  background-color:#e64a19;
+  background-color:white;
   transform: scale(1.1);
 }
