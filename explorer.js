@@ -356,3 +356,7 @@ function toggleInfoModal() {
   const modal = document.getElementById("infoModal");
   modal.classList.toggle("hidden");
 }
+function toggleKeywordModal() {
+  const modal = document.getElementById("keywordModal");
+  modal.classList.toggle("hidden");
+}
