@@ -50,12 +50,11 @@
         <h3 class="title-3">Filtres</h3>
        <div class="filtres-ligne">
        
-       <div class="dropdown-checkbox">
-  <h4 class="title-4">
+       <div class="dropdown-checkbox" style="position: relative;">
+  <h4 class="title-4" style="display: flex; align-items: center;">
     Catégories
-    <i class="fa-solid fa-circle-info info-icon" onclick="toggleCategoryInfo()"></i>
-  </h4>
-  <div id="category-info-box" class="category-info-box hidden">
+    <i class="fa-solid fa-circle-info info-icon" onclick="toggleCategoryTooltip(event)"></i>
+    <div id="categoryTooltip" class="tooltip-floating hidden">
   <p> Les événements peuvent être filtrés par <strong>"Catégorie"</strong>. Ce filtre s’appuie sur les <a href="https://iris.who.int/bitstream/handle/10665/376579/9789240091436-eng.pdf" target="_blank">
           Fonctions Essentielles de Santé Publique (FESP)</a> établies par l’OMS. Pour faciliter leur utilisation, les 12 FESP ont été regroupées en 5 grandes catégories :</p>
       <ul>     
@@ -66,9 +65,10 @@
       <li><strong>Accès aux services et aux moyens :</strong>  ressources humaines, infrastructures, technologies, accès aux soins </li>
         </ul>
     <p> La catégorie <strong>"Contexte"</strong> regroupe des événements ayant un impact indirect sur la santé publique. Un événement peut appartenir à plusieurs catégories.<br>
- </div>
- <div id="categoryDropdown"></div>
-
+  </div>
+  </h4>
+  <div id="categoryDropdown"></div>
+</div>
        
       </div>   
         
