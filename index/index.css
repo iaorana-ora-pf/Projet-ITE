@@ -93,7 +93,7 @@ a:hover {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -543,7 +543,7 @@ a.button {
   margin-right: 0.5rem;
 }
 .side-panel {
-  width: 200px;
+  width: 300px;
   height: 100vh;
   background-color: #f0f8f8;
   border-right: 1px solid #ccc;
