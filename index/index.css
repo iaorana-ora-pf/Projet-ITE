@@ -216,7 +216,7 @@ a.button {
 .dropdown-checkbox div {
   padding: 10px;
   overflow-y: auto;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .search-box textarea {
@@ -227,8 +227,8 @@ a.button {
 
 .search-box textarea::placeholder {
   color: var(--light-bg);
-  font-size: 0.85rem;
-  opacity: 1.2;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 .filter-badge {
