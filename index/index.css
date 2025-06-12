@@ -78,11 +78,13 @@ a:hover {
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  margin-left: 220px;
 }
 
 .main-content {
   padding-top: 30px;
   padding-bottom: 2rem;
+   padding-left: 220px;
 }
 
 /*-----------------------------------
