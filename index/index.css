@@ -469,3 +469,44 @@ a:hover {
   border: none;
   cursor: pointer;
 }
+/* Bouton de fermeture en bas */
+.close-btn-bottom {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--main-green);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn-bottom:hover {
+  background-color: var(--hover-green);
+}
+
+/* Modale positionnée à droite avec une marge */
+.help-modal {
+  display: none;
+  position: fixed;
+  top: 0; bottom: 0;
+  right: 2rem; /* marge droite */
+  justify-content: flex-end; /* pousser à droite */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.help-modal-content {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-right: 2rem; /* espace par rapport au bord droit */
+}
