@@ -348,3 +348,7 @@ function closeTooltipOnClickOutside(e) {
     document.removeEventListener("click", closeTooltipOnClickOutside);
   }
 }
+function toggleInfoModal() {
+  const modal = document.getElementById("infoModal");
+  modal.classList.toggle("hidden");
+}
