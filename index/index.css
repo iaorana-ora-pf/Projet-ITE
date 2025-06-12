@@ -117,14 +117,14 @@ a.button {
 .new-btn,
 .help-btn,
 .contact-btn {
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -329,7 +329,7 @@ a.button {
 -----------------------------------*/
 .floating-buttons {
   position: fixed;
-  bottom: 1.5rem;
+   top: 1rem;
   right: 1.5rem;
   display: flex;
   flex-direction: row;
