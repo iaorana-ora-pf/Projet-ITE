@@ -228,7 +228,7 @@ a.button {
 .search-box textarea::placeholder {
   color: #363B40;
   font-size: 0.9rem;
-  opacity: 0.8;
+  opacity:1;
 }
 
 .filter-badge {
