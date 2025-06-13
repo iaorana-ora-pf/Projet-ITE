@@ -143,4 +143,269 @@
       "end": 1996
     }
   ]
+  "2024": [
+    {
+      "name": "Enquête Ea Piahi – Santé jeune",
+      "category": [
+        "Données",
+        "surveillance et recherche"
+      ],
+      "keywords": [
+        "Enquêtes de santé",
+        "Adolescent",
+        "Comportement"
+      ],
+      "description": "L’enquête cible les élèves de la 5ème à la 1ère dans les établissements scolaires publics et privés des différents archipels de la Polynésie. Avec la participation de 3118 élèves, l’enquête de 2024 révèle des résultats encourageants, mais aussi des problématiques inquiétantes qui nécessitent des réponses adaptées.",
+      "sources": [
+        {
+          "label": "Enquête Ea Piahi",
+          "url": "https://www.calameo.com/read/0074445001db78a204940"
+        }
+      ],
+      "start": 2024,
+      "end": 2024
+    },
+    {
+      "name": "Données sur la santé - Jeunes",
+      "category": [
+        "Données",
+        "surveillance et recherche"
+      ],
+      "keywords": [
+        "Enquêtes de santé",
+        "Adolescent",
+        "Comportement"
+      ],
+      "description": "Points positifs : Activité physique régulière, Bon soutien familial, Bonne santé perçue\n\nPoints d’alerte : Hausse de la consommation de cannabis, Usage excessif des écrans (sommeil, concentration), Santé mentale en dégradation (isolement, pensées suicidaires), Surpoids et obésité toujours préoccupants",
+      "sources": [
+        {
+          "label": "Enquête Ea Piahi",
+          "url": "https://www.calameo.com/read/0074445001db78a204940"
+        }
+      ],
+      "start": 2024,
+      "end": 2024
+    }
+  ],
+  "2020": [
+    {
+      "name": "1er rapport du Registre des cancers",
+      "category": [
+        "Données",
+        "surveillance et recherche"
+      ],
+      "keywords": [
+        "Tumeurs",
+        "Registres de Maladies"
+      ],
+      "description": "Le Registre des Cancers de Polynésie française (RCPf) a publié un premier rapport en 2020 présentant les données de 2015.",
+      "sources": [
+        {
+          "label": "Statistiques du registre des cancers de Polynésie française Chiffres 2015",
+          "url": "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2020/02/Chiffres2015_RCPF.pdf"
+        }
+      ],
+      "start": 2020,
+      "end": 2020
+    }
+  ],
+  "2015": [
+    {
+      "name": "Données sur la santé - Cancer",
+      "category": [
+        "Données",
+        "surveillance et recherche"
+      ],
+      "keywords": [
+        "Tumeurs"
+      ],
+      "description": "749 cas de cancers diagnostiqués en 2015.\nCette même année, d’après l’analyse des certificats médicaux de décès, 365 décès avaient pour cause initiale une tumeur maligne (162 chez la femme et 203 chez l’homme). Chez la femme, les 2 premières causes de décès par cancer en 2015 étaient le cancer du sein et le cancer broncho-pulmonaire. Chez l’homme, les 2 premières causes de décès par cancer en 2015 étaient le cancer broncho-pulmonaire et le cancer du foie.",
+      "sources": [
+        {
+          "label": "Statistiques du registre des cancers de Polynésie française Chiffres 2015",
+          "url": "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2020/02/Chiffres2015_RCPF.pdf"
+        }
+      ],
+      "start": 2015,
+      "end": 2015
+    }
+  ],
+  "2010": [
+    {
+      "name": "Enquête santé - MNT",
+      "category": [
+        "Données",
+        "surveillance et recherche"
+      ],
+      "keywords": [
+        "Enquêtes de santé",
+        "Maladies non transmissibles",
+        "Facteurs de risque"
+      ],
+      "description": "En 2010, la Polynésie a réalisé cette enquête transversale fondée sur la méthodologie STEPwise de l’OMS. L’objectif était de cerner les facteurs de risque (tabac, obésité, hypertension, alimentation, sédentarité) des maladies non transmissibles à l’aide de questionnaires et de mesures physiques sur environ 3 500 adultes.",
+      "sources": [
+        "Bertrand S, Berry AL. Enquête santé 2010 en Polynésie française : surveillance des facteurs de risque des maladies non\ntransmissibles. Bull Épidémiol Hebd. 2013",
+        {
+          "label": "(28-29):326-32.",
+          "url": "https://beh.santepubliquefrance.fr/beh/2013/28-29/pdf/2013_28-29_1.pdf"
+        }
+      ],
+      "start": 2010,
+      "end": 2010
+    }
+  ],
+  "1772": [
+    {
+      "name": "1ere épidémie de grippe",
+      "category": [
+        "Données",
+        "surveillance et recherche"
+      ],
+      "keywords": [
+        "Épidémies",
+        "Grippe humaine"
+      ],
+      "description": "Tahiti fut atteinte dès 1772 par une épidémie de grippe, et jusqu'en 1854, la\npopulation fut frappée à douze reprises au moins par des épisodes épidémiques.",
+      "sources": [
+        {
+          "label": "Atlas de la Polynésie française \"L'histoire démographique\" 1993",
+          "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-08/38895.pdf?utm_source=chatgpt.com"
+        }
+      ],
+      "start": 1772,
+      "end": 1772
+    }
+  ],
+  "1863": [
+    {
+      "name": "Épidémie de variole aux Marquises",
+      "category": [
+        "Données",
+        "surveillance et recherche"
+      ],
+      "keywords": [
+        "Épidémies",
+        "Variole"
+      ],
+      "description": "En août 1863, l’aviso Le Diamant accoste à Nuku Hiva avec à son bord des Polynésiens rapatriés du Pérou, dont plusieurs étaient infectés par la variole. Malgré les tentatives d’isolement, la maladie se propage rapidement à Nuku Hiva et Ua Pou, touchant surtout les populations indigènes. En mars 1864, Nuku Hiva aurait perdu la moitié de sa population (958 morts pour 998 survivants), et Ua Pou, les deux tiers.\nEn février 1864, un chirurgien est envoyé pour vacciner la population à Taiohae, alors que l’épidémie déclinait.",
+      "sources": [
+        {
+          "label": "Atlas de la Polynésie française \"L'histoire démographique\" 1993",
+          "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-08/38895.pdf?utm_source=chatgpt.com"
+        }
+      ],
+      "start": 1863,
+      "end": 1864
+    }
+  ],
+  "1864": [
+    {
+      "name": "Épidémie de variole aux Marquises",
+      "category": [
+        "Données",
+        "surveillance et recherche"
+      ],
+      "keywords": [
+        "Épidémies",
+        "Variole"
+      ],
+      "description": "En août 1863, l’aviso Le Diamant accoste à Nuku Hiva avec à son bord des Polynésiens rapatriés du Pérou, dont plusieurs étaient infectés par la variole. Malgré les tentatives d’isolement, la maladie se propage rapidement à Nuku Hiva et Ua Pou, touchant surtout les populations indigènes. En mars 1864, Nuku Hiva aurait perdu la moitié de sa population (958 morts pour 998 survivants), et Ua Pou, les deux tiers.\nEn février 1864, un chirurgien est envoyé pour vacciner la population à Taiohae, alors que l’épidémie déclinait.",
+      "sources": [
+        {
+          "label": "Atlas de la Polynésie française \"L'histoire démographique\" 1993",
+          "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-08/38895.pdf?utm_source=chatgpt.com"
+        }
+      ],
+      "start": 1863,
+      "end": 1864
+    }
+  ],
+  "1918": [
+    {
+      "name": "Epidémie de grippe espagnole",
+      "category": [
+        "Données",
+        "surveillance et recherche",
+        "Protection sanitaire et gestion des risques"
+      ],
+      "keywords": [
+        "Épidémies",
+        "Grippe humaine"
+      ],
+      "description": "En novembre 1918, la grippe espagnole arrive à Tahiti via deux navires venus de San Francisco. L’alerte sanitaire tarde, et l’épidémie se propage rapidement, notamment à Tahiti, Moorea et les îles Sous-le-Vent. Les archipels périphériques (Tuamotu, Australes, Marquises) sont épargnés grâce à des mesures sanitaires. On estime à plus de 3 000 morts en un mois et jusqu’à 15 % de la population décimée dans certaines îles.",
+      "sources": [
+        {
+          "label": "Atlas de la Polynésie française \"L'histoire démographique\" 1993",
+          "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-08/38895.pdf?utm_source=chatgpt.com"
+        }
+      ],
+      "start": 1918,
+      "end": 1918
+    }
+  ],
+  "1850": [
+    {
+      "name": "Maladies majeures vers 1850",
+      "category": [
+        "Données",
+        "surveillance et recherche"
+      ],
+      "keywords": [
+        "Maladies sexuellement transmissibles",
+        "Tuberculose",
+        "Dysenterie"
+      ],
+      "description": "Vers 1845–1865, la Polynésie française fait face à une forte prévalence des maladies sexuellement transmissibles. Près d’un tiers des hospitalisations à Tahiti sont dues à des infections vénériennes graves.\nParallèlement, la tuberculose devient une cause majeure de mortalité, touchant particulièrement Tahiti et les Marquises. Elle est responsable d’environ un tiers des décès, évoluant très rapidement. \nEnfin, la dysenterie sévit de manière endémique à Tahiti, avec des poussées épidémiques périodiques.",
+      "sources": [
+        {
+          "label": "Atlas de la Polynésie française \"L'histoire démographique\" 1993",
+          "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-08/38895.pdf?utm_source=chatgpt.com"
+        }
+      ],
+      "start": 1850,
+      "end": 1850
+    }
+  ],
+  "1931": [
+    {
+      "name": "Principales causes de mortalité",
+      "category": [
+        "Données",
+        "surveillance et recherche"
+      ],
+      "keywords": [
+        "Mortalité"
+      ],
+      "description": "Entre 1922 et 1931, selon les statistiques démographiques de Papeete, 41,4 % des décès sont dus aux maladies infectieuses et parasitaires, dont la tuberculose. Les maladies respiratoires (14 %) et digestives (4,3 %) complètent ce tableau.\nEnsemble, ces trois causes représentent près des deux tiers des décès durant cette période.",
+      "sources": [
+        {
+          "label": "Atlas de la Polynésie française \"L'histoire démographique\" 1993",
+          "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-08/38895.pdf?utm_source=chatgpt.com"
+        }
+      ],
+      "start": 1931,
+      "end": 1931
+    }
+  ],
+  "1986": [
+    {
+      "name": "Principales causes de mortalité",
+      "category": [
+        "Données",
+        "surveillance et recherche"
+      ],
+      "keywords": [
+        "Mortalité"
+      ],
+      "description": "Les maladies infectieuses ne représentent plus que 15,6 % des décès, soit une baisse de près de 90 % par rapport aux années 1920.\nCette réduction est liée aux progrès en vaccination, accès aux soins et surveillance sanitaire.",
+      "sources": [
+        {
+          "label": "Atlas de la Polynésie française \"L'histoire démographique\" 1993",
+          "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-08/38895.pdf?utm_source=chatgpt.com"
+        }
+      ],
+      "start": 1986,
+      "end": 1986
+    }
+  ]
 }
