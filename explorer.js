@@ -6,7 +6,7 @@ let currentIndex = -1;
 // Catégories fixes avec icônes associées
 const categoryColors = {
   "Gouvernance et pilotage stratégique": "#007b7f",
-  "Données, surveillance et recherche": "#4b0082",
+  "Données surveillance et recherche": "#4b0082",
   "Promotion de la santé et prévention": "#e76f51",
   "Protection sanitaire et gestion des risques": "#f4a261",
   "Accès aux services et aux moyens": "#2a9d8f",
