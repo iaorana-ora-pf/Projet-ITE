@@ -164,9 +164,13 @@ function showDetails(ev, year) {
   const isMulti = ev.start && ev.end && ev.start !== ev.end;
  const catList = (Array.isArray(ev.category) ? ev.category : [ev.category])
   .map(cat => `<li>${getIconForCategory(cat)} ${cat}</li>`).join("");
-  const sourceList = (ev.sources || []).map(src =>
-  `<li>${src.startsWith("http") ? `<a href="${src}" target="_blank">${src}</a>` : src}</li>`
-).join("");
+ const sourceList = (ev.sources || []).map(src => {
+  if (typeof src === "object" && src.url) {
+    return `<li><a href="${src.url}" target="_blank">${src.label || src.url}</a></li>`;
+  } else {
+    return `<li>${src}</li>`;
+  }
+}).join("");
   const keywordList = (ev.keywords || []).map(k => `• ${k}`).join("<br>");
 
  container.innerHTML = `
