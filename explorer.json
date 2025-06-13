@@ -8,97 +8,114 @@
       "keywords": [
         "Schéma et plans"
       ],
-      "description": "Le schéma d’organisation sanitaire (SOS) 2016-2021donne les orientations en matière d’organisation et de répartition géographique de l’ensemble de l’offre de soins, y compris en matière de prévention et de promotion de la santé, ainsi que de prévision d’évolution et d’objectifs opérationnels, en cohérence avec les stratégies de politiques publiques dans le domaine de la santé. Ce SOS a été prorogé en 2020 jusqu’à la publication d’un nouveau schéma, et prévu au plus tard jusqu’au 15 janvier 2023. Un bilan à fin novembre 2021 démontrait une avancée satisfaisante des actions portées par les acteurs du Pays.",
+      "description": "Le schéma d’organisation sanitaire (SOS) 2016-2021 donne les orientations en matière d’organisation et de répartition géographique de l’ensemble de l’offre de soins, y compris de prévention et de promotion de la santé, ainsi que de prévision d’évolution et d’objectifs opérationnels. Ce SOS a été prorogé en 2020 jusqu’à la publication d’un nouveau schéma, prévu au plus tard jusqu’au 15 janvier 2023. Un bilan à fin novembre 2021 démontrait une avancée satisfaisante des actions.",
       "sources": [
-        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2017/06/Sche%CC%81ma-dorganisation-Sanitaire-en-PF-2016-2021-web.pdf; Conseil des ministres du 15/12/2021"
+        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2017/06/Sche%CC%81ma-dorganisation-Sanitaire-en-PF-2016-2021-web.pdf",
+        "Conseil des ministres du 15/12/2021"
       ],
       "start": 2016,
-      "end": 2021
-    }
-  ],
-  "2017": [
+      "end": 2016
+    },
     {
-      "name": "Schéma d’Organisation Sanitaire de la Polynésie française (2016-2021)",
+      "name": "Politique de Santé de la Polynésie française 2016-2025",
       "category": [
         "Gouvernance et pilotage stratégique"
       ],
       "keywords": [
-        "Schéma et plans"
+        "Plans et Programmes de Santé"
       ],
-      "description": "Le schéma d’organisation sanitaire (SOS) 2016-2021donne les orientations en matière d’organisation et de répartition géographique de l’ensemble de l’offre de soins, y compris en matière de prévention et de promotion de la santé, ainsi que de prévision d’évolution et d’objectifs opérationnels, en cohérence avec les stratégies de politiques publiques dans le domaine de la santé. Ce SOS a été prorogé en 2020 jusqu’à la publication d’un nouveau schéma, et prévu au plus tard jusqu’au 15 janvier 2023. Un bilan à fin novembre 2021 démontrait une avancée satisfaisante des actions portées par les acteurs du Pays.",
+      "description": "La Politique de Santé de la Polynésie française 2016-2025 définit les orientations stratégiques à 10 ans des évolutions à conduire et des inflexions à accompagner. Les plus importantes d’entre elles sont traduites dans le projet de Schéma d’organisation sanitaire 2016-2021.",
       "sources": [
-        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2017/06/Sche%CC%81ma-dorganisation-Sanitaire-en-PF-2016-2021-web.pdf, Conseil des ministres du 15/12/2021"
+        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2017/06/La-politique-de-Sante%CC%81-en-PF-2016-2025-web.pdf"
       ],
       "start": 2016,
-      "end": 2021
+      "end": 2016
     }
   ],
   "2018": [
     {
-      "name": "Schéma d’Organisation Sanitaire de la Polynésie française (2016-2021)",
+      "name": "Plan cancer 2018-2022",
       "category": [
         "Gouvernance et pilotage stratégique"
       ],
       "keywords": [
-        "Schéma et plans"
+        "Plans et Programmes de Santé",
+        "Tumeurs"
       ],
-      "description": "Le schéma d’organisation sanitaire (SOS) 2016-2021donne les orientations en matière d’organisation et de répartition géographique de l’ensemble de l’offre de soins, y compris en matière de prévention et de promotion de la santé, ainsi que de prévision d’évolution et d’objectifs opérationnels, en cohérence avec les stratégies de politiques publiques dans le domaine de la santé. Ce SOS a été prorogé en 2020 jusqu’à la publication d’un nouveau schéma, et prévu au plus tard jusqu’au 15 janvier 2023. Un bilan à fin novembre 2021 démontrait une avancée satisfaisante des actions portées par les acteurs du Pays.",
+      "description": "Le Plan Cancer 2018-2022 vise à améliorer l’efficacité des actions de prévention, l’accès au dépistage, la prise en charge du patient et enfin, la qualité et le confort de vie de ce dernier.",
       "sources": [
-        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2017/06/Sche%CC%81ma-dorganisation-Sanitaire-en-PF-2016-2021-web.pdf; Conseil des ministres du 15/12/2021"
+        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2017/07/Plan-cancer-polyn%C3%A9sien-2018_2022_21juin.pdf"
       ],
-      "start": 2016,
-      "end": 2021
+      "start": 2018,
+      "end": 2018
+    },
+    {
+      "name": "Schéma de Prévention et de Promotion de la Santé 2018-2022",
+      "category": [
+        "Gouvernance et pilotage stratégique"
+      ],
+      "keywords": [
+        "Plans et Programmes de Santé"
+      ],
+      "description": "Le Schéma de Prévention et de Promotion de la Santé décline le cadre de la politique de prévention. Il en définit ses principes, ses objectifs, ses axes et les mesures prioritaires que le Pays, les communes, les organisations et la société civile auront à traduire en programmes cohérents d’actions locales ou territoriales.",
+      "sources": [
+        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2017/12/Sch%C3%A9ma-Pr%C3%A9vention-2018-2022.pdf"
+      ],
+      "start": 2018,
+      "end": 2018
     }
   ],
-  "2019": [
+  "2001": [
     {
-      "name": "Schéma d’Organisation Sanitaire de la Polynésie française (2016-2021)",
+      "name": "Schéma d’Organisation Sanitaire 2001-2007",
       "category": [
         "Gouvernance et pilotage stratégique"
       ],
       "keywords": [
-        "Schéma et plans"
+        "Plans et Programmes de Santé"
       ],
-      "description": "Le schéma d’organisation sanitaire (SOS) 2016-2021donne les orientations en matière d’organisation et de répartition géographique de l’ensemble de l’offre de soins, y compris en matière de prévention et de promotion de la santé, ainsi que de prévision d’évolution et d’objectifs opérationnels, en cohérence avec les stratégies de politiques publiques dans le domaine de la santé. Ce SOS a été prorogé en 2020 jusqu’à la publication d’un nouveau schéma, et prévu au plus tard jusqu’au 15 janvier 2023. Un bilan à fin novembre 2021 démontrait une avancée satisfaisante des actions portées par les acteurs du Pays.",
+      "description": "Le Schéma d’Organisation Sanitaire 2001-2007 a été prorogé jusque fin 2013 sans aucune révision.",
       "sources": [
-        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2017/06/Sche%CC%81ma-dorganisation-Sanitaire-en-PF-2016-2021-web.pdf; Conseil des ministres du 15/12/2021"
+        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2017/06/La-politique-de-Sante%CC%81-en-PF-2016-2025-web.pdf"
       ],
-      "start": 2016,
-      "end": 2021
+      "start": 2001,
+      "end": 2001
     }
   ],
-  "2020": [
+  "2015": [
     {
-      "name": "Schéma d’Organisation Sanitaire de la Polynésie française (2016-2021)",
+      "name": "Programme polynésien pour la promotion de l'allaitement maternel 2015-2020",
       "category": [
         "Gouvernance et pilotage stratégique"
       ],
       "keywords": [
-        "Schéma et plans"
+        "Plans et Programmes de Santé",
+        "Allaitement naturel"
       ],
-      "description": "Le schéma d’organisation sanitaire (SOS) 2016-2021donne les orientations en matière d’organisation et de répartition géographique de l’ensemble de l’offre de soins, y compris en matière de prévention et de promotion de la santé, ainsi que de prévision d’évolution et d’objectifs opérationnels, en cohérence avec les stratégies de politiques publiques dans le domaine de la santé. Ce SOS a été prorogé en 2020 jusqu’à la publication d’un nouveau schéma, et prévu au plus tard jusqu’au 15 janvier 2023. Un bilan à fin novembre 2021 démontrait une avancée satisfaisante des actions portées par les acteurs du Pays.",
+      "description": "Le Programme polynésien pour la promotion de l'allaitement maternel 2015-2020 a pour objectif d'apporter toute l'aide nécessaire aux femmes qui ont le désir d'allaiter et de leur permettre de continuer aussi longtemps qu'elles le souhaitent.",
       "sources": [
-        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2017/06/Sche%CC%81ma-dorganisation-Sanitaire-en-PF-2016-2021-web.pdf; Conseil des ministres du 15/12/2021"
+        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2019/12/Programme-AM-2015-2020.pdf"
       ],
-      "start": 2016,
-      "end": 2021
+      "start": 2015,
+      "end": 2015
     }
   ],
-  "2021": [
+  "1996": [
     {
-      "name": "Schéma d’Organisation Sanitaire de la Polynésie française (2016-2021)",
+      "name": "Démarrage du programme pour la promotion de l'allaitement maternelle et d'une nutrition saine chez le jeune enfant",
       "category": [
         "Gouvernance et pilotage stratégique"
       ],
       "keywords": [
-        "Schéma et plans"
+        "Plans et Programmes de Santé",
+        "Allaitement naturel"
       ],
-      "description": "Le schéma d’organisation sanitaire (SOS) 2016-2021donne les orientations en matière d’organisation et de répartition géographique de l’ensemble de l’offre de soins, y compris en matière de prévention et de promotion de la santé, ainsi que de prévision d’évolution et d’objectifs opérationnels, en cohérence avec les stratégies de politiques publiques dans le domaine de la santé. Ce SOS a été prorogé en 2020 jusqu’à la publication d’un nouveau schéma, et prévu au plus tard jusqu’au 15 janvier 2023. Un bilan à fin novembre 2021 démontrait une avancée satisfaisante des actions portées par les acteurs du Pays.",
+      "description": "Le programme pour la promotion de l'allaitement maternelle et d'une nutrition saine chez le jeune enfant propose des lignes directrices pour guider les acteurs du domaine.",
       "sources": [
-        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2017/06/Sche%CC%81ma-dorganisation-Sanitaire-en-PF-2016-2021-web.pdf; Conseil des ministres du 15/12/2021"
+        "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2019/12/Programme-AM-2015-2020.pdf"
       ],
-      "start": 2016,
-      "end": 2021
+      "start": 1996,
+      "end": 1996
     }
   ]
 }
