@@ -15,7 +15,7 @@ const categoryColors = {
 
 const fixedCategoryIcons = {
   "Gouvernance et pilotage stratégique": "fa-scale-balanced",
-  "Données, surveillance et recherche": "fa-database",
+  "Données surveillance et recherche": "fa-database",
   "Promotion de la santé et prévention": "fa-heart-pulse",
   "Protection sanitaire et gestion des risques": "fa-shield-alt",
   "Accès aux services et aux moyens": "fa-hospital",
