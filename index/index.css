@@ -443,12 +443,6 @@ a.button {
   background-color: #f4f0ec;
 }
 
-@media (max-width: 768px) {
-  #filters {
-    display: none;
-  }
-}
-
 /*-----------------------------------
   DÉTAILS ÉVÉNEMENT
 -----------------------------------*/
