@@ -864,3 +864,12 @@ a.button {
   justify-content: space-between;
   gap: 0.5rem;
 }
+.event-details-container p,
+.event-details-container ul,
+.event-details-container li,
+.event-details-container strong,
+.event-details-container a {
+  font-style: normal;
+  color: var(--dark-text);
+  text-align: left;
+}
