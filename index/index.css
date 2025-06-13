@@ -142,6 +142,11 @@
   opacity: 0;
   pointer-events: none;
 }
+.title-4.inline-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
 /*-----------------------------------
   STRUCTURE GÉNÉRALE
 -----------------------------------*/
