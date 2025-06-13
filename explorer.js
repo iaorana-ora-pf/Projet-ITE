@@ -276,6 +276,10 @@ function resetFilters() {
   updateTimeline();
   updateActiveFilterBadges();
 }
+function toggleFilters() {
+  const el = document.getElementById("filters");
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
 function toggleSidePanel() {
   const panel = document.getElementById('side-panel');
   panel.style.display = (panel.style.display === 'none') ? 'flex' : 'none';
@@ -319,55 +323,3 @@ window.addEventListener("DOMContentLoaded", function () {
     main.style.paddingTop = headerHeight + "px";
   }
 });
-function toggleCategoryInfo() {
-  const box = document.getElementById("category-info-box");
-  box.classList.toggle("hidden");
-}
-function toggleCategoryTooltip(event) {
-  event.stopPropagation(); // évite que le clic se propage
-
-  const tooltip = document.getElementById("categoryTooltip");
-  const isVisible = !tooltip.classList.contains("hidden");
-  
-  document.querySelectorAll(".tooltip-floating").forEach(el => el.classList.add("hidden"));
-  
-  if (!isVisible) {
-    tooltip.classList.remove("hidden");
-    document.addEventListener("click", closeTooltipOnClickOutside);
-  }
-}
-
-function closeTooltipOnClickOutside(e) {
-  const tooltip = document.getElementById("categoryTooltip");
-  if (!tooltip.contains(e.target) && !e.target.classList.contains("info-icon")) {
-    tooltip.classList.add("hidden");
-    document.removeEventListener("click", closeTooltipOnClickOutside);
-  }
-}
-function toggleInfoModal() {
-  const modal = document.getElementById("infoModal");
-  modal.classList.toggle("hidden");
-}
-function toggleInfoModal() {
-  const modal = document.getElementById("infoModal");
-  modal.classList.toggle("hidden");
-}
-function toggleKeywordModal() {
-  const modal = document.getElementById("keywordModal");
-  modal.classList.toggle("hidden");
-}
-function toggleFilters() {
-  const content = document.getElementById("filters-content");
-  const icon = document.getElementById("filtersArrow");
-  
-  content.classList.toggle("filters-collapsed");
-
-  // Change l'icône flèche haut/bas
-  if (content.classList.contains("filters-collapsed")) {
-    icon.classList.remove("fa-chevron-up");
-    icon.classList.add("fa-chevron-down");
-  } else {
-    icon.classList.remove("fa-chevron-down");
-    icon.classList.add("fa-chevron-up");
-  }
-}
