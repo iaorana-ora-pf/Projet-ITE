@@ -164,7 +164,9 @@ function showDetails(ev, year) {
   const isMulti = ev.start && ev.end && ev.start !== ev.end;
  const catList = (Array.isArray(ev.category) ? ev.category : [ev.category])
   .map(cat => `<li>${getIconForCategory(cat)} ${cat}</li>`).join("");
-  const sourceList = (ev.sources || []).map(src => src.startsWith("http") ? `<a href="${src}" target="_blank">${src}</a>` : src).join("<br>");
+  const sourceList = (ev.sources || []).map(src =>
+  `<li>${src.startsWith("http") ? `<a href="${src}" target="_blank">${src}</a>` : src}</li>`
+).join("");
   const keywordList = (ev.keywords || []).map(k => `• ${k}`).join("<br>");
 
   container.innerHTML = `
@@ -178,7 +180,10 @@ function showDetails(ev, year) {
 </div>
     <p><strong>Mots-clés :</strong><br>${keywordList}</p>
     <p><strong>Description :</strong><br>${ev.description || "N/A"}</p>
-    <p><strong>Source(s) :</strong><br>${sourceList || "N/A"}</p>`;
+    <div>
+  <strong>Source(s) :</strong>
+  ${sourceList ? `<ul style="padding-left: 1rem; text-align: left;">${sourceList}</ul>` : "<p>N/A</p>"}
+</div>
 container.innerHTML += `
   <div style="display:flex; justify-content: space-between; margin-top: 1.5rem;">
     <button class="button" onclick="navigateEvent(-1)">◀ Précédent</button>
