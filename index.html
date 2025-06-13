@@ -45,7 +45,10 @@
        <!-- Filtres ------------------------------------------>
     <div class="filters-block"> 
       <div class="filters-block-header" style="display: flex; align-items: center; justify-content: space-between;">
-  <h3 class="title-3">Filtres</h3>
+ <h3 class="title-3 inline-icon">
+  Filtres
+  <i id="filtersArrow" class="fa-solid fa-chevron-up" onclick="toggleFilters()" title="Afficher/Masquer les filtres" style="cursor:pointer;"></i>
+</h3>
   <button id="toggleFiltersBtn" onclick="toggleFilters()" style="background: none; border: none; cursor: pointer;">
     <i id="filtersArrow" class="fa-solid fa-chevron-up"></i>
   </button>
@@ -81,10 +84,10 @@
 
     <!-- Bloc Mots-clés -->
  <div class="dropdown-checkbox" style="position: relative;">
-  <h4 class="title-4" style="display: flex; align-items: center; gap: 8px;">
-    <span style="flex-grow: 1;">Mots-clés</span>
-    <i class="fa-solid fa-circle-info info-icon" onclick="toggleKeywordModal()" title="À propos des mots-clés"></i>
-  </h4>
+  <h4 class="title-4 inline-icon">
+  Mots-clés
+  <i class="fa-solid fa-circle-info" onclick="toggleKeywordModal()" title="À propos des mots-clés"></i>
+</h4>
   <div id="keywordDropdown"></div>
 </div>
 
