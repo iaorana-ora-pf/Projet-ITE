@@ -276,10 +276,6 @@ function resetFilters() {
   updateTimeline();
   updateActiveFilterBadges();
 }
-function toggleFilters() {
-  const el = document.getElementById("filters");
-  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
-}
 function toggleSidePanel() {
   const panel = document.getElementById('side-panel');
   panel.style.display = (panel.style.display === 'none') ? 'flex' : 'none';
