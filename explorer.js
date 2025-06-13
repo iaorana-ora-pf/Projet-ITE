@@ -169,27 +169,27 @@ function showDetails(ev, year) {
 ).join("");
   const keywordList = (ev.keywords || []).map(k => `• ${k}`).join("<br>");
 
-  container.innerHTML = `
-    <h2 style="color:#007b7f; font-size:1.2rem; margin-bottom: 1rem;">${ev.name}</h2>
-    <p><strong>${isMulti ? "Période" : "Année"} :</strong> ${isMulti ? `${ev.start} – ${ev.end}` : year}</p>
-    <div>
-  <strong>Catégorie(s) :</strong>
-  <ul style="list-style: none; padding-left: 0; text-align: left;">
-    ${catList}
-  </ul>
-</div>
-    <p><strong>Mots-clés :</strong><br>${keywordList}</p>
-    <p><strong>Description :</strong><br>${ev.description || "N/A"}</p>
-    <div>
-  <strong>Source(s) :</strong>
-  ${sourceList ? `<ul style="padding-left: 1rem; text-align: left;">${sourceList}</ul>` : "<p>N/A</p>"}
-</div>
-container.innerHTML += `
+ container.innerHTML = `
+  <h2 style="color:#007b7f; font-size:1.2rem; margin-bottom: 1rem;">${ev.name}</h2>
+  <p><strong>${isMulti ? "Période" : "Année"} :</strong> ${isMulti ? `${ev.start} – ${ev.end}` : year}</p>
+  <div>
+    <strong>Catégorie(s) :</strong>
+    <ul style="list-style: none; padding-left: 0; text-align: left;">
+      ${catList}
+    </ul>
+  </div>
+  <p><strong>Mots-clés :</strong><br>${keywordList}</p>
+  <p><strong>Description :</strong><br>${ev.description || "N/A"}</p>
+  <div>
+    <strong>Source(s) :</strong>
+    ${sourceList ? `<ul style="padding-left: 1rem; text-align: left;">${sourceList}</ul>` : "<p>N/A</p>"}
+  </div>
   <div style="display:flex; justify-content: space-between; margin-top: 1.5rem;">
     <button class="button" onclick="navigateEvent(-1)">◀ Précédent</button>
     <button class="button" onclick="navigateEvent(1)">Suivant ▶</button>
   </div>
 `;
+
   document.querySelectorAll(".year-block li").forEach(li => li.classList.remove("selected-event"));
   const selected = document.querySelector(`li[data-uid="${ev.name}-${year}"]`);
   if (selected) {
