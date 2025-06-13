@@ -239,9 +239,8 @@
       ],
       "description": "En 2010, la Polynésie a réalisé cette enquête transversale fondée sur la méthodologie STEPwise de l’OMS. L’objectif était de cerner les facteurs de risque (tabac, obésité, hypertension, alimentation, sédentarité) des maladies non transmissibles à l’aide de questionnaires et de mesures physiques sur environ 3 500 adultes.",
       "sources": [
-        "Bertrand S, Berry AL. Enquête santé 2010 en Polynésie française : surveillance des facteurs de risque des maladies non\ntransmissibles. Bull Épidémiol Hebd. 2013",
         {
-          "label": "(28-29):326-32.",
+          "label": "Bertrand S, Berry AL. Enquête santé 2010 en Polynésie française : surveillance des facteurs de risque des maladies non\ntransmissibles. Bull Épidémiol Hebd. 2013",
           "url": "https://beh.santepubliquefrance.fr/beh/2013/28-29/pdf/2013_28-29_1.pdf"
         }
       ],
