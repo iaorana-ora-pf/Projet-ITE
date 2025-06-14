@@ -68,11 +68,11 @@
 }
 
 .event-count-highlight {
-  font-size: 1.1rem;         /* Texte un peu plus grand */
+  font-size: 1.2rem;         /* Texte un peu plus grand */
   font-weight: 500;
   text-align: center;
   color: #333;               /* Couleur foncée lisible */
-  margin-top: 1.5rem;        /* Espace après les boutons info/mail */
+  margin-top: 3rem;        /* Espace après les boutons info/mail */
   margin-bottom: 5rem;       /* Grand espace avant le bloc orange */
   line-height: 1.5;
 }
