@@ -462,9 +462,13 @@
       "description": "Ces dispositifs ont pour objectif de promouvoir la santé à l’école, en permettant aux enfants d’acquérir dès le plus jeune âge des compétences et de développer des comportements favorables à leur santé et leur bien-être.\n",
       "sources": [
         {
-          "label": "Direction de la santé",
-          "url": "https://www.service-public.pf/dsp/dispositifs/label-ecole-cja-sante/, Guide de présentation du dispositif école et CJA en santé | https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2022/02/dsp-ecole-en-sante-guide-de-presentation.pdf"
-        }
+  "label": "Direction de la santé",
+  "url": "https://www.service-public.pf/dsp/dispositifs/label-ecole-cja-sante/"
+},
+{
+  "label": "Guide de présentation du dispositif école et CJA en santé",
+  "url": "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2022/02/dsp-ecole-en-sante-guide-de-presentation.pdf"
+}
       ],
       "start": 2017,
       "end": 2017
