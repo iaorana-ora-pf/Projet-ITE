@@ -111,7 +111,6 @@ function updateTimeline() {
   }
   updateDependentFilters();
   updateActiveFilterBadges();
-// ➕ Compter les événements affichés après filtre
 const total = Object.values(events).flat().filter(e =>
   (!filters.categories.length || (Array.isArray(e.category) ? e.category.some(c => filters.categories.includes(c)) : filters.categories.includes(e.category))) &&
   (!filters.keywords.length || filters.keywords.some(k => e.keywords.includes(k))) &&
@@ -125,10 +124,9 @@ const total = Object.values(events).flat().filter(e =>
   ))
 ).length;
 
-// ➕ Injecter dans l’élément HTML
 const countEl = document.getElementById("event-count-display");
 if (countEl) {
-  countEl.textContent = `La frise contient ${total} événement${total > 1 ? "s" : ""}.`;
+  countEl.innerHTML = `La frise contient <strong>${total}</strong> <strong>événement${total > 1 ? "s" : ""}</strong>.`;
 }
 }
 
