@@ -342,28 +342,7 @@
       "end": 1864
     }
   ],
-  "1864": [
-    {
-      "name": "Épidémie de variole aux Marquises",
-      "category": [
-        "Données surveillance et recherche"
-      ],
-      "keywords": [
-        "Épidémies",
-        "Variole"
-      ],
-      "description": "En août 1863, l’aviso Le Diamant accoste à Nuku Hiva avec à son bord des Polynésiens rapatriés du Pérou, dont plusieurs étaient infectés par la variole. Malgré les tentatives d’isolement, la maladie se propage rapidement à Nuku Hiva et Ua Pou, touchant surtout les populations indigènes. En mars 1864, Nuku Hiva aurait perdu la moitié de sa population (958 morts pour 998 survivants), et Ua Pou, les deux tiers.\nEn février 1864, un chirurgien est envoyé pour vacciner la population à Taiohae, alors que l’épidémie déclinait.",
-      "sources": [
-        {
-          "label": "Atlas de la Polynésie française \"L'histoire démographique\" 1993",
-          "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-08/38895.pdf?utm_source=chatgpt.com"
-        }
-      ],
-      "start": 1863,
-      "end": 1864
-    }
-  ],
-  "1918": [
+ "1918": [
     {
       "name": "Epidémie de grippe espagnole",
       "category": [
