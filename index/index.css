@@ -67,6 +67,22 @@
   color: #5f5f5f;
 }
 
+.event-count-highlight {
+  font-size: 1.1rem;         /* Texte un peu plus grand */
+  font-weight: 500;
+  text-align: center;
+  color: #333;               /* Couleur foncée lisible */
+  margin-top: 1.5rem;        /* Espace après les boutons info/mail */
+  margin-bottom: 5rem;       /* Grand espace avant le bloc orange */
+  line-height: 1.5;
+}
+
+.event-count-highlight strong {
+  font-weight: 700;          /* Met le chiffre en gras */
+}
+
+
+
 .category-info-box {
   background-color: #fefefe;
   border: 1px solid #ccc;
