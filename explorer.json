@@ -1,6 +1,202 @@
 {
   "2016": [
     {
+      "name": "Enquête santé - Jeunes",
+      "category": [
+        "Données surveillance et recherche"
+      ],
+      "keywords": [
+        "Enquêtes de santé",
+        "Adolescent",
+        "Comportement"
+      ],
+      "description": "L'enquête, élaboré sur le modèle GSHS de l'OMS, porte sur les comportements de santé des écoliers de 13 à 17 ans.",
+      "sources": [
+        {
+          "label": "Enquête Santé Jeune",
+          "url": "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2018/06/GSHS_FrenchPolynesia_2018v2.pdf"
+        }
+      ],
+      "start": 2016,
+      "end": 2016
+    },
+    {
+      "name": "Données sur la santé - Jeunes",
+      "category": [
+        "Données surveillance et recherche"
+      ],
+      "keywords": [
+        "Enquêtes de santé",
+        "Adolescent"
+      ],
+      "description": "A propos des élèves polynésiens de 13 - 17 ans : \n43% sont en surpoids dont 20% au stade d’obésité\n44% ont consommé de l’alcool au cours des 30 derniers jours\n42% déclarent être en position sédentaire au moins trois heures par jour\n46% déclarent boire des boissons gazeuses sucrées au moins une fois par jour\n26% ont consommé du tabac",
+      "sources": [
+        {
+          "label": "Enquête Santé Jeune",
+          "url": "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2018/06/GSHS_FrenchPolynesia_2018v2.pdf"
+        }
+      ],
+      "start": 2016,
+      "end": 2016
+    }
+  ],
+  "2017": [
+    {
+      "name": "Création du dispositif \"Ecole et CJA en santé\"",
+      "category": [
+        "Promotion de la santé et prévention"
+      ],
+      "keywords": [
+        "Ecole et CJA en santé",
+        "Adolescent",
+        "Enfant",
+        "Milieu scolaire"
+      ],
+      "description": "Ces dispositifs ont pour objectif de promouvoir la santé à l’école, en permettant aux enfants d’acquérir dès le plus jeune âge des compétences et de développer des comportements favorables à leur santé et leur bien-être.\n",
+      "sources": [
+        {
+          "label": "Direction de la santé",
+          "url": "https://www.service-public.pf/dsp/dispositifs/label-ecole-cja-sante/, Guide de présentation du dispositif école et CJA en santé | https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2022/02/dsp-ecole-en-sante-guide-de-presentation.pdf"
+        }
+      ],
+      "start": 2017,
+      "end": 2017
+    }
+  ],
+  "2014": [
+    {
+      "name": "Inauguration du parcours de santé dans les jardins de Paofai",
+      "category": [
+        "Promotion de la santé et prévention"
+      ],
+      "keywords": [
+        "Exercice physique"
+      ],
+      "description": "Le ministère de la Santé a mis en place un fitness park et un parcours sportif dans le parc Paofai.",
+      "sources": [
+        {
+          "label": "Tahiti info",
+          "url": "https://www.tahiti-infos.com/Parcours-sante-Le-parc-Paofai-s-equipe-pour-le-sport-en-plein-air_a101528.html#:~:text=Partager-,Parcours%20sant%C3%A9%20%3A%20Le%20parc%20Paofai%20s'%C3%A9quipe%20pourle%20sport%20en%20plein%20air&text=PAPEETE%2C%20le%2019%20mai%202014,premier%2C%20dans%20les%20trois%20mois"
+        }
+      ],
+      "start": 2014,
+      "end": 2014
+    }
+  ],
+  "2015": [
+    {
+      "name": "Création du dispositif \"Entreprises actives\" pour la santé des salariés",
+      "category": [
+        "Promotion de la santé et prévention"
+      ],
+      "keywords": [
+        "Secteur privé; Santé au travail"
+      ],
+      "description": "Les entreprises au travers d’un comité santé interne, proposent des réponses en fonction de leurs possibilités et des initiatives Ea’ttitude permettant des pratiques alimentaires saines et de l’activité physique, sur la base d’une consultation de leurs salariés, sur le bien-être et la santé au travail. En 2016, neuf entreprises volontaires étaient inscrites.",
+      "sources": [
+        {
+          "label": "Dossier de presse - Ea'ttidue",
+          "url": "http://archives2.presidence.pf/files/Dossier_de_presse_EAttitude_2016.pdf"
+        }
+      ],
+      "start": 2015,
+      "end": 2015
+    }
+  ],
+  "2022": [
+    {
+      "name": "1ère campagne de détection précoce des mélanomes",
+      "category": [
+        "Promotion de la santé et prévention"
+      ],
+      "keywords": [
+        "Tumeurs",
+        "Dépistage de masse",
+        "Peau"
+      ],
+      "description": "Depuis 2022, l’Institut du Cancer de Polynésie française a initié une campagne de détection précoce du mélanome. Dans ce cadre, des journées de sensibilisation ont été organisées en partenariat avec l’association La Ligue contre le cancer, visant à informer la population sur les signes d’alerte et les moyens de prévention. Des opérations de dépistage gratuites ont également été proposées sur l’ensemble des archipels.",
+      "sources": [
+        {
+          "label": "La politique de lutte contre le cancer en Polynésie française - Cous de comptes",
+          "url": "https://www.ccomptes.fr/sites/default/files/2024-10/PFR2024013.pdf"
+        }
+      ],
+      "start": 2022,
+      "end": 2022
+    }
+  ],
+  "2003": [
+    {
+      "name": "Mise nne place du dépistage gratuit des cancers gynécologiques",
+      "category": [
+        "Accès aux services et aux moyens",
+        "Promotion de la santé et prévention"
+      ],
+      "keywords": [
+        "Tumeurs",
+        "Dépistage de masse",
+        "Femmes"
+      ],
+      "description": "Le dépistage gratuit des cancers gynécologiques a été institué par délibération du 6 novembre 2003. En application du plan cancer 2018-2022, les modalités de réalisation de ces dépistages ont été renforcées par la loi du Pays du 13 juin 2019 et par arrêté du 18 septembre 2020.",
+      "sources": [
+        {
+          "label": "La politique de lutte contre le cancer en Polynésie française - Cous de comptes",
+          "url": "https://www.ccomptes.fr/sites/default/files/2024-10/PFR2024013.pdf"
+        }
+      ],
+      "start": 2003,
+      "end": 2003
+    }
+  ],
+  "2019": [
+    {
+      "name": "Mise en place du dépistage systématique du Rhumatisme Articulaire Aigu en milieu scolaire",
+      "category": [
+        "Accès aux services et aux moyens",
+        "Promotion de la santé et prévention"
+      ],
+      "keywords": [
+        "RAA",
+        "Dépistage de masse",
+        "Enfant",
+        "Milieu scolaire"
+      ],
+      "description": "La Direction de la Santé a lancé dès 2019 un programme de dépistage systématique en milieu scolaire, basé sur l’utilisation d’échographies cardiaques pour repérer précocement les anomalies valvulaires, beaucoup plus sensibles que l’auscultation traditionnelle à la stéthoscope. L’objectif initial était de couvrir tout le territoire d’ici 2023, bien que la pandémie de CoVID-19 ait entraîné quelques retards .",
+      "sources": [
+        {
+          "label": "Programme de lutte contre le RAA en Polynésie française",
+          "url": "https://www.service-public.pf/dsp/wp-content/uploads/sites/12/2024/09/2024-09-24-Outils-SSP-RAA.pdf"
+        }
+      ],
+      "start": 2019,
+      "end": 2019
+    }
+  ],
+  "1949": [
+    {
+      "name": "Création du Centre de Santé Scolaire",
+      "category": [
+        "Accès aux services et aux moyens",
+        "Promotion de la santé et prévention"
+      ],
+      "keywords": [
+        "Adolescent",
+        "Enfant",
+        "Milieu scolaire"
+      ],
+      "description": "Le Centre de Santé Scolaire (initialement appelé « Centre Médico-Scolaire ») a été créé en 1949 à l’initiative conjointe du Service social et du Service de Santé. Il avait pour mission de réaliser les vaccinations, tenir les dossiers médico-scolaires, assurer les soins d'urgence et émettre les certificats médicaux pour les enfants scolarisés. De 1947 à 1950, les vaccinations étaient réalisées par le Dispensaire de Vaiami et la gestion des dossiers médico-scolaires était faite par le Service social.",
+      "sources": [
+        {
+          "label": "Direction de la Santé",
+          "url": "https://www.service-public.pf/dsp/centre-de-sante-scolaire/?utm_source=chatgpt.com"
+        }
+      ],
+      "start": 1949,
+      "end": 1949
+    }
+  ],
+  "2016": [
+    {
       "name": "Schéma d’Organisation Sanitaire de la Polynésie française 2016-2021",
       "category": [
         "Gouvernance et pilotage stratégique"
